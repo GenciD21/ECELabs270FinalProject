@@ -11,12 +11,14 @@ module register_file(
     if (rst) begin
       for (int i = 0; i < 32; i++)
         registers[i] <= 32'd0;
-    end else begin
+    end 
+    else begin
       // same-destination conflict resolution
       if (reg_write && reg_write2 && (regd == regd2)) begin
         if (regd != 5'd0)
           registers[regd] <= write_data2; // ALU2 priority
-      end else begin
+      end 
+      else begin
         if (reg_write && (regd != 5'd0))
           registers[regd] <= write_data;
         if (reg_write2 && (regd2 != 5'd0))

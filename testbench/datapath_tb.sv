@@ -30,6 +30,7 @@ module datapath_tb;
         $display("         ins0=%h ins1=%h", dut.instruction0, dut.instruction1);
         $display("ALU RESULTS: ALU_result1=%h, ALU_result2=%h",
                  dut.ALU_result1,  dut.ALU_result2);
+        
 
         // Print all registers in the register file
         $display("         Register File:");
@@ -42,7 +43,7 @@ module datapath_tb;
     initial begin
         $dumpfile("waves/datapath.vcd");
         $dumpvars(0, datapath_tb);
-        #200;
+        #1000;
         $display("=== DATAPATH SIMULATION COMPLETE ===");
         $finish;
     end

@@ -42,7 +42,7 @@ module cache1_tb;
 
     // Reset
     rst = 1;
-    freeze1 = 0;
+    freeze1 = 1;
     freeze2 = 0;
     dependency_on_ins2 = 0;
 
@@ -50,10 +50,10 @@ module cache1_tb;
     rst = 0;
 
     // Let simulation run for a while
-    repeat (100) begin
+    repeat (20) begin
       @(posedge clk);
-      if ($urandom_range(0, 2) == 0) freeze1 = ~freeze1;
-      if ($urandom_range(0, 2) == 0) freeze2 = ~freeze2;
+      // if ($urandom_range(0, 2) == 0) freeze1 = ~freeze1;
+      // if ($urandom_range(0, 2) == 0) freeze2 = ~freeze2;
       //if ($urandom_range(0, 4) == 0) dependency_on_ins2 = ~dependency_on_ins2;
       $display("freeze states: freeze1=%b, freeze2=%b, dependency_on_ins2=%b", dut.freeze1, dut.freeze2, dut.dependency_on_ins2);
       $display("[%0t] PC=%h  ins0=%h  ins1=%h  nothing_filled=%b...Second_fill=%b...busy=%b",
@@ -63,6 +63,28 @@ module cache1_tb;
         $write("%0h ", dut.ins[i]);
       end
       $display(""); // new line
+      $write("n_ins array: ");
+      for (int i = 0; i < 6; i++) begin
+        $write("%0h ", dut.n_ins[i]);
+      end
+      $display(""); // new line
+      $display(""); // new line
+    end
+    freeze1 = 0;
+    repeat (20) begin
+      @(posedge clk);
+      // if ($urandom_range(0, 2) == 0) freeze1 = ~freeze1;
+      // if ($urandom_range(0, 2) == 0) freeze2 = ~freeze2;
+      //if ($urandom_range(0, 4) == 0) dependency_on_ins2 = ~dependency_on_ins2;
+      $display("freeze states: freeze1=%b, freeze2=%b, dependency_on_ins2=%b", dut.freeze1, dut.freeze2, dut.dependency_on_ins2);
+      $display("[%0t] PC=%h  ins0=%h  ins1=%h  nothing_filled=%b...Second_fill=%b...busy=%b",
+               $time, dut.PC, instruction0, instruction1, nothing_filled, dut.second_half_cache_to_fill, dut.busy);
+      $write("ins array: ");
+      for (int i = 0; i < 12; i++) begin
+        $write("%0h ", dut.ins[i]);
+      end
+      $display(""); // new line
+      // $display("f = %h", dut.f); // new line
       $write("n_ins array: ");
       for (int i = 0; i < 6; i++) begin
         $write("%0h ", dut.n_ins[i]);

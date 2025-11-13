@@ -120,6 +120,14 @@ module scheduling_assistant (
         end
 
         // Cache empty overrides everything
+
+        if (instruction0 == 32'h0) begin
+            datapath_1_enable = 1'b0;
+        end
+        if (instruction1 == 32'h0) begin
+            datapath_2_enable = 1'b0;
+        end
+
         if (nothing_filled) begin
             datapath_1_enable = 1'b0;
             datapath_2_enable = 1'b0;

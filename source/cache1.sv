@@ -22,9 +22,14 @@ module cache1 (
     logic second_half_cache_to_fill;
     logic [31:0] next_PC;
     logic [31:0] PC;
+    //CAVEAT PC UPDATE IS JANK
     always_comb begin
     if (rst)
         next_PC = 32'h0000_0000;
+    else if ((n_ins[0] == ins[0] && n_ins[1] == ins[1] && n_ins[2] == ins[2] && n_ins[3] == ins[3] && n_ins[4] == ins[4] && n_ins[5] == ins[5]))
+        next_PC = PC + 32'd6;
+    else if (freeze1 || freeze2)
+        next_PC = PC;
     else if (dependency_on_ins2)
         next_PC = PC + 32'd4;
     else if (!nothing_filled || busy == 1'b1)
@@ -167,7 +172,7 @@ module cache1 (
             ins[4] <= n_ins[4];
             ins[5] <= n_ins[5];
         end  
-        else if (!freeze1 && !freeze2) begin
+        else if (!freeze1) begin
             // --- Immediate reaction to dependency_on_ins2 ---
             if (dependency_on_ins2) begin
                 // Slide by 1 instruction (ins[1] becomes new ins[0])

@@ -108,8 +108,8 @@ module datapath(
     register_file reg_file_inst (
         .clk(clk),
         .rst(rst),
-        .reg_write(datapath_1_enable),
-        .reg_write2(datapath_2_enable),
+        .reg_write(!freeze1),
+        .reg_write2(!freeze2),
         .reg1(reg1),
         .reg2(reg2),
         .reg3(reg3),
