@@ -164,7 +164,7 @@ module cache1 (
         // instruction0 <= ins[0];
         // instruction1 <= ins[1];
 
-        if (nothing_filled && !busy) begin
+        if (nothing_filled) begin
             ins[0] <= n_ins[0];
             ins[1] <= n_ins[1];
             ins[2] <= n_ins[2];
@@ -229,6 +229,6 @@ assign instruction1 = ins[1]; //nothing_filled ? n_ins[1] : ins[1];
         // else begin
         //     n_counter = counter;
         // end
-        second_half_cache_to_fill = (ins[6] == 32'd0? 1'b1 : 1'b0) && !nothing_filled && (n_ins[0] != past_n_ins[0]) && (n_ins[1] != past_n_ins[1]) && (n_ins[2] != past_n_ins[2]) && (n_ins[3] != past_n_ins[3]) && (n_ins[4] != past_n_ins[4]) && (n_ins[5] != past_n_ins[5]);
+        second_half_cache_to_fill = 32'd0;
     end
 endmodule

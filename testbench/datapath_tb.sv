@@ -37,13 +37,19 @@ module datapath_tb;
         for (int i = 0; i < 32; i++) begin
             $display("           x%0d = %h", i, dut.reg_file_inst.registers[i]);
         end
+
+        // Print cache contents
+        $display("         Cache Contents (ins[0:11]):");
+        for (int i = 0; i < 12; i++) begin
+            $display("           ins[%0d] = %h", i, dut.cache_inst.ins[i]);
+        end
     end
 
     // Stop simulation after some time
     initial begin
         $dumpfile("waves/datapath.vcd");
         $dumpvars(0, datapath_tb);
-        #1000;
+        #200;
         $display("=== DATAPATH SIMULATION COMPLETE ===");
         $finish;
     end
