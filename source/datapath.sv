@@ -12,6 +12,13 @@ module datapath(
     logic datapath_2_enable;
     logic [4:0] RegD1, reg1, reg2;
     logic [4:0] RegD2, reg3, reg4;
+    logic clk_d;
+
+    clk_divider clk_div_inst (
+        .clk(clk),
+        .rst(rst),
+        .clk_d(clk_d)
+    );
 
     cache1 cache_inst (
         .clk(clk),
@@ -108,8 +115,8 @@ module datapath(
     register_file reg_file_inst (
         .clk(clk),
         .rst(rst),
-        .reg_write(!freeze1),
-        .reg_write2(!freeze2),
+        .reg_write(datapath_1_enable || !freeze1),
+        .reg_write2(datapath_2_enable || !freeze2),
         .reg1(reg1),
         .reg2(reg2),
         .reg3(reg3),
