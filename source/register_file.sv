@@ -6,6 +6,7 @@ module register_file(
   output logic [31:0] read_data1, read_data2, read_data3, read_data4
 );
   logic [31:0] registers [31:0];
+  logic [31:0] fake_ALU_to_test;
 
   always_ff @(posedge clk or posedge rst) begin
     if (rst) begin
@@ -26,7 +27,7 @@ module register_file(
       end
     end
   end
-
+  
   // 4 read ports for dual-issue
   assign read_data1 = registers[reg1];
   assign read_data2 = registers[reg2];
