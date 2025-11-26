@@ -115,8 +115,8 @@ module datapath(
     register_file reg_file_inst (
         .clk(clk),
         .rst(rst),
-        .reg_write(datapath_1_enable || !freeze1),
-        .reg_write2(datapath_2_enable || !freeze2),
+        .reg_write((datapath_1_enable || !freeze1) && instruction0 != 32'd0),
+        .reg_write2((datapath_2_enable || !freeze2) && instruction1 != 32'd0),
         .reg1(reg1),
         .reg2(reg2),
         .reg3(reg3),

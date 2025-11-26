@@ -49,7 +49,7 @@ module datapath_tb;
     initial begin
         $dumpfile("waves/datapath.vcd");
         $dumpvars(0, datapath_tb);
-        #200;
+        #700;
         $display("=== DATAPATH SIMULATION COMPLETE ===");
         $finish;
     end
