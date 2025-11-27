@@ -35,100 +35,7 @@
         }
       },
       "cells": {
-        "$specify$10": {
-          "hide_name": 1,
-          "type": "$specify2",
-          "parameters": {
-            "DST_WIDTH": "00000000000000000000000000000001",
-            "FULL": "0",
-            "SRC_DST_PEN": "0",
-            "SRC_DST_POL": "0",
-            "SRC_WIDTH": "00000000000000000000000000000001",
-            "T_FALL_MAX": "00000000000000000000000101110101",
-            "T_FALL_MIN": "00000000000000000000000101110101",
-            "T_FALL_TYP": "00000000000000000000000101110101",
-            "T_RISE_MAX": "00000000000000000000000101110101",
-            "T_RISE_MIN": "00000000000000000000000101110101",
-            "T_RISE_TYP": "00000000000000000000000101110101"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/bin/../share/yosys/ecp5/cells_sim.v:26.9-26.24"
-          },
-          "port_directions": {
-            "DST": "input",
-            "EN": "input",
-            "SRC": "input"
-          },
-          "connections": {
-            "DST": [ 7 ],
-            "EN": [ "1" ],
-            "SRC": [ 4 ]
-          }
-        },
-        "$specify$11": {
-          "hide_name": 1,
-          "type": "$specify2",
-          "parameters": {
-            "DST_WIDTH": "00000000000000000000000000000001",
-            "FULL": "0",
-            "SRC_DST_PEN": "0",
-            "SRC_DST_POL": "0",
-            "SRC_WIDTH": "00000000000000000000000000000001",
-            "T_FALL_MAX": "00000000000000000000000111011101",
-            "T_FALL_MIN": "00000000000000000000000111011101",
-            "T_FALL_TYP": "00000000000000000000000111011101",
-            "T_RISE_MAX": "00000000000000000000000111011101",
-            "T_RISE_MIN": "00000000000000000000000111011101",
-            "T_RISE_TYP": "00000000000000000000000111011101"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/bin/../share/yosys/ecp5/cells_sim.v:27.9-27.24"
-          },
-          "port_directions": {
-            "DST": "input",
-            "EN": "input",
-            "SRC": "input"
-          },
-          "connections": {
-            "DST": [ 7 ],
-            "EN": [ "1" ],
-            "SRC": [ 5 ]
-          }
-        },
-        "$specify$12": {
-          "hide_name": 1,
-          "type": "$specify2",
-          "parameters": {
-            "DST_WIDTH": "00000000000000000000000000000001",
-            "FULL": "0",
-            "SRC_DST_PEN": "0",
-            "SRC_DST_POL": "0",
-            "SRC_WIDTH": "00000000000000000000000000000001",
-            "T_FALL_MAX": "00000000000000000000000111011101",
-            "T_FALL_MIN": "00000000000000000000000111011101",
-            "T_FALL_TYP": "00000000000000000000000111011101",
-            "T_RISE_MAX": "00000000000000000000000111011101",
-            "T_RISE_MIN": "00000000000000000000000111011101",
-            "T_RISE_TYP": "00000000000000000000000111011101"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/bin/../share/yosys/ecp5/cells_sim.v:28.9-28.24"
-          },
-          "port_directions": {
-            "DST": "input",
-            "EN": "input",
-            "SRC": "input"
-          },
-          "connections": {
-            "DST": [ 7 ],
-            "EN": [ "1" ],
-            "SRC": [ 6 ]
-          }
-        },
-        "$specify$8": {
+        "$specify$327": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -159,7 +66,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$9": {
+        "$specify$328": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -188,6 +95,99 @@
             "DST": [ 7 ],
             "EN": [ "1" ],
             "SRC": [ 3 ]
+          }
+        },
+        "$specify$329": {
+          "hide_name": 1,
+          "type": "$specify2",
+          "parameters": {
+            "DST_WIDTH": "00000000000000000000000000000001",
+            "FULL": "0",
+            "SRC_DST_PEN": "0",
+            "SRC_DST_POL": "0",
+            "SRC_WIDTH": "00000000000000000000000000000001",
+            "T_FALL_MAX": "00000000000000000000000101110101",
+            "T_FALL_MIN": "00000000000000000000000101110101",
+            "T_FALL_TYP": "00000000000000000000000101110101",
+            "T_RISE_MAX": "00000000000000000000000101110101",
+            "T_RISE_MIN": "00000000000000000000000101110101",
+            "T_RISE_TYP": "00000000000000000000000101110101"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_sim.v:26.9-26.24"
+          },
+          "port_directions": {
+            "DST": "input",
+            "EN": "input",
+            "SRC": "input"
+          },
+          "connections": {
+            "DST": [ 7 ],
+            "EN": [ "1" ],
+            "SRC": [ 4 ]
+          }
+        },
+        "$specify$330": {
+          "hide_name": 1,
+          "type": "$specify2",
+          "parameters": {
+            "DST_WIDTH": "00000000000000000000000000000001",
+            "FULL": "0",
+            "SRC_DST_PEN": "0",
+            "SRC_DST_POL": "0",
+            "SRC_WIDTH": "00000000000000000000000000000001",
+            "T_FALL_MAX": "00000000000000000000000111011101",
+            "T_FALL_MIN": "00000000000000000000000111011101",
+            "T_FALL_TYP": "00000000000000000000000111011101",
+            "T_RISE_MAX": "00000000000000000000000111011101",
+            "T_RISE_MIN": "00000000000000000000000111011101",
+            "T_RISE_TYP": "00000000000000000000000111011101"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_sim.v:27.9-27.24"
+          },
+          "port_directions": {
+            "DST": "input",
+            "EN": "input",
+            "SRC": "input"
+          },
+          "connections": {
+            "DST": [ 7 ],
+            "EN": [ "1" ],
+            "SRC": [ 5 ]
+          }
+        },
+        "$specify$331": {
+          "hide_name": 1,
+          "type": "$specify2",
+          "parameters": {
+            "DST_WIDTH": "00000000000000000000000000000001",
+            "FULL": "0",
+            "SRC_DST_PEN": "0",
+            "SRC_DST_POL": "0",
+            "SRC_WIDTH": "00000000000000000000000000000001",
+            "T_FALL_MAX": "00000000000000000000000111011101",
+            "T_FALL_MIN": "00000000000000000000000111011101",
+            "T_FALL_TYP": "00000000000000000000000111011101",
+            "T_RISE_MAX": "00000000000000000000000111011101",
+            "T_RISE_MIN": "00000000000000000000000111011101",
+            "T_RISE_TYP": "00000000000000000000000111011101"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_sim.v:28.9-28.24"
+          },
+          "port_directions": {
+            "DST": "input",
+            "EN": "input",
+            "SRC": "input"
+          },
+          "connections": {
+            "DST": [ 7 ],
+            "EN": [ "1" ],
+            "SRC": [ 6 ]
           }
         }
       },
@@ -274,7 +274,7 @@
         }
       },
       "cells": {
-        "$specify$13": {
+        "$specify$332": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -305,7 +305,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$14": {
+        "$specify$333": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -336,7 +336,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$15": {
+        "$specify$334": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -367,7 +367,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$16": {
+        "$specify$335": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -398,7 +398,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$17": {
+        "$specify$336": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -429,7 +429,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$18": {
+        "$specify$337": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -555,7 +555,7 @@
         }
       },
       "cells": {
-        "$specify$19": {
+        "$specify$338": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -586,7 +586,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$20": {
+        "$specify$339": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -617,7 +617,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$21": {
+        "$specify$340": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -648,7 +648,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$22": {
+        "$specify$341": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -679,7 +679,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$23": {
+        "$specify$342": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -710,7 +710,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$24": {
+        "$specify$343": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -741,7 +741,7 @@
             "SRC": [ 7 ]
           }
         },
-        "$specify$25": {
+        "$specify$344": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -14756,9 +14756,8 @@
     },
     "L6MUX21": {
       "attributes": {
-        "blackbox": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
-        "cells_not_processed": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
         "src": "/usr/bin/../share/yosys/ecp5/cells_sim.v:65.1-72.10"
       },
       "ports": {
@@ -20145,9 +20144,8 @@
     },
     "PFUMX": {
       "attributes": {
-        "blackbox": "00000000000000000000000000000001",
         "abc9_box": "00000000000000000000000000000001",
-        "cells_not_processed": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
         "src": "/usr/bin/../share/yosys/ecp5/cells_sim.v:179.1-186.10"
       },
       "ports": {
@@ -21141,7 +21139,7 @@
     "top": {
       "attributes": {
         "top": "00000000000000000000000000000001",
-        "src": "src/top.sv:1.1-21.10"
+        "src": "src/top.sv:1.1-69.10"
       },
       "ports": {
         "clk": {
@@ -21154,263 +21152,1815 @@
         },
         "led": {
           "direction": "output",
-          "bits": [ 4, 5, 3, 6, 7, 8, 9, 10 ]
+          "bits": [ "x", 4, "x", 3, 5, "x", "x", "x" ]
+        },
+        "rst_pin": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "J39_b15": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "J39_c15": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "J39_b20": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "J39_e11": {
+          "direction": "input",
+          "bits": [ 10 ]
+        },
+        "J39_b10": {
+          "direction": "input",
+          "bits": [ 11 ]
+        },
+        "J39_a14": {
+          "direction": "input",
+          "bits": [ 12 ]
+        },
+        "J39_d13": {
+          "direction": "input",
+          "bits": [ 13 ]
+        },
+        "J39_e12": {
+          "direction": "input",
+          "bits": [ 14 ]
+        },
+        "J40_m3": {
+          "direction": "input",
+          "bits": [ 15 ]
+        },
+        "J40_j5": {
+          "direction": "output",
+          "bits": [ "x" ]
+        },
+        "J40_a15": {
+          "direction": "output",
+          "bits": [ "x" ]
+        },
+        "J40_h2": {
+          "direction": "output",
+          "bits": [ "x" ]
+        },
+        "J40_j4": {
+          "direction": "output",
+          "bits": [ "x" ]
+        },
+        "J40_j3": {
+          "direction": "output",
+          "bits": [ "x" ]
+        },
+        "J40_l4": {
+          "direction": "output",
+          "bits": [ "x" ]
+        },
+        "J40_m4": {
+          "direction": "output",
+          "bits": [ "x" ]
+        },
+        "J40_n4": {
+          "direction": "output",
+          "bits": [ "x" ]
+        },
+        "J40_k5": {
+          "direction": "output",
+          "bits": [ "x" ]
         }
       },
       "cells": {
-        "counter_CCU2C_B0": {
+        "clk_divider.counter_TRELLIS_FF_Q": {
           "hide_name": 0,
-          "type": "CCU2C",
+          "type": "TRELLIS_FF",
           "parameters": {
-            "INIT0": "1001011010101010",
-            "INIT1": "1001011010101010",
-            "INJECT1_0": "NO",
-            "INJECT1_1": "NO"
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
           },
           "attributes": {
+            "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
-            "A0": "input",
-            "A1": "input",
-            "B0": "input",
-            "B1": "input",
-            "C0": "input",
-            "C1": "input",
-            "CIN": "input",
-            "COUT": "output",
-            "D0": "input",
-            "D1": "input",
-            "S0": "output",
-            "S1": "output"
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
           },
           "connections": {
-            "A0": [ "0" ],
-            "A1": [ "0" ],
-            "B0": [ 11 ],
-            "B1": [ 12 ],
-            "C0": [ "0" ],
-            "C1": [ "0" ],
-            "CIN": [ 13 ],
-            "COUT": [ 14 ],
-            "D0": [ "1" ],
-            "D1": [ "1" ],
-            "S0": [ 15 ],
-            "S1": [ 16 ]
+            "CLK": [ 2 ],
+            "DI": [ 16 ],
+            "LSR": [ 17 ],
+            "Q": [ 18 ]
           }
         },
-        "counter_CCU2C_B0_1": {
+        "clk_divider.counter_TRELLIS_FF_Q_1": {
           "hide_name": 0,
-          "type": "CCU2C",
+          "type": "TRELLIS_FF",
           "parameters": {
-            "INIT0": "1001011010101010",
-            "INIT1": "1001011010101010",
-            "INJECT1_0": "NO",
-            "INJECT1_1": "NO"
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
           },
           "attributes": {
+            "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
-            "A0": "input",
-            "A1": "input",
-            "B0": "input",
-            "B1": "input",
-            "C0": "input",
-            "C1": "input",
-            "CIN": "input",
-            "COUT": "output",
-            "D0": "input",
-            "D1": "input",
-            "S0": "output",
-            "S1": "output"
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
           },
           "connections": {
-            "A0": [ "0" ],
-            "A1": [ "0" ],
-            "B0": [ 17 ],
-            "B1": [ 18 ],
-            "C0": [ "0" ],
-            "C1": [ "0" ],
-            "CIN": [ 19 ],
-            "COUT": [ 13 ],
-            "D0": [ "1" ],
-            "D1": [ "1" ],
-            "S0": [ 20 ],
-            "S1": [ 21 ]
+            "CLK": [ 2 ],
+            "DI": [ 19 ],
+            "LSR": [ 17 ],
+            "Q": [ 20 ]
           }
         },
-        "counter_CCU2C_B0_10": {
+        "clk_divider.counter_TRELLIS_FF_Q_10": {
           "hide_name": 0,
-          "type": "CCU2C",
+          "type": "TRELLIS_FF",
           "parameters": {
-            "INIT0": "1001011010101010",
-            "INIT1": "1001011010101010",
-            "INJECT1_0": "NO",
-            "INJECT1_1": "NO"
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
           },
           "attributes": {
+            "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
-            "A0": "input",
-            "A1": "input",
-            "B0": "input",
-            "B1": "input",
-            "C0": "input",
-            "C1": "input",
-            "CIN": "input",
-            "COUT": "output",
-            "D0": "input",
-            "D1": "input",
-            "S0": "output",
-            "S1": "output"
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
           },
           "connections": {
-            "A0": [ "0" ],
-            "A1": [ "0" ],
-            "B0": [ 22 ],
-            "B1": [ 23 ],
-            "C0": [ "0" ],
-            "C1": [ "0" ],
-            "CIN": [ 24 ],
-            "COUT": [ 25 ],
-            "D0": [ "1" ],
-            "D1": [ "1" ],
-            "S0": [ 26 ],
-            "S1": [ 27 ]
+            "CLK": [ 2 ],
+            "DI": [ 21 ],
+            "LSR": [ 17 ],
+            "Q": [ 22 ]
           }
         },
-        "counter_CCU2C_B0_11": {
+        "clk_divider.counter_TRELLIS_FF_Q_10_DI_LUT4_Z": {
           "hide_name": 0,
-          "type": "CCU2C",
+          "type": "LUT4",
           "parameters": {
-            "INIT0": "1001011010101010",
-            "INIT1": "1001011010101010",
-            "INJECT1_0": "NO",
-            "INJECT1_1": "NO"
+            "INIT": "0000111100000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
           },
           "port_directions": {
-            "A0": "input",
-            "A1": "input",
-            "B0": "input",
-            "B1": "input",
-            "C0": "input",
-            "C1": "input",
-            "CIN": "input",
-            "COUT": "output",
-            "D0": "input",
-            "D1": "input",
-            "S0": "output",
-            "S1": "output"
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
           },
           "connections": {
-            "A0": [ "0" ],
-            "A1": [ "0" ],
-            "B0": [ 28 ],
-            "B1": [ 29 ],
-            "C0": [ "0" ],
-            "C1": [ "0" ],
-            "CIN": [ 30 ],
-            "COUT": [ 24 ],
-            "D0": [ "1" ],
-            "D1": [ "1" ],
-            "S0": [ 31 ],
-            "S1": [ 32 ]
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 24 ],
+            "Z": [ 21 ]
           }
         },
-        "counter_CCU2C_B0_12": {
+        "clk_divider.counter_TRELLIS_FF_Q_11": {
           "hide_name": 0,
-          "type": "CCU2C",
+          "type": "TRELLIS_FF",
           "parameters": {
-            "INIT0": "1001011010101010",
-            "INIT1": "1001011010101010",
-            "INJECT1_0": "NO",
-            "INJECT1_1": "NO"
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
           },
           "attributes": {
+            "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
-            "A0": "input",
-            "A1": "input",
-            "B0": "input",
-            "B1": "input",
-            "C0": "input",
-            "C1": "input",
-            "CIN": "input",
-            "COUT": "output",
-            "D0": "input",
-            "D1": "input",
-            "S0": "output",
-            "S1": "output"
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
           },
           "connections": {
-            "A0": [ "0" ],
-            "A1": [ "0" ],
-            "B0": [ 33 ],
-            "B1": [ 34 ],
-            "C0": [ "0" ],
-            "C1": [ "0" ],
-            "CIN": [ 35 ],
-            "COUT": [ 30 ],
-            "D0": [ "1" ],
-            "D1": [ "1" ],
-            "S0": [ 36 ],
-            "S1": [ 37 ]
+            "CLK": [ 2 ],
+            "DI": [ 25 ],
+            "LSR": [ 17 ],
+            "Q": [ 26 ]
           }
         },
-        "counter_CCU2C_B0_13": {
+        "clk_divider.counter_TRELLIS_FF_Q_11_DI_LUT4_Z": {
           "hide_name": 0,
-          "type": "CCU2C",
+          "type": "LUT4",
           "parameters": {
-            "INIT0": "1001011010101010",
-            "INIT1": "1001011010101010",
-            "INJECT1_0": "NO",
-            "INJECT1_1": "NO"
+            "INIT": "0000111100000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
           },
           "port_directions": {
-            "A0": "input",
-            "A1": "input",
-            "B0": "input",
-            "B1": "input",
-            "C0": "input",
-            "C1": "input",
-            "CIN": "input",
-            "COUT": "output",
-            "D0": "input",
-            "D1": "input",
-            "S0": "output",
-            "S1": "output"
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
           },
           "connections": {
-            "A0": [ "0" ],
-            "A1": [ "0" ],
-            "B0": [ 38 ],
-            "B1": [ 39 ],
-            "C0": [ "0" ],
-            "C1": [ "0" ],
-            "CIN": [ 40 ],
-            "COUT": [ 35 ],
-            "D0": [ "1" ],
-            "D1": [ "1" ],
-            "S0": [ 41 ],
-            "S1": [ 42 ]
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 27 ],
+            "Z": [ 25 ]
           }
         },
-        "counter_CCU2C_B0_14": {
+        "clk_divider.counter_TRELLIS_FF_Q_12": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 28 ],
+            "LSR": [ 17 ],
+            "Q": [ 29 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_12_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 30 ],
+            "Z": [ 28 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_13": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 31 ],
+            "LSR": [ 17 ],
+            "Q": [ 32 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_13_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 33 ],
+            "Z": [ 31 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_14": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 34 ],
+            "LSR": [ 17 ],
+            "Q": [ 35 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_14_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 36 ],
+            "Z": [ 34 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_15": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 37 ],
+            "LSR": [ 17 ],
+            "Q": [ 38 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_15_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 39 ],
+            "Z": [ 37 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_16": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 40 ],
+            "LSR": [ 17 ],
+            "Q": [ 41 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_16_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 42 ],
+            "Z": [ 40 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_17": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 43 ],
+            "LSR": [ 17 ],
+            "Q": [ 44 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_17_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 45 ],
+            "Z": [ 43 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_18": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 46 ],
+            "LSR": [ 17 ],
+            "Q": [ 47 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_18_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 48 ],
+            "Z": [ 46 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_19": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 49 ],
+            "LSR": [ 17 ],
+            "Q": [ 50 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_19_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 51 ],
+            "Z": [ 49 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_1_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 52 ],
+            "Z": [ 19 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_2": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 53 ],
+            "LSR": [ 17 ],
+            "Q": [ 54 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_20": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 55 ],
+            "LSR": [ 17 ],
+            "Q": [ 56 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_20_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 57 ],
+            "Z": [ 55 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_21": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 58 ],
+            "LSR": [ 17 ],
+            "Q": [ 59 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_21_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 60 ],
+            "Z": [ 58 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_22": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 61 ],
+            "LSR": [ 17 ],
+            "Q": [ 62 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_22_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 63 ],
+            "Z": [ 61 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_23": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 64 ],
+            "LSR": [ 17 ],
+            "Q": [ 65 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_23_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 66 ],
+            "Z": [ 64 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_24": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 67 ],
+            "LSR": [ 17 ],
+            "Q": [ 68 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_24_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 69 ],
+            "Z": [ 67 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_25": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 70 ],
+            "LSR": [ 17 ],
+            "Q": [ 71 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_25_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 72 ],
+            "Z": [ 70 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_26": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 73 ],
+            "LSR": [ 17 ],
+            "Q": [ 74 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_26_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 75 ],
+            "Z": [ 73 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_27": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 76 ],
+            "LSR": [ 17 ],
+            "Q": [ 77 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_27_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 78 ],
+            "Z": [ 76 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_28": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 79 ],
+            "LSR": [ 17 ],
+            "Q": [ 80 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_28_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 81 ],
+            "Z": [ 79 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_29": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 82 ],
+            "LSR": [ 17 ],
+            "Q": [ 83 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_29_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 84 ],
+            "Z": [ 82 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_2_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 85 ],
+            "Z": [ 53 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_3": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 86 ],
+            "LSR": [ 17 ],
+            "Q": [ 87 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_30": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 88 ],
+            "LSR": [ 17 ],
+            "Q": [ 89 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_30_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 90 ],
+            "Z": [ 88 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_31": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 91 ],
+            "LSR": [ 17 ],
+            "Q": [ 92 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_31_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 93 ],
+            "Z": [ 91 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_3_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 94 ],
+            "Z": [ 86 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_4": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 95 ],
+            "LSR": [ 17 ],
+            "Q": [ 96 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_4_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 97 ],
+            "Z": [ 95 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_5": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 98 ],
+            "LSR": [ 17 ],
+            "Q": [ 99 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_5_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 100 ],
+            "Z": [ 98 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_6": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 101 ],
+            "LSR": [ 17 ],
+            "Q": [ 102 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_6_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 103 ],
+            "Z": [ 101 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_7": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 104 ],
+            "LSR": [ 17 ],
+            "Q": [ 105 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_7_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 106 ],
+            "Z": [ 104 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_8": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 107 ],
+            "LSR": [ 17 ],
+            "Q": [ 108 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_8_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 109 ],
+            "Z": [ 107 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_9": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "1 ",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "DI": [ 110 ],
+            "LSR": [ 17 ],
+            "Q": [ 111 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_9_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 112 ],
+            "Z": [ 110 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 23 ],
+            "D": [ 113 ],
+            "Z": [ 16 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0": {
           "hide_name": 0,
           "type": "CCU2C",
           "parameters": {
@@ -21421,7 +22971,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21440,19 +22990,145 @@
           "connections": {
             "A0": [ "0" ],
             "A1": [ "0" ],
-            "B0": [ 43 ],
+            "B0": [ 74 ],
+            "B1": [ 71 ],
+            "C0": [ "0" ],
+            "C1": [ "0" ],
+            "CIN": [ 114 ],
+            "COUT": [ 115 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 75 ],
+            "S1": [ 72 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 80 ],
+            "B1": [ 77 ],
+            "C0": [ "0" ],
+            "C1": [ "0" ],
+            "CIN": [ 116 ],
+            "COUT": [ 114 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 81 ],
+            "S1": [ 78 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_10": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 41 ],
+            "B1": [ 38 ],
+            "C0": [ "0" ],
+            "C1": [ "0" ],
+            "CIN": [ 117 ],
+            "COUT": [ 118 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 42 ],
+            "S1": [ 39 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_11": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 47 ],
             "B1": [ 44 ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 14 ],
-            "COUT": [ 40 ],
+            "CIN": [ 119 ],
+            "COUT": [ 117 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 45 ],
-            "S1": [ 46 ]
+            "S0": [ 48 ],
+            "S1": [ 45 ]
           }
         },
-        "counter_CCU2C_B0_15": {
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_12": {
           "hide_name": 0,
           "type": "CCU2C",
           "parameters": {
@@ -21463,7 +23139,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21480,21 +23156,21 @@
             "S1": "output"
           },
           "connections": {
-            "A0": [ "1" ],
+            "A0": [ "0" ],
             "A1": [ "0" ],
-            "B0": [ 47 ],
-            "B1": [ 48 ],
+            "B0": [ 56 ],
+            "B1": [ 50 ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ "0" ],
-            "COUT": [ 49 ],
+            "CIN": [ 120 ],
+            "COUT": [ 119 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 50 ],
+            "S0": [ 57 ],
             "S1": [ 51 ]
           }
         },
-        "counter_CCU2C_B0_2": {
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_13": {
           "hide_name": 0,
           "type": "CCU2C",
           "parameters": {
@@ -21505,7 +23181,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21524,103 +23200,19 @@
           "connections": {
             "A0": [ "0" ],
             "A1": [ "0" ],
-            "B0": [ 52 ],
-            "B1": [ 53 ],
+            "B0": [ 62 ],
+            "B1": [ 59 ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 54 ],
-            "COUT": [ 19 ],
-            "D0": [ "1" ],
-            "D1": [ "1" ],
-            "S0": [ 55 ],
-            "S1": [ 56 ]
-          }
-        },
-        "counter_CCU2C_B0_3": {
-          "hide_name": 0,
-          "type": "CCU2C",
-          "parameters": {
-            "INIT0": "1001011010101010",
-            "INIT1": "1001011010101010",
-            "INJECT1_0": "NO",
-            "INJECT1_1": "NO"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
-          },
-          "port_directions": {
-            "A0": "input",
-            "A1": "input",
-            "B0": "input",
-            "B1": "input",
-            "C0": "input",
-            "C1": "input",
-            "CIN": "input",
-            "COUT": "output",
-            "D0": "input",
-            "D1": "input",
-            "S0": "output",
-            "S1": "output"
-          },
-          "connections": {
-            "A0": [ "0" ],
-            "A1": [ "0" ],
-            "B0": [ 9 ],
-            "B1": [ 10 ],
-            "C0": [ "0" ],
-            "C1": [ "0" ],
-            "CIN": [ 57 ],
-            "COUT": [ 58 ],
-            "D0": [ "1" ],
-            "D1": [ "1" ],
-            "S0": [ 59 ],
-            "S1": [ 60 ]
-          }
-        },
-        "counter_CCU2C_B0_4": {
-          "hide_name": 0,
-          "type": "CCU2C",
-          "parameters": {
-            "INIT0": "1001011010101010",
-            "INIT1": "1001011010101010",
-            "INJECT1_0": "NO",
-            "INJECT1_1": "NO"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
-          },
-          "port_directions": {
-            "A0": "input",
-            "A1": "input",
-            "B0": "input",
-            "B1": "input",
-            "C0": "input",
-            "C1": "input",
-            "CIN": "input",
-            "COUT": "output",
-            "D0": "input",
-            "D1": "input",
-            "S0": "output",
-            "S1": "output"
-          },
-          "connections": {
-            "A0": [ "0" ],
-            "A1": [ "0" ],
-            "B0": [ 61 ],
-            "B1": [ 62 ],
-            "C0": [ "0" ],
-            "C1": [ "0" ],
-            "CIN": [ 49 ],
-            "COUT": [ 54 ],
+            "CIN": [ 121 ],
+            "COUT": [ 120 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
             "S0": [ 63 ],
-            "S1": [ 64 ]
+            "S1": [ 60 ]
           }
         },
-        "counter_CCU2C_B0_5": {
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_14": {
           "hide_name": 0,
           "type": "CCU2C",
           "parameters": {
@@ -21631,49 +23223,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
-          },
-          "port_directions": {
-            "A0": "input",
-            "A1": "input",
-            "B0": "input",
-            "B1": "input",
-            "C0": "input",
-            "C1": "input",
-            "CIN": "input",
-            "COUT": "output",
-            "D0": "input",
-            "D1": "input",
-            "S0": "output",
-            "S1": "output"
-          },
-          "connections": {
-            "A0": [ "0" ],
-            "A1": [ "0" ],
-            "B0": [ 7 ],
-            "B1": [ 8 ],
-            "C0": [ "0" ],
-            "C1": [ "0" ],
-            "CIN": [ 65 ],
-            "COUT": [ 57 ],
-            "D0": [ "1" ],
-            "D1": [ "1" ],
-            "S0": [ 66 ],
-            "S1": [ 67 ]
-          }
-        },
-        "counter_CCU2C_B0_6": {
-          "hide_name": 0,
-          "type": "CCU2C",
-          "parameters": {
-            "INIT0": "1001011010101010",
-            "INIT1": "1001011010101010",
-            "INJECT1_0": "NO",
-            "INJECT1_1": "NO"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21693,18 +23243,18 @@
             "A0": [ "0" ],
             "A1": [ "0" ],
             "B0": [ 68 ],
-            "B1": [ 69 ],
+            "B1": [ 65 ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 70 ],
-            "COUT": [ 65 ],
+            "CIN": [ 115 ],
+            "COUT": [ 121 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 71 ],
-            "S1": [ 72 ]
+            "S0": [ 69 ],
+            "S1": [ 66 ]
           }
         },
-        "counter_CCU2C_B0_7": {
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_15": {
           "hide_name": 0,
           "type": "CCU2C",
           "parameters": {
@@ -21715,7 +23265,49 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "1" ],
+            "A1": [ "0" ],
+            "B0": [ 54 ],
+            "B1": [ 20 ],
+            "C0": [ "0" ],
+            "C1": [ "0" ],
+            "CIN": [ "0" ],
+            "COUT": [ 122 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 85 ],
+            "S1": [ 52 ]
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21734,999 +23326,313 @@
           "connections": {
             "A0": [ "0" ],
             "A1": [ "0" ],
-            "B0": [ 5 ],
-            "B1": [ 4 ],
+            "B0": [ 89 ],
+            "B1": [ 83 ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 73 ],
-            "COUT": [ 70 ],
+            "CIN": [ 123 ],
+            "COUT": [ 116 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 74 ],
-            "S1": [ 75 ]
-          }
-        },
-        "counter_CCU2C_B0_8": {
-          "hide_name": 0,
-          "type": "CCU2C",
-          "parameters": {
-            "INIT0": "1001011010101010",
-            "INIT1": "1001011010101010",
-            "INJECT1_0": "NO",
-            "INJECT1_1": "NO"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
-          },
-          "port_directions": {
-            "A0": "input",
-            "A1": "input",
-            "B0": "input",
-            "B1": "input",
-            "C0": "input",
-            "C1": "input",
-            "CIN": "input",
-            "COUT": "output",
-            "D0": "input",
-            "D1": "input",
-            "S0": "output",
-            "S1": "output"
-          },
-          "connections": {
-            "A0": [ "0" ],
-            "A1": [ "0" ],
-            "B0": [ 76 ],
-            "B1": [ 77 ],
-            "C0": [ "0" ],
-            "C1": [ "0" ],
-            "CIN": [ 78 ],
-            "COUT": [ 73 ],
-            "D0": [ "1" ],
-            "D1": [ "1" ],
-            "S0": [ 79 ],
-            "S1": [ 80 ]
-          }
-        },
-        "counter_CCU2C_B0_9": {
-          "hide_name": 0,
-          "type": "CCU2C",
-          "parameters": {
-            "INIT0": "1001011010101010",
-            "INIT1": "1001011010101010",
-            "INJECT1_0": "NO",
-            "INJECT1_1": "NO"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
-          },
-          "port_directions": {
-            "A0": "input",
-            "A1": "input",
-            "B0": "input",
-            "B1": "input",
-            "C0": "input",
-            "C1": "input",
-            "CIN": "input",
-            "COUT": "output",
-            "D0": "input",
-            "D1": "input",
-            "S0": "output",
-            "S1": "output"
-          },
-          "connections": {
-            "A0": [ "0" ],
-            "A1": [ "0" ],
-            "B0": [ 81 ],
-            "B1": [ 82 ],
-            "C0": [ "0" ],
-            "C1": [ "0" ],
-            "CIN": [ 25 ],
-            "COUT": [ 78 ],
-            "D0": [ "1" ],
-            "D1": [ "1" ],
-            "S0": [ 83 ],
+            "S0": [ 90 ],
             "S1": [ 84 ]
           }
         },
-        "counter_TRELLIS_FF_Q": {
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_3": {
           "hide_name": 0,
-          "type": "TRELLIS_FF",
+          "type": "CCU2C",
           "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
           },
           "attributes": {
-            "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
           },
           "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 60 ],
-            "LSR": [ "0" ],
-            "Q": [ 10 ]
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 96 ],
+            "B1": [ 87 ],
+            "C0": [ "0" ],
+            "C1": [ "0" ],
+            "CIN": [ 124 ],
+            "COUT": [ 125 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 97 ],
+            "S1": [ 94 ]
           }
         },
-        "counter_TRELLIS_FF_Q_1": {
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_4": {
           "hide_name": 0,
-          "type": "TRELLIS_FF",
+          "type": "CCU2C",
           "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
           },
           "attributes": {
-            "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
           },
           "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 59 ],
-            "LSR": [ "0" ],
-            "Q": [ 9 ]
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 18 ],
+            "B1": [ 92 ],
+            "C0": [ "0" ],
+            "C1": [ "0" ],
+            "CIN": [ 122 ],
+            "COUT": [ 123 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 113 ],
+            "S1": [ 93 ]
           }
         },
-        "counter_TRELLIS_FF_Q_10": {
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_5": {
           "hide_name": 0,
-          "type": "TRELLIS_FF",
+          "type": "CCU2C",
           "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
           },
           "attributes": {
-            "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
           },
           "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 84 ],
-            "LSR": [ "0" ],
-            "Q": [ 82 ]
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 102 ],
+            "B1": [ 99 ],
+            "C0": [ "0" ],
+            "C1": [ "0" ],
+            "CIN": [ 126 ],
+            "COUT": [ 124 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 103 ],
+            "S1": [ 100 ]
           }
         },
-        "counter_TRELLIS_FF_Q_11": {
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_6": {
           "hide_name": 0,
-          "type": "TRELLIS_FF",
+          "type": "CCU2C",
           "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
           },
           "attributes": {
-            "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
           },
           "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 83 ],
-            "LSR": [ "0" ],
-            "Q": [ 81 ]
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 108 ],
+            "B1": [ 105 ],
+            "C0": [ "0" ],
+            "C1": [ "0" ],
+            "CIN": [ 127 ],
+            "COUT": [ 126 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 109 ],
+            "S1": [ 106 ]
           }
         },
-        "counter_TRELLIS_FF_Q_12": {
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_7": {
           "hide_name": 0,
-          "type": "TRELLIS_FF",
+          "type": "CCU2C",
           "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
           },
           "attributes": {
-            "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
           },
           "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 27 ],
-            "LSR": [ "0" ],
-            "Q": [ 23 ]
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 22 ],
+            "B1": [ 111 ],
+            "C0": [ "0" ],
+            "C1": [ "0" ],
+            "CIN": [ 128 ],
+            "COUT": [ 127 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 24 ],
+            "S1": [ 112 ]
           }
         },
-        "counter_TRELLIS_FF_Q_13": {
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_8": {
           "hide_name": 0,
-          "type": "TRELLIS_FF",
+          "type": "CCU2C",
           "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
           },
           "attributes": {
-            "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
           },
           "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 26 ],
-            "LSR": [ "0" ],
-            "Q": [ 22 ]
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 29 ],
+            "B1": [ 26 ],
+            "C0": [ "0" ],
+            "C1": [ "0" ],
+            "CIN": [ 129 ],
+            "COUT": [ 128 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 30 ],
+            "S1": [ 27 ]
           }
         },
-        "counter_TRELLIS_FF_Q_14": {
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_9": {
           "hide_name": 0,
-          "type": "TRELLIS_FF",
+          "type": "CCU2C",
           "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
           },
           "attributes": {
-            "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
           },
           "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 32 ],
-            "LSR": [ "0" ],
-            "Q": [ 29 ]
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 35 ],
+            "B1": [ 32 ],
+            "C0": [ "0" ],
+            "C1": [ "0" ],
+            "CIN": [ 118 ],
+            "COUT": [ 129 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 36 ],
+            "S1": [ 33 ]
           }
         },
-        "counter_TRELLIS_FF_Q_15": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 31 ],
-            "LSR": [ "0" ],
-            "Q": [ 28 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_16": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 37 ],
-            "LSR": [ "0" ],
-            "Q": [ 34 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_17": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 36 ],
-            "LSR": [ "0" ],
-            "Q": [ 33 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_18": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 42 ],
-            "LSR": [ "0" ],
-            "Q": [ 39 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_19": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 41 ],
-            "LSR": [ "0" ],
-            "Q": [ 38 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_2": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 67 ],
-            "LSR": [ "0" ],
-            "Q": [ 8 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_20": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 46 ],
-            "LSR": [ "0" ],
-            "Q": [ 44 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_21": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 45 ],
-            "LSR": [ "0" ],
-            "Q": [ 43 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_22": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 16 ],
-            "LSR": [ "0" ],
-            "Q": [ 12 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_23": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 15 ],
-            "LSR": [ "0" ],
-            "Q": [ 11 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_24": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 21 ],
-            "LSR": [ "0" ],
-            "Q": [ 18 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_25": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 20 ],
-            "LSR": [ "0" ],
-            "Q": [ 17 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_26": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 56 ],
-            "LSR": [ "0" ],
-            "Q": [ 53 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_27": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 55 ],
-            "LSR": [ "0" ],
-            "Q": [ 52 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_28": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 64 ],
-            "LSR": [ "0" ],
-            "Q": [ 62 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_29": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 63 ],
-            "LSR": [ "0" ],
-            "Q": [ 61 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_3": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 66 ],
-            "LSR": [ "0" ],
-            "Q": [ 7 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_30": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 51 ],
-            "LSR": [ "0" ],
-            "Q": [ 48 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_31": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 50 ],
-            "LSR": [ "0" ],
-            "Q": [ 47 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_4": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 72 ],
-            "LSR": [ "0" ],
-            "Q": [ 69 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_5": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 71 ],
-            "LSR": [ "0" ],
-            "Q": [ 68 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_6": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 75 ],
-            "LSR": [ "0" ],
-            "Q": [ 4 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_7": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 74 ],
-            "LSR": [ "0" ],
-            "Q": [ 5 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_8": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 80 ],
-            "LSR": [ "0" ],
-            "Q": [ 77 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_9": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "1 ",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:10.5-12.8|/usr/bin/../share/yosys/ecp5/cells_map.v:16.100-16.154"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 2 ],
-            "DI": [ 79 ],
-            "LSR": [ "0" ],
-            "Q": [ 76 ]
-          }
-        },
-        "led_LUT4_Z": {
+        "clk_divider.new_clk_LUT4_D": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
@@ -22747,12 +23653,1502 @@
             "A": [ "0" ],
             "B": [ "0" ],
             "C": [ "0" ],
-            "D": [ 3 ],
-            "Z": [ 6 ]
+            "D": [ 4 ],
+            "Z": [ 130 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "INV",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8|/usr/bin/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+          },
+          "port_directions": {
+            "CE": "input",
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CE": [ 131 ],
+            "CLK": [ 2 ],
+            "DI": [ 130 ],
+            "LSR": [ 17 ],
+            "Q": [ 4 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000011111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:114.33-115.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ 23 ],
+            "Z": [ 131 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z": {
+          "hide_name": 0,
+          "type": "L6MUX21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:184.21-184.63"
+          },
+          "port_directions": {
+            "D0": "input",
+            "D1": "input",
+            "SD": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "D0": [ 132 ],
+            "D1": [ 133 ],
+            "SD": [ 134 ],
+            "Z": [ 23 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z": {
+          "hide_name": 0,
+          "type": "L6MUX21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:182.21-182.64"
+          },
+          "port_directions": {
+            "D0": "input",
+            "D1": "input",
+            "SD": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "D0": [ 135 ],
+            "D1": [ 136 ],
+            "SD": [ 137 ],
+            "Z": [ 132 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:178.19-178.65"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 138 ],
+            "BLUT": [ 139 ],
+            "C0": [ 140 ],
+            "Z": [ 135 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:160.39-161.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 138 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:158.39-159.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 139 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:179.19-179.65"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 141 ],
+            "BLUT": [ 142 ],
+            "C0": [ 140 ],
+            "Z": [ 136 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:165.39-166.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 141 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:163.39-164.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 142 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z": {
+          "hide_name": 0,
+          "type": "L6MUX21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:183.21-183.64"
+          },
+          "port_directions": {
+            "D0": "input",
+            "D1": "input",
+            "SD": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "D0": [ 143 ],
+            "D1": [ 144 ],
+            "SD": [ 137 ],
+            "Z": [ 133 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:180.19-180.65"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 145 ],
+            "BLUT": [ 146 ],
+            "C0": [ 140 ],
+            "Z": [ 143 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:170.39-171.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 145 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:168.39-169.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 146 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:181.19-181.65"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 147 ],
+            "BLUT": [ 148 ],
+            "C0": [ 140 ],
+            "Z": [ 144 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:175.41-176.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 149 ],
+            "B": [ 150 ],
+            "C": [ 151 ],
+            "D": [ 152 ],
+            "Z": [ 147 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:173.41-174.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 148 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z": {
+          "hide_name": 0,
+          "type": "L6MUX21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:154.21-154.62"
+          },
+          "port_directions": {
+            "D0": "input",
+            "D1": "input",
+            "SD": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "D0": [ 153 ],
+            "D1": [ 154 ],
+            "SD": [ 38 ],
+            "Z": [ 134 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1": {
+          "hide_name": 0,
+          "type": "L6MUX21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:154.21-154.62"
+          },
+          "port_directions": {
+            "D0": "input",
+            "D1": "input",
+            "SD": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "D0": [ 155 ],
+            "D1": [ 156 ],
+            "SD": [ 65 ],
+            "Z": [ 137 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D0_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:152.19-152.65"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 157 ],
+            "BLUT": [ 158 ],
+            "C0": [ 83 ],
+            "Z": [ 155 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D0_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:144.39-145.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 157 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D0_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:142.39-143.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 158 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D1_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:153.19-153.65"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 159 ],
+            "BLUT": [ 160 ],
+            "C0": [ 83 ],
+            "Z": [ 156 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D1_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:149.39-150.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 111 ],
+            "B": [ 108 ],
+            "C": [ 87 ],
+            "D": [ 54 ],
+            "Z": [ 159 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D1_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:147.39-148.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 160 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2": {
+          "hide_name": 0,
+          "type": "L6MUX21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:154.21-154.62"
+          },
+          "port_directions": {
+            "D0": "input",
+            "D1": "input",
+            "SD": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "D0": [ 161 ],
+            "D1": [ 162 ],
+            "SD": [ 22 ],
+            "Z": [ 152 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:152.19-152.65"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 163 ],
+            "BLUT": [ 164 ],
+            "C0": [ 29 ],
+            "Z": [ 161 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:144.39-145.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 163 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:142.39-143.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 164 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:153.19-153.65"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 165 ],
+            "BLUT": [ 166 ],
+            "C0": [ 29 ],
+            "Z": [ 162 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:149.39-150.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 56 ],
+            "B": [ 47 ],
+            "C": [ 35 ],
+            "D": [ 32 ],
+            "Z": [ 165 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:147.39-148.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 166 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3": {
+          "hide_name": 0,
+          "type": "L6MUX21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:154.21-154.62"
+          },
+          "port_directions": {
+            "D0": "input",
+            "D1": "input",
+            "SD": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "D0": [ 167 ],
+            "D1": [ 168 ],
+            "SD": [ 89 ],
+            "Z": [ 151 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3_D0_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:152.19-152.65"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 169 ],
+            "BLUT": [ 170 ],
+            "C0": [ 92 ],
+            "Z": [ 167 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3_D0_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:144.39-145.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 169 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3_D0_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:142.39-143.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 170 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3_D1_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:153.19-153.65"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 171 ],
+            "BLUT": [ 172 ],
+            "C0": [ 92 ],
+            "Z": [ 168 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3_D1_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:149.39-150.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 80 ],
+            "B": [ 44 ],
+            "C": [ 26 ],
+            "D": [ 18 ],
+            "Z": [ 171 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3_D1_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:147.39-148.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 172 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D0_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:152.19-152.65"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 173 ],
+            "BLUT": [ 174 ],
+            "C0": [ 41 ],
+            "Z": [ 153 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:144.39-145.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 173 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:142.39-143.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 174 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D1_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:153.19-153.65"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 175 ],
+            "BLUT": [ 176 ],
+            "C0": [ 41 ],
+            "Z": [ 154 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:149.39-150.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 68 ],
+            "B": [ 50 ],
+            "C": [ 105 ],
+            "D": [ 102 ],
+            "Z": [ 175 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:147.39-148.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
+            "Z": [ 176 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000011"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:124.33-125.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 77 ],
+            "C": [ 74 ],
+            "D": [ 71 ],
+            "Z": [ 140 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_LUT4_Z_1": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1100000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:124.33-125.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 20 ],
+            "C": [ 62 ],
+            "D": [ 59 ],
+            "Z": [ 150 ]
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_LUT4_Z_2": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000001111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 99 ],
+            "D": [ 96 ],
+            "Z": [ 149 ]
+          }
+        },
+        "ros.reset_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000011111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:114.33-115.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ 17 ],
+            "Z": [ 5 ]
+          }
+        },
+        "ros.startup_LUT4_B": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011110000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:124.33-125.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 177 ],
+            "C": [ 178 ],
+            "D": [ 179 ],
+            "Z": [ 180 ]
+          }
+        },
+        "ros.startup_LUT4_C": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 179 ],
+            "D": [ 177 ],
+            "Z": [ 181 ]
+          }
+        },
+        "ros.startup_LUT4_D": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111000011111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 181 ],
+            "D": [ 178 ],
+            "Z": [ 182 ]
+          }
+        },
+        "ros.startup_TRELLIS_FF_Q": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "CE",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "SET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:34.20-38.6|src/reset_on_start.sv:8.3-18.8|/usr/bin/../share/yosys/ecp5/cells_map.v:74.161-74.220"
+          },
+          "port_directions": {
+            "CE": "input",
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CE": [ 179 ],
+            "CLK": [ 2 ],
+            "DI": [ 182 ],
+            "LSR": [ 6 ],
+            "Q": [ 179 ]
+          }
+        },
+        "ros.startup_TRELLIS_FF_Q_1": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "CE",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:34.20-38.6|src/reset_on_start.sv:8.3-18.8|/usr/bin/../share/yosys/ecp5/cells_map.v:73.163-73.222"
+          },
+          "port_directions": {
+            "CE": "input",
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CE": [ 179 ],
+            "CLK": [ 2 ],
+            "DI": [ 180 ],
+            "LSR": [ 6 ],
+            "Q": [ 178 ]
+          }
+        },
+        "ros.startup_TRELLIS_FF_Q_2": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "CE",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/top.sv:34.20-38.6|src/reset_on_start.sv:8.3-18.8|/usr/bin/../share/yosys/ecp5/cells_map.v:73.163-73.222"
+          },
+          "port_directions": {
+            "CE": "input",
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CE": [ 179 ],
+            "CLK": [ 2 ],
+            "DI": [ 181 ],
+            "LSR": [ 6 ],
+            "Q": [ 177 ]
+          }
+        },
+        "rst_pin_LUT4_D": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000001111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:119.33-120.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 179 ],
+            "D": [ 6 ],
+            "Z": [ 17 ]
           }
         }
       },
       "netnames": {
+        "J39_a14": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "src/top.sv:9.26-9.33"
+          }
+        },
+        "J39_b10": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "src/top.sv:9.17-9.24"
+          }
+        },
+        "J39_b15": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "src/top.sv:6.17-6.24"
+          }
+        },
+        "J39_b20": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "src/top.sv:6.35-6.42"
+          }
+        },
+        "J39_c15": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "src/top.sv:6.26-6.33"
+          }
+        },
+        "J39_d13": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "src/top.sv:9.35-9.42"
+          }
+        },
+        "J39_e11": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "src/top.sv:6.44-6.51"
+          }
+        },
+        "J39_e12": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "src/top.sv:9.44-9.51"
+          }
+        },
+        "J40_a15": {
+          "hide_name": 0,
+          "bits": [ "x" ],
+          "attributes": {
+            "src": "src/top.sv:13.26-13.33"
+          }
+        },
+        "J40_h2": {
+          "hide_name": 0,
+          "bits": [ "x" ],
+          "attributes": {
+            "src": "src/top.sv:13.35-13.41"
+          }
+        },
+        "J40_j3": {
+          "hide_name": 0,
+          "bits": [ "x" ],
+          "attributes": {
+            "src": "src/top.sv:14.5-14.11"
+          }
+        },
+        "J40_j4": {
+          "hide_name": 0,
+          "bits": [ "x" ],
+          "attributes": {
+            "src": "src/top.sv:13.43-13.49"
+          }
+        },
+        "J40_j5": {
+          "hide_name": 0,
+          "bits": [ "x" ],
+          "attributes": {
+            "src": "src/top.sv:13.18-13.24"
+          }
+        },
+        "J40_k5": {
+          "hide_name": 0,
+          "bits": [ "x" ],
+          "attributes": {
+            "src": "src/top.sv:14.37-14.43"
+          }
+        },
+        "J40_l4": {
+          "hide_name": 0,
+          "bits": [ "x" ],
+          "attributes": {
+            "src": "src/top.sv:14.13-14.19"
+          }
+        },
+        "J40_m3": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "src/top.sv:11.17-11.23"
+          }
+        },
+        "J40_m4": {
+          "hide_name": 0,
+          "bits": [ "x" ],
+          "attributes": {
+            "src": "src/top.sv:14.21-14.27"
+          }
+        },
+        "J40_n4": {
+          "hide_name": 0,
+          "bits": [ "x" ],
+          "attributes": {
+            "src": "src/top.sv:14.29-14.35"
+          }
+        },
         "btn": {
           "hide_name": 0,
           "bits": [ 3 ],
@@ -22767,44 +25163,649 @@
             "src": "src/top.sv:2.18-2.21"
           }
         },
-        "counter": {
+        "clk_divider.clk": {
           "hide_name": 0,
-          "bits": [ 47, 48, 61, 62, 52, 53, 17, 18, 11, 12, 43, 44, 38, 39, 33, 34, 28, 29, 22, 23, 81, 82, 76, 77, 5, 4, 68, 69, 7, 8, 9, 10 ],
+          "bits": [ 2 ],
           "attributes": {
-            "src": "src/top.sv:8.18-8.25"
+            "hdlname": "clk_divider clk",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:2.17-2.20"
           }
         },
-        "counter_CCU2C_B0_3_COUT": {
+        "clk_divider.counter": {
           "hide_name": 0,
-          "bits": [ 47, 49, 85, 54, 86, 19, 87, 13, 88, 14, 89, 40, 90, 35, 91, 30, 92, 24, 93, 25, 94, 78, 95, 73, 96, 70, 97, 65, 98, 57, 99, 58 ],
+          "bits": [ 54, 20, 18, 92, 89, 83, 80, 77, 74, 71, 68, 65, 62, 59, 56, 50, 47, 44, 41, 38, 35, 32, 29, 26, 22, 111, 108, 105, 102, 99, 96, 87 ],
+          "attributes": {
+            "hdlname": "clk_divider counter",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:7.18-7.25"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_10_DI": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_11_DI": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_12_DI": {
+          "hide_name": 0,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_13_DI": {
+          "hide_name": 0,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_14_DI": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_15_DI": {
+          "hide_name": 0,
+          "bits": [ 37 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_16_DI": {
+          "hide_name": 0,
+          "bits": [ 40 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_17_DI": {
+          "hide_name": 0,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_18_DI": {
+          "hide_name": 0,
+          "bits": [ 46 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_19_DI": {
+          "hide_name": 0,
+          "bits": [ 49 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_1_DI": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_20_DI": {
+          "hide_name": 0,
+          "bits": [ 55 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_21_DI": {
+          "hide_name": 0,
+          "bits": [ 58 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_22_DI": {
+          "hide_name": 0,
+          "bits": [ 61 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_23_DI": {
+          "hide_name": 0,
+          "bits": [ 64 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_24_DI": {
+          "hide_name": 0,
+          "bits": [ 67 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_25_DI": {
+          "hide_name": 0,
+          "bits": [ 70 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_26_DI": {
+          "hide_name": 0,
+          "bits": [ 73 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_27_DI": {
+          "hide_name": 0,
+          "bits": [ 76 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_28_DI": {
+          "hide_name": 0,
+          "bits": [ 79 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_29_DI": {
+          "hide_name": 0,
+          "bits": [ 82 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_2_DI": {
+          "hide_name": 0,
+          "bits": [ 53 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_30_DI": {
+          "hide_name": 0,
+          "bits": [ 88 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_31_DI": {
+          "hide_name": 0,
+          "bits": [ 91 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_3_DI": {
+          "hide_name": 0,
+          "bits": [ 86 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_4_DI": {
+          "hide_name": 0,
+          "bits": [ 95 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_5_DI": {
+          "hide_name": 0,
+          "bits": [ 98 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_6_DI": {
+          "hide_name": 0,
+          "bits": [ 101 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_7_DI": {
+          "hide_name": 0,
+          "bits": [ 104 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_8_DI": {
+          "hide_name": 0,
+          "bits": [ 107 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_9_DI": {
+          "hide_name": 0,
+          "bits": [ 110 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_DI": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:9.5-23.8"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D": {
+          "hide_name": 0,
+          "bits": [ 85, 52, 113, 93, 90, 84, 81, 78, 75, 72, 69, 66, 63, 60, 57, 51, 48, 45, 42, 39, 36, 33, 30, 27, 24, 112, 109, 106, 103, 100, 97, 94 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:38.23-38.25",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:34.26-34.27"
+          }
+        },
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_3_COUT": {
+          "hide_name": 0,
+          "bits": [ 54, 122, 183, 123, 184, 116, 185, 114, 186, 115, 187, 121, 188, 120, 189, 119, 190, 117, 191, 118, 192, 129, 193, 128, 194, 127, 195, 126, 196, 124, 197, 125 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:38.23-38.25",
             "unused_bits": "2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 31"
           }
         },
-        "counter_CCU2C_B0_COUT": {
+        "clk_divider.counter_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_COUT": {
           "hide_name": 0,
-          "bits": [ "0", 47, 49, 85, 54, 86, 19, 87, 13, 88, 14, 89, 40, 90, 35, 91, 30, 92, 24, 93, 25, 94, 78, 95, 73, 96, 70, 97, 65, 98, 57, 99 ],
+          "bits": [ "0", 54, 122, 183, 123, 184, 116, 185, 114, 186, 115, 187, 121, 188, 120, 189, 119, 190, 117, 191, 118, 192, 129, 193, 128, 194, 127, 195, 126, 196, 124, 197 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:20.28-20.39|/usr/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23",
             "unused_bits": "3 5 7 9 11 13 15 17 19 21 23 25 27 29 31"
           }
         },
-        "counter_TRELLIS_FF_Q_DI": {
+        "clk_divider.new_clk": {
           "hide_name": 0,
-          "bits": [ 50, 51, 63, 64, 55, 56, 20, 21, 15, 16, 45, 46, 41, 42, 36, 37, 31, 32, 26, 27, 83, 84, 79, 80, 74, 75, 71, 72, 66, 67, 59, 60 ],
+          "bits": [ 4 ],
+          "attributes": {
+            "hdlname": "clk_divider new_clk",
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:4.18-4.25"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE": {
+          "hide_name": 0,
+          "bits": [ 131 ],
+          "attributes": {
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D": {
+          "hide_name": 0,
+          "bits": [ 23, 97 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "src/top.sv:11.20-11.31|/usr/bin/../share/yosys/ecp5/arith_map.v:34.26-34.27"
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0": {
+          "hide_name": 0,
+          "bits": [ 132 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.66-157.68"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0": {
+          "hide_name": 0,
+          "bits": [ 135 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.50-157.52"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 138 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.22-157.24"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 139 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.18-157.20"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1": {
+          "hide_name": 0,
+          "bits": [ 136 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.54-157.56"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 141 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.30-157.32"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 142 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.26-157.28"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1": {
+          "hide_name": 0,
+          "bits": [ 133 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.70-157.72"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0": {
+          "hide_name": 0,
+          "bits": [ 143 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.58-157.60"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 145 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.38-157.40"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 146 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.34-157.36"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D1": {
+          "hide_name": 0,
+          "bits": [ 144 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.62-157.64"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 147 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.46-157.48"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 148 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:157.42-157.44"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD": {
+          "hide_name": 0,
+          "bits": [ 149, 150, 151, 152, 140, 137, 134 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D0": {
+          "hide_name": 0,
+          "bits": [ 155 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.34-141.36"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D0_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 157 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.22-141.24"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D0_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 158 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.18-141.20"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D1": {
+          "hide_name": 0,
+          "bits": [ 156 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.38-141.40"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D1_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 159 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.30-141.32"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D1_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 160 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.26-141.28"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0": {
+          "hide_name": 0,
+          "bits": [ 161 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.34-141.36"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 163 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.22-141.24"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 164 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.18-141.20"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1": {
+          "hide_name": 0,
+          "bits": [ 162 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.38-141.40"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 165 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.30-141.32"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 166 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.26-141.28"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3_D0": {
+          "hide_name": 0,
+          "bits": [ 167 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.34-141.36"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3_D0_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 169 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.22-141.24"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3_D0_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 170 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.18-141.20"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3_D1": {
+          "hide_name": 0,
+          "bits": [ 168 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.38-141.40"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3_D1_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 171 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.30-141.32"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_3_D1_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 172 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.26-141.28"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D0": {
+          "hide_name": 0,
+          "bits": [ 153 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.34-141.36"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D0_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 173 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.22-141.24"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D0_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 174 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.18-141.20"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D1": {
+          "hide_name": 0,
+          "bits": [ 154 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.38-141.40"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D1_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 175 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.30-141.32"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D1_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 176 ],
+          "attributes": {
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:141.26-141.28"
+          }
+        },
+        "clk_divider.new_clk_TRELLIS_FF_Q_DI": {
+          "hide_name": 0,
+          "bits": [ 130 ],
+          "attributes": {
+            "src": "src/top.sv:39.19-44.6|src/clock_div_1HZ.sv:16.28-16.36"
+          }
+        },
+        "hz1_clk": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "src/top.sv:21.11-21.18"
           }
         },
         "led": {
           "hide_name": 0,
-          "bits": [ 4, 5, 3, 6, 7, 8, 9, 10 ],
+          "bits": [ "x", 4, "x", 3, 5, "x", "x", "x" ],
           "attributes": {
             "src": "src/top.sv:4.24-4.27"
+          }
+        },
+        "ros.clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "hdlname": "ros clk",
+            "src": "src/top.sv:34.20-38.6|src/reset_on_start.sv:3.17-3.20"
+          }
+        },
+        "ros.manual": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "hdlname": "ros manual",
+            "src": "src/top.sv:34.20-38.6|src/reset_on_start.sv:4.17-4.23"
+          }
+        },
+        "ros.reset": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "hdlname": "ros reset",
+            "src": "src/top.sv:34.20-38.6|src/reset_on_start.sv:2.18-2.23"
+          }
+        },
+        "ros.startup": {
+          "hide_name": 0,
+          "bits": [ 177, 178, 179 ],
+          "attributes": {
+            "hdlname": "ros startup",
+            "src": "src/top.sv:34.20-38.6|src/reset_on_start.sv:6.15-6.22"
+          }
+        },
+        "ros.startup_TRELLIS_FF_Q_DI": {
+          "hide_name": 0,
+          "bits": [ 181, 180, 182 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "src/top.sv:34.20-38.6|src/reset_on_start.sv:12.9-17.16|src/reset_on_start.sv:0.0-0.0|/usr/bin/../share/yosys/techmap.v:575.21-575.22"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "src/top.sv:22.11-22.14"
+          }
+        },
+        "rst_pin": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "src/top.sv:5.17-5.24"
+          }
+        },
+        "rst_pin_LUT4_D_Z": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24"
           }
         }
       }

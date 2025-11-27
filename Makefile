@@ -7,6 +7,7 @@ PCF        := constraints/ecp5_evn_full.lpf
 
 # Auto-detect all SystemVerilog sources
 SRC        := $(wildcard $(SRC_DIR)/*.sv)
+TB	=  testbench
 
 DEVICE     := um5g-85k
 PACKAGE    := CABGA381
@@ -64,6 +65,24 @@ clean:
 
 $(BUILD):
 	mkdir -p $(BUILD)
+
+
+.PHONY: sim_%_src
+sim_%_src: 
+	@echo -e "Creating executable for source simulation...\n"
+	@mkdir -p $(BUILD) && rm -rf $(BUILD)/*
+	@iverilog -g2012 -o $(BUILD)/$*_tb -Y .sv -y $(SRC) $(TB)/$*_tb.sv
+	@echo -e "\nSource Compilation complete!\n"
+	@echo -e "Simulating source...\n"
+	@vvp -l vvp_sim.log $(BUILD)/$*_tb
+	@echo -e "\nSimulation complete!\n"
+	@echo -e "\nOpening waveforms...\n"
+	@if [ -f waves/$*.gtkw ]; then \
+		gtkwave waves/$*.gtkw; \
+	else \
+		gtkwave waves/$*.vcd; \
+	fi
+
 
 .PHONY: all clean prog
 
