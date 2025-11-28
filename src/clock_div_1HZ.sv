@@ -12,7 +12,7 @@ module clock_div_1HZ (
             new_clk <= 0;
         end
         else begin
-            if (counter == 24_999_999) begin
+            if (counter == 1) begin
                 new_clk <= ~new_clk;
                 counter <= 0;
             end
@@ -22,4 +22,5 @@ module clock_div_1HZ (
         end
     end
 
+//24_999_999
 endmodule

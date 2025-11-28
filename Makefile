@@ -71,7 +71,7 @@ $(BUILD):
 sim_%_src: 
 	@echo -e "Creating executable for source simulation...\n"
 	@mkdir -p $(BUILD) && rm -rf $(BUILD)/*
-	@iverilog -g2012 -o $(BUILD)/$*_tb -Y .sv -y $(SRC) $(TB)/$*_tb.sv
+	@iverilog -g2012 -o $(BUILD)/$*_tb $(SRC) $(TB)/$*_tb.sv
 	@echo -e "\nSource Compilation complete!\n"
 	@echo -e "Simulating source...\n"
 	@vvp -l vvp_sim.log $(BUILD)/$*_tb

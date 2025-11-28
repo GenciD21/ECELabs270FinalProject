@@ -62,15 +62,7 @@ module scheduling_assistant (
 
     control_unit cu1 (
         .instruction(ins0),
-        .RegWrite(),
         .ALUSrc(),
-        .MemRead(),
-        .MemWrite(),
-        .MemToReg(),
-        .Jal(),
-        .Jalr(),     
-        .Imm(),
-        .ALU_control(),
         .RegD(RegD1),
         .Reg2(reg2),
         .Reg1(reg1)
@@ -82,15 +74,7 @@ module scheduling_assistant (
 
     control_unit cu2 (
         .instruction(ins1),
-        .RegWrite(),
         .ALUSrc(),
-        .MemRead(),
-        .MemWrite(),
-        .MemToReg(),
-        .Jal(),
-        .Jalr(),
-        .Imm(),
-        .ALU_control(),
         .RegD(RegD2),
         .Reg2(reg4),
         .Reg1(reg3)
