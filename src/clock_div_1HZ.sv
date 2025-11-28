@@ -6,7 +6,7 @@ module clock_div_1HZ (
 
     logic [31:0] counter;
 
-    always_ff @(posedge clk or negedge n_rst) begin
+    always_ff @(posedge clk, negedge n_rst) begin
     if (~n_rst) begin
             counter <= 0;
             new_clk <= 0;

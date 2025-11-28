@@ -16,7 +16,7 @@ module cache1 (
     logic [31:0] ins [0:11]; //The Current Instruction
     logic [31:0] n_ins [0:11]; // Next Instruction Well Load in
 
-    logic [31:0] pc_wb_ins [0:5]; //6 Instruction from wb 
+    logic [31:0] pc_wb_ins [0:5]; //Instruction from wb 
 
     logic busy;
     //logic [2:0] counter;
@@ -37,7 +37,7 @@ module cache1 (
 
 
     always_comb begin
-    next_PC = PC;
+        next_PC = PC;
     if ((n_ins[0] == ins[0] && n_ins[1] == ins[1] && n_ins[2] == ins[2] && n_ins[3] == ins[3] && n_ins[4] == ins[4] && n_ins[5] == ins[5]))
         next_PC = PC + 32'd6;
     else if (freeze1 || freeze2)
