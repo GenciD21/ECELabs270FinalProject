@@ -11,16 +11,88 @@ module top (
     // input logic J40_m3,
     // // //right line J40
     output logic J40_j5, J40_a15, J40_h2, J40_j4, 
-    J40_j3, J40_l4, J40_m4, J40_n4, J40_k5
+    J40_j3, J40_l4, J40_m4, J40_n4, J40_k5, J40_p5, // Some of these GPIOs are probably tied to some other 
+    //driven signal because they arent working
 
-    // //left line J40
-    // output logic J40_p5, J40_n5, J40_l5, J40_k3,J40_g1,
-    // J40_d11
+    output logic J39_b15, J39_c15, J39_b20, J39_e11, J39_d11, J39_b13, J39_b12, J39_d15, J39_d12, // Seg 1 GPIO
+    
+    output logic J39_c12, J39_e12, J39_c13, J39_d13, J39_a14,J39_e13,J39_a9, J39_b10, J39_e7
+
+   //J39_c13, //Display 1
+    //J39_d13  // Disply 2
+    //J39_c12, // A
+    //J39_e12, // B
+    //J39_a14
+    //J39_e13 
+    //J39_A9
+    //J39_B10
+    //J39_E7 
 );
+    
 
+    alu_7seg_mux goon0 (
+    .clk(clk), 
+    .alu_result(ALU_result1), 
+    .seg({J39_e11,J39_b20,J39_d11,J39_b13,J39_b12,J39_d15,J39_d12}), // A-G 
+    .digit_en({J39_b15, J39_c15}), // [1]=left, [0]=right (active LOW)
+    .dp()                  // Decimal point
+);
 
     logic n_rst;
     logic hz1_clk;
+    
+     alu_7seg_mux goon2 (
+    .clk(clk), 
+    .alu_result(8'h88), 
+    .seg({J39_c12,J39_e12,J39_e13,J39_a9,J39_b10,J39_a14,J39_e7}), // A-G 
+    .digit_en({J39_c13, J39_d13}), // [1]=left, [0]=right (active LOW)
+    .dp()                  // Decimal point
+);
+
+     // assign J39_c13 = 0;
+    // assign J39_d13 = 0;
+    // assign J39_c12 = 1; // A
+    // assign J39_e12 = 1; // B
+    // assign J39_e13 = 1; // C
+    // assign J39_a9 = 1; // E
+    // assign J39_b10 = 1; // D
+    // assign J39_a14 = 1;  // F
+    // assign J39_e7 = 1; // G
+
+    //E11 Is Right
+    // assign J39_b15 = 0; // Display 1 
+    // assign J39_c15 = 0; // Display 2 
+    // assign J39_e11 = 0; // A 
+    // assign J39_b20 = 0; // B
+    // assign J39_d11 = 0; // C
+    // assign J39_b13 = 0; // D
+    // assign J40_m4 = 0; // E
+    // assign J39_d15 = 0; // F
+    // assign J39_d12 = 0; // G
+
+    //J39_c13, //Display 1
+    //J39_d13  // Disply 2
+    //J39_c12, // A
+    //J39_e12, // B
+    //J39_a14
+    //J39_e13 
+    //J39_A9
+    //J39_B10
+    //J39_E7 
+
+    // assign J39_c13 = 0;
+    // assign J39_d13 = 0;
+    // assign J39_c12 = 1; // A
+    // assign J39_e12 = 1; // B
+    // assign J39_e13 = 1; // C
+    // assign J39_a9 = 1; // E
+    // assign J39_b10 = 1; // D
+    // assign J39_a14 = 1;  // F
+    // assign J39_e7 = 1; // G
+
+
+    assign J40_n4 = 0; //Right Active
+    assign J40_m4 = 0; //Left Active
 
 
     logic [31:0] ALU_result1;
@@ -66,22 +138,20 @@ module top (
         .clk(clk),
         .n_rst(n_rst),
         .new_clk(hz1_clk),
-        .div(9_999_999)
+        .div(2_499_999)
     );
 
-    // assign led[3] = btn;
-    // assign led[4] = rst;
-    assign led[7] = hz1_clk;
-    logic [6:0] led_sampled;
+
+    logic [7:0] led_sampled;
 
     always_ff @(posedge hz1_clk, negedge n_rst) begin
     if (~n_rst)
         led_sampled <= 0;
     else
-        led_sampled <= ALU_result1[6:0];
+        led_sampled <= ALU_result1[7:0];
     end
 
-    assign led[6:0] = led_sampled;
+    assign led[7] = hz1_clk;
 
     cache1 cache_inst (
         .clk(hz1_clk),
