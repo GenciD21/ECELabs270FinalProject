@@ -65,7 +65,7 @@ end
          for (int i = 0; i < 12; i++) begin
              n_ins[i] = ins[i];
         end
-        if (nothing_filled) begin
+        if (nothing_filled && !busy) begin
             n_ins[0] = pc_wb_ins[0];
             n_ins[1] = pc_wb_ins[1];
             n_ins[2] = pc_wb_ins[2];
