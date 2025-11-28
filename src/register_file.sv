@@ -1,5 +1,5 @@
 module register_file(
-  input  logic clk, rst,
+  input  logic clk, n_rst,
   input  logic reg_write, reg_write2,
   input  logic [4:0] reg1, reg2, reg3, reg4, regd, regd2,
   input  logic [31:0] write_data, write_data2,
@@ -7,9 +7,9 @@ module register_file(
 );
   logic [31:0] registers [31:0];
 
-  always_ff @(posedge clk, posedge rst) begin
+  always_ff @(posedge clk, negedge n_rst) begin
     
-    if (rst) begin
+    if (~rst) begin
       for (int i = 0; i < 32; i++)
         registers[i] <= 32'd0;
     end 
@@ -21,7 +21,7 @@ module register_file(
           registers[regd] <= write_data2; // ALU2 priority
       end 
 
-      else begin
+      else begin //Paralllel, Write data1 to registers[index 2^5-1]
         if (reg_write && (regd != 5'd0))
           registers[regd] <= write_data;
         if (reg_write2 && (regd2 != 5'd0))

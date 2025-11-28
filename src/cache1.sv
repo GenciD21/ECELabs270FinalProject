@@ -1,6 +1,6 @@
 module cache1 (
     input  logic clk,
-    input  logic rst,
+    input  logic n_rst,
 
     // Scheduler outputs
     input  logic freeze1,             // do not increment instructions     
@@ -24,8 +24,8 @@ module cache1 (
     logic [31:0] PC;
     //CAVEAT PC UPDATE IS JANK
 
-    always_ff @(posedge clk, posedge rst) begin
-        if(rst) begin
+    always_ff @(posedge clk, negedge n_rst) begin
+        if(~rst) begin
             PC <= 0;
         end
         else begin
@@ -150,7 +150,7 @@ assign instruction1 = ins[1]; //nothing_filled ? n_ins[1] : ins[1];
         .LATENCY(3)
     ) wb_inst0 (
         .clk(clk),
-        .rst_n(~rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC),
@@ -166,7 +166,7 @@ assign instruction1 = ins[1]; //nothing_filled ? n_ins[1] : ins[1];
         .LATENCY(3)
     ) wb_inst1 (
         .clk(clk),
-        .rst_n(~rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd4),
@@ -182,7 +182,7 @@ assign instruction1 = ins[1]; //nothing_filled ? n_ins[1] : ins[1];
         .LATENCY(3)
     ) wb_inst2 (
         .clk(clk),
-        .rst_n(~rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd8),
@@ -198,7 +198,7 @@ assign instruction1 = ins[1]; //nothing_filled ? n_ins[1] : ins[1];
         .LATENCY(3)
     ) wb_inst3 (
         .clk(clk),
-        .rst_n(~rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd12),
@@ -214,7 +214,7 @@ assign instruction1 = ins[1]; //nothing_filled ? n_ins[1] : ins[1];
         .LATENCY(3)
     ) wb_inst4 (
         .clk(clk),
-        .rst_n(~rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd16),
@@ -230,7 +230,7 @@ assign instruction1 = ins[1]; //nothing_filled ? n_ins[1] : ins[1];
         .LATENCY(3)
     ) wb_inst5 (
         .clk(clk),
-        .rst_n(~rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd20),

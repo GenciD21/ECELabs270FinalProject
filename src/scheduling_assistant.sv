@@ -1,6 +1,6 @@
 module scheduling_assistant_controlunit (
     input  logic          clk,
-    input  logic          rst,
+    input  logic          n_rst,
 
     // Scheduler outputs
     output logic          freeze1,
@@ -38,8 +38,8 @@ module scheduling_assistant_controlunit (
     //  INSTRUCTION LATCHING
     //  - latch new pair only when both freezes are low
     // =========================================================
-    always_ff @(posedge clk or posedge rst) begin
-        if (rst) begin
+    always_ff @(posedge clk or negedge rst) begin
+        if (~rst) begin
             ins0 <= 32'd0;
             ins1 <= 32'd0;
         end else begin
@@ -121,8 +121,8 @@ module scheduling_assistant_controlunit (
     //    dep_timer == 1 -> allow lane1 only (second cycle)
     //    dep_timer == 0 -> normal operation
     // =========================================================
-    always_ff @(posedge clk or posedge rst) begin
-        if (rst) begin
+    always_ff @(posedge clk or negedge rst) begin
+        if (~rst) begin
             dep_timer <= 2'd0;
         end else begin
             if (dep_detected && dep_timer == 2'd0)
