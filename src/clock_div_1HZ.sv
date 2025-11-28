@@ -1,13 +1,13 @@
 module clock_div_1HZ (
     input logic clk,
-    input logic rst,
+    input logic n_rst,
     output logic new_clk
 );
 
     logic [31:0] counter;
 
     always_ff @(posedge clk or negedge n_rst) begin
-    if (~rst) begin
+    if (~n_rst) begin
             counter <= 0;
             new_clk <= 0;
         end

@@ -2,7 +2,7 @@ module top (
     input  logic clk,       // 100 MHz clock from PCF
     input  logic btn,       // pushbutton
     output logic [7:0] led,  // onboard LED but
-    input logic rst
+    input logic rst_pin
     // input logic J39_b15, J39_c15, J39_b20, J39_e11,
 
     // //right line J39
@@ -18,7 +18,7 @@ module top (
     // J40_d11
 );
     
-    
+    logic n_rst;
     logic hz1_clk;
 
 
@@ -50,16 +50,16 @@ module top (
 
     logic clk_d;
 
-    // reset_on_start
-    //  ros (
-    //     .reset(rst),
-    //     .clk(clk),
-    //     .manual(rst_pin)
-    // );
+    reset_on_start
+     ros (
+        .reset(n_rst),
+        .clk(clk),
+        .manual(rst_pin)
+    );
     clock_div_1HZ clk_divider
     (
         .clk(clk),
-        .rst(rst),
+        .n_rst(n_rst),
         .new_clk(hz1_clk)
     );
 
@@ -70,7 +70,7 @@ module top (
 
     cache1 cache_inst (
         .clk(hz1_clk),
-        .rst(rst),
+        .n_rst(n_rst),
         .freeze1(freeze1),
         .freeze2(freeze2),
         .dependency_on_ins2(1'b0),
@@ -81,7 +81,7 @@ module top (
 
     scheduling_assistant_controlunit sched_assist_inst (
         .clk(hz1_clk),
-        .rst(rst),
+        .n_rst(n_rst),
         .freeze1(freeze1),
         .freeze2(freeze2),
         .dependency_on_ins2(dependency_on_ins2),
@@ -125,7 +125,7 @@ module top (
     // Dual register file
     register_file reg_file_inst (
         .clk(clk),
-        .rst(rst),
+        .n_rst(n_rst),
         .reg_write((datapath_1_enable || !freeze1) && instruction0 != 32'd0),
         .reg_write2((datapath_2_enable || !freeze2) && instruction1 != 32'd0),
         .reg1(reg1),

@@ -3,7 +3,7 @@
 module top_tb;
 
     logic clk=0;
-    logic rst;
+    logic rst_pin;
     logic [7:0] led;  // onboard LED but
     // logic rst_pin, J39_b15, J39_c15, J39_b20, J39_e11, J39_b10, 
     // J39_a14, J39_d13, J39_e12, J40_m3, J40_j5, J40_a15, J40_h2, J40_j4, 
@@ -12,7 +12,7 @@ module top_tb;
     // Instantiate DUT
     top dut (
         .clk(clk),
-        .rst(rst),
+        .rst_pin(rst_pin),
         .led(led)
     );
 
@@ -21,9 +21,9 @@ module top_tb;
 
     // Reset pulse
     initial begin
-        rst = 1;
+        rst_pin = 0;
         #20;
-        rst = 0;
+        rst_pin = 1;
     end
     
     initial begin

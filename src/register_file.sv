@@ -9,7 +9,7 @@ module register_file(
 
   always_ff @(posedge clk, negedge n_rst) begin
     
-    if (~rst) begin
+    if (~n_rst) begin
       for (int i = 0; i < 32; i++)
         registers[i] <= 32'd0;
     end 
