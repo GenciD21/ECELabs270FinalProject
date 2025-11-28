@@ -6,4 +6,4 @@ WARNING: src/wb_simulator.sv:20: $readmemh(instruction_memory.memh): Not enough 
 WARNING: src/wb_simulator.sv:20: $readmemh(instruction_memory.memh): Not enough words in the file for the requested range [0:1023].
 VCD info: dumpfile waves/top.vcd opened for output.
 === DATAPATH SIMULATION COMPLETE ===
-testbench/top_tb.sv:34: $finish called at 1000000 (1ps)
+testbench/top_tb.sv:34: $finish called at 5000000000000 (1ps)

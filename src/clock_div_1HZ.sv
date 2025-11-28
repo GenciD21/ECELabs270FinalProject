@@ -12,7 +12,7 @@ module clock_div_1HZ (
             new_clk <= 0;
         end
         else begin
-            if (counter == 1) begin
+            if (counter == 5_000_000) begin
                 new_clk <= ~new_clk;
                 counter <= 0;
             end

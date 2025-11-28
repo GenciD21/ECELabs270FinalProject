@@ -50,13 +50,17 @@ module top (
 
     logic clk_d;
 
+
+
+    
     reset_on_start
      ros (
         .reset(n_rst),
         .clk(clk),
         .manual(rst_pin)
     );
-    clock_div_1HZ clk_divider
+
+    clock_div_1HZ clk_divider_1HZ
     (
         .clk(clk),
         .n_rst(n_rst),
@@ -66,7 +70,16 @@ module top (
     // assign led[3] = btn;
     // assign led[4] = rst;
     assign led[7] = hz1_clk;
-    assign led[6:0] = instruction0[6:0]; 
+    logic [6:0] led_sampled;
+
+    always_ff @(posedge hz1_clk, negedge n_rst) begin
+    if (~n_rst)
+        led_sampled <= 0;
+    else
+        led_sampled <= ALU_result1[6:0];
+    end
+
+    assign led[6:0] = led_sampled;
 
     cache1 cache_inst (
         .clk(hz1_clk),
