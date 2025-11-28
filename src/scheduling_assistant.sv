@@ -1,4 +1,4 @@
-module scheduling_assistant (
+module scheduling_assistant_controlunit (
     input  logic          clk,
     input  logic          rst,
 
@@ -17,8 +17,9 @@ module scheduling_assistant (
     input  logic          nothing_filled,
     input  logic [31:0]   instruction0,
     input  logic [31:0]   instruction1,
-    input  logic          ack1,    // datapath 1 done (not used to clear dependency timer)
-    input  logic          ack2     // datapath 2 done (not used to clear dependency timer)
+    output logic [31:0] Imm1, Imm2,
+    output logic ALUSrc1,
+    output logic ALUSrc2
 );
 
     // Internal signals
@@ -42,10 +43,10 @@ module scheduling_assistant (
             ins0 <= 32'd0;
             ins1 <= 32'd0;
         end else begin
-            if (!freeze1 && !freeze2) begin
+            if (!freeze1 && !freeze2) begin //both are not frozen, let it flow freeze1 == 0 and freeze2 == 0
                 ins0 <= instruction0;
                 ins1 <= instruction1;
-            end else begin
+            end else begin //keep same instructions otherwise.
                 ins0 <= ins0;
                 ins1 <= ins1;
             end
@@ -56,28 +57,24 @@ module scheduling_assistant (
     //  CONTROL UNIT DECODE (instantiated for both lanes)
     //  - control_unit port names: .instruction, .RegD, .Reg2, .Reg1, .Imm, etc.
     // =========================================================
-    logic RegWrite1, ALUSrc1, MemRead1, MemWrite1, MemToReg1, Jal1, Jalr1;
-    logic signed [31:0] Imm1;
-    logic ALU_control1;
 
+    
     control_unit cu1 (
         .instruction(ins0),
-        .ALUSrc(),
+        .ALUSrc(ALUSrc1),
         .RegD(RegD1),
         .Reg2(reg2),
-        .Reg1(reg1)
+        .Reg1(reg1),
+        .Imm(Imm1)
     );
-
-    logic RegWrite2, ALUSrc2, MemRead2, MemWrite2, MemToReg2, Jal2, Jalr2;
-    logic signed [31:0] Imm2;
-    logic ALU_control2;
 
     control_unit cu2 (
         .instruction(ins1),
-        .ALUSrc(),
+        .ALUSrc(ALUSrc2),
         .RegD(RegD2),
         .Reg2(reg4),
-        .Reg1(reg3)
+        .Reg1(reg3),
+        .Imm(Imm2)
     );
 
     // =========================================================

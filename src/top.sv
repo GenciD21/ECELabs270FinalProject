@@ -18,20 +18,38 @@ module top (
     // J40_d11
 );
     
+    
     logic hz1_clk;
-    logic rst;
+
+
+    logic [31:0] ALU_result1;
+    logic [31:0] ALU_result2;
+    logic [31:0] imm1, imm2;
+    logic ALU_src1, ALU_src2;
+    logic [31:0] read_data1_dp1, read_data2_dp1;
+    logic [31:0] read_data1_dp2, read_data2_dp2;
+
+    //Testing Outputs
     logic [6:0] opcode_1;
     logic [6:0] opcode_2;
+
+    //Depndency Signals
     logic freeze1, freeze2;
     logic dependency_on_ins2;
     logic nothing_filled;
-    logic [31:0] instruction0;
-    logic [31:0] instruction1;
     logic datapath_1_enable;
     logic datapath_2_enable;
+    
+    //Intructions from Queue
+    logic [31:0] instruction0;
+    logic [31:0] instruction1;
+
+    //Registers
     logic [4:0] RegD1, reg1, reg2;
     logic [4:0] RegD2, reg3, reg4;
+
     logic clk_d;
+
     // reset_on_start
     //  ros (
     //     .reset(rst),
@@ -61,7 +79,7 @@ module top (
         .instruction1(instruction1)
     );
 
-    scheduling_assistant sched_assist_inst (
+    scheduling_assistant_controlunit sched_assist_inst (
         .clk(hz1_clk),
         .rst(rst),
         .freeze1(freeze1),
@@ -78,22 +96,10 @@ module top (
         .RegD2(RegD2),
         .reg3(reg3),
         .reg4(reg4),
-        .ack1(1'b1),
-        .ack2(1'b1)
-    );
-
-    // Datapath 1
-    logic [31:0] ALU_result1;
-    logic [31:0] ALU_result2;
-    logic [31:0] imm1, imm2;
-    logic ALU_src1, ALU_src2;
-    logic [31:0] read_data1_dp1, read_data2_dp1;
-    logic [31:0] read_data1_dp2, read_data2_dp2;
-
-    control_unit DP_CU1 (
-        .instruction(instruction0),
-        .ALUSrc(ALU_src1),
-        .Imm(imm1)
+        .ALUSrc1(ALU_src1),
+        .ALUSrc2(ALU_src2),
+        .Imm1(imm1),
+        .Imm2(imm2)
     );
 
     ALU alu1(
@@ -104,15 +110,8 @@ module top (
         .ALU_result(ALU_result1),
         .opcode_out(opcode_1)
     );
+
     // Datapath 2
-    // control_unit DP_CU2 (
-    //     .instruction(instruction1),
-    //     .ALUSrc(ALU_src2),
-    //     .Imm(imm2),
-    //     .RegD(RegD2),
-    //     .Reg2(reg3),
-    //     .Reg1(reg4)
-    // );
     ALU alu2(
         .src_A(read_data1_dp2),
         .src_B(ALU_src2 ? imm2 : read_data2_dp2),

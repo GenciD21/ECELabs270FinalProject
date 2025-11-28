@@ -12,12 +12,12 @@ module top_tb;
     // Instantiate DUT
     top dut (
         .clk(clk),
-        .rst_pin(rst),
+        .rst(rst),
         .led(led)
     );
 
     // Clock generation: 10ns perio
-    always #5 clk = ~clk;
+    always #1 clk = ~clk;
 
     // Reset pulse
     initial begin
@@ -29,7 +29,7 @@ module top_tb;
     initial begin
         $dumpfile("waves/top.vcd");
         $dumpvars(0, top_tb);
-        #700;
+        #1000;
         $display("=== DATAPATH SIMULATION COMPLETE ===");
         $finish;
     end

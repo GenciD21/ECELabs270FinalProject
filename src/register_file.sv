@@ -6,19 +6,21 @@ module register_file(
   output logic [31:0] read_data1, read_data2, read_data3, read_data4
 );
   logic [31:0] registers [31:0];
-  logic [31:0] fake_ALU_to_test;
 
-  always_ff @(posedge clk or posedge rst) begin
+  always_ff @(posedge clk, posedge rst) begin
+    
     if (rst) begin
       for (int i = 0; i < 32; i++)
         registers[i] <= 32'd0;
     end 
+    
     else begin
-      // same-destination conflict resolution
+      // When the register destiation of 1 and 2 are the same, you write_data2 as opposed to data1
       if (reg_write && reg_write2 && (regd == regd2)) begin
         if (regd != 5'd0)
           registers[regd] <= write_data2; // ALU2 priority
       end 
+
       else begin
         if (reg_write && (regd != 5'd0))
           registers[regd] <= write_data;

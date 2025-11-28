@@ -6,13 +6,10 @@ module control_unit (
 );
 
   logic [6:0] r, i, l, s, b, jalr, jal;
-  assign b = 7'b1100011;
   assign r = 7'b0110011;
   assign i = 7'b0010011;
   assign l = 7'b0000011;
   assign s = 7'b0100011;
-  assign jalr = 7'b1100111;
-  assign jal = 7'b1101111;
 
   logic [6:0] opcode;
   assign opcode = instruction[6:0];
@@ -26,7 +23,7 @@ module control_unit (
     ALUSrc = (opcode == i || opcode == l || opcode == s);
   
     case (opcode)
-      i, l, jalr: begin Imm = {{20{instruction[31]}}, instruction[31:20]}; end
+      i, l, s: begin Imm = {{20{instruction[31]}}, instruction[31:20]}; end
       default:    begin Imm = 32'b0; end
     endcase
   end
