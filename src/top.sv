@@ -105,7 +105,7 @@ module top (
     ALU alu1(
         .src_A(read_data1_dp1),
         .src_B(ALU_src1 ? imm1 : read_data2_dp1),
-        .instruction(ALU_src1 ? imm1 : read_data2_dp1),
+        .instruction(instruction0),
         .ALU_control(1'b0),
         .ALU_result(ALU_result1),
         .opcode_out(opcode_1)
@@ -115,7 +115,7 @@ module top (
     ALU alu2(
         .src_A(read_data1_dp2),
         .src_B(ALU_src2 ? imm2 : read_data2_dp2),
-        .instruction(ALU_src2 ? imm2 : read_data2_dp2),
+        .instruction(instruction1),
         .ALU_control(1'b0),
         .ALU_result(ALU_result2),
         .opcode_out(opcode_2)
