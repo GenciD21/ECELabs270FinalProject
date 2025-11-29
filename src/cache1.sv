@@ -56,7 +56,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst0 (
         .clk(clk),
-        .rst_n(~n_rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC),
@@ -72,7 +72,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst1 (
         .clk(clk),
-        .rst_n(~n_rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd4),
@@ -88,7 +88,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst2 (
         .clk(clk),
-        .rst_n(~n_rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd8),
@@ -104,7 +104,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst3 (
         .clk(clk),
-        .rst_n(~n_rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd12),
@@ -120,7 +120,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst4 (
         .clk(clk),
-        .rst_n(~n_rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd16),
@@ -136,7 +136,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst5 (
         .clk(clk),
-        .rst_n(~n_rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd20),
