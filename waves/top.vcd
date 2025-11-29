@@ -1,5 +1,5 @@
 $date
-	Fri Nov 28 19:24:52 2025
+	Fri Nov 28 19:30:42 2025
 $end
 $version
 	Icarus Verilog
@@ -565,287 +565,293 @@ $scope module cache_inst $end
 $var wire 1 C% dependency_on_ins2 $end
 $var wire 32 D% instruction0 [31:0] $end
 $var wire 32 E% instruction1 [31:0] $end
-$var wire 1 F% rst $end
 $var wire 1 2 n_rst $end
 $var wire 1 7 freeze2 $end
 $var wire 1 8 freeze1 $end
 $var wire 1 6 clk $end
-$var wire 1 G% busy $end
-$var reg 32 H% PC [31:0] $end
-$var reg 32 I% next_PC [31:0] $end
+$var wire 1 F% busy $end
+$var reg 32 G% PC [31:0] $end
+$var reg 32 H% next_PC [31:0] $end
 $var reg 1 1 nothing_filled $end
-$var reg 1 J% second_half_cache_to_fill $end
+$var reg 1 I% second_half_cache_to_fill $end
 $scope module wb_inst0 $end
-$var wire 32 K% addr [31:0] $end
-$var wire 1 L% req $end
-$var wire 1 M% rst_n $end
-$var wire 32 N% wdata [31:0] $end
-$var wire 1 O% we $end
+$var wire 32 J% addr [31:0] $end
+$var wire 1 K% req $end
+$var wire 1 L% rst_n $end
+$var wire 32 M% wdata [31:0] $end
+$var wire 1 N% we $end
 $var wire 1 6 clk $end
-$var parameter 32 P% DEPTH $end
-$var parameter 32 Q% LATENCY $end
-$var parameter 184 R% MEM_FILE $end
-$var reg 32 S% addr_reg [31:0] $end
-$var reg 1 G% busy $end
-$var reg 2 T% counter [1:0] $end
-$var reg 1 U% pending $end
-$var reg 32 V% rdata [31:0] $end
-$var reg 1 W% valid $end
+$var parameter 32 O% DEPTH $end
+$var parameter 32 P% LATENCY $end
+$var parameter 184 Q% MEM_FILE $end
+$var reg 32 R% addr_reg [31:0] $end
+$var reg 1 F% busy $end
+$var reg 2 S% counter [1:0] $end
+$var reg 1 T% pending $end
+$var reg 32 U% rdata [31:0] $end
+$var reg 1 V% valid $end
 $upscope $end
 $scope module wb_inst1 $end
-$var wire 32 X% addr [31:0] $end
-$var wire 1 Y% req $end
-$var wire 1 Z% rst_n $end
-$var wire 32 [% wdata [31:0] $end
-$var wire 1 \% we $end
+$var wire 32 W% addr [31:0] $end
+$var wire 1 X% req $end
+$var wire 1 Y% rst_n $end
+$var wire 32 Z% wdata [31:0] $end
+$var wire 1 [% we $end
 $var wire 1 6 clk $end
-$var parameter 32 ]% DEPTH $end
-$var parameter 32 ^% LATENCY $end
-$var parameter 184 _% MEM_FILE $end
-$var reg 32 `% addr_reg [31:0] $end
-$var reg 1 a% busy $end
-$var reg 2 b% counter [1:0] $end
-$var reg 1 c% pending $end
-$var reg 32 d% rdata [31:0] $end
-$var reg 1 e% valid $end
+$var parameter 32 \% DEPTH $end
+$var parameter 32 ]% LATENCY $end
+$var parameter 184 ^% MEM_FILE $end
+$var reg 32 _% addr_reg [31:0] $end
+$var reg 1 `% busy $end
+$var reg 2 a% counter [1:0] $end
+$var reg 1 b% pending $end
+$var reg 32 c% rdata [31:0] $end
+$var reg 1 d% valid $end
 $upscope $end
 $scope module wb_inst2 $end
-$var wire 32 f% addr [31:0] $end
-$var wire 1 g% req $end
-$var wire 1 h% rst_n $end
-$var wire 32 i% wdata [31:0] $end
-$var wire 1 j% we $end
+$var wire 32 e% addr [31:0] $end
+$var wire 1 f% req $end
+$var wire 1 g% rst_n $end
+$var wire 32 h% wdata [31:0] $end
+$var wire 1 i% we $end
 $var wire 1 6 clk $end
-$var parameter 32 k% DEPTH $end
-$var parameter 32 l% LATENCY $end
-$var parameter 184 m% MEM_FILE $end
-$var reg 32 n% addr_reg [31:0] $end
-$var reg 1 o% busy $end
-$var reg 2 p% counter [1:0] $end
-$var reg 1 q% pending $end
-$var reg 32 r% rdata [31:0] $end
-$var reg 1 s% valid $end
+$var parameter 32 j% DEPTH $end
+$var parameter 32 k% LATENCY $end
+$var parameter 184 l% MEM_FILE $end
+$var reg 32 m% addr_reg [31:0] $end
+$var reg 1 n% busy $end
+$var reg 2 o% counter [1:0] $end
+$var reg 1 p% pending $end
+$var reg 32 q% rdata [31:0] $end
+$var reg 1 r% valid $end
 $upscope $end
 $scope module wb_inst3 $end
-$var wire 32 t% addr [31:0] $end
-$var wire 1 u% req $end
-$var wire 1 v% rst_n $end
-$var wire 32 w% wdata [31:0] $end
-$var wire 1 x% we $end
+$var wire 32 s% addr [31:0] $end
+$var wire 1 t% req $end
+$var wire 1 u% rst_n $end
+$var wire 32 v% wdata [31:0] $end
+$var wire 1 w% we $end
 $var wire 1 6 clk $end
-$var parameter 32 y% DEPTH $end
-$var parameter 32 z% LATENCY $end
-$var parameter 184 {% MEM_FILE $end
-$var reg 32 |% addr_reg [31:0] $end
-$var reg 1 }% busy $end
-$var reg 2 ~% counter [1:0] $end
-$var reg 1 !& pending $end
-$var reg 32 "& rdata [31:0] $end
-$var reg 1 #& valid $end
+$var parameter 32 x% DEPTH $end
+$var parameter 32 y% LATENCY $end
+$var parameter 184 z% MEM_FILE $end
+$var reg 32 {% addr_reg [31:0] $end
+$var reg 1 |% busy $end
+$var reg 2 }% counter [1:0] $end
+$var reg 1 ~% pending $end
+$var reg 32 !& rdata [31:0] $end
+$var reg 1 "& valid $end
 $upscope $end
 $scope module wb_inst4 $end
-$var wire 32 $& addr [31:0] $end
-$var wire 1 %& req $end
-$var wire 1 && rst_n $end
-$var wire 32 '& wdata [31:0] $end
-$var wire 1 (& we $end
+$var wire 32 #& addr [31:0] $end
+$var wire 1 $& req $end
+$var wire 1 %& rst_n $end
+$var wire 32 && wdata [31:0] $end
+$var wire 1 '& we $end
 $var wire 1 6 clk $end
-$var parameter 32 )& DEPTH $end
-$var parameter 32 *& LATENCY $end
-$var parameter 184 +& MEM_FILE $end
-$var reg 32 ,& addr_reg [31:0] $end
-$var reg 1 -& busy $end
-$var reg 2 .& counter [1:0] $end
-$var reg 1 /& pending $end
-$var reg 32 0& rdata [31:0] $end
-$var reg 1 1& valid $end
+$var parameter 32 (& DEPTH $end
+$var parameter 32 )& LATENCY $end
+$var parameter 184 *& MEM_FILE $end
+$var reg 32 +& addr_reg [31:0] $end
+$var reg 1 ,& busy $end
+$var reg 2 -& counter [1:0] $end
+$var reg 1 .& pending $end
+$var reg 32 /& rdata [31:0] $end
+$var reg 1 0& valid $end
 $upscope $end
 $scope module wb_inst5 $end
-$var wire 32 2& addr [31:0] $end
-$var wire 1 3& req $end
-$var wire 1 4& rst_n $end
-$var wire 32 5& wdata [31:0] $end
-$var wire 1 6& we $end
+$var wire 32 1& addr [31:0] $end
+$var wire 1 2& req $end
+$var wire 1 3& rst_n $end
+$var wire 32 4& wdata [31:0] $end
+$var wire 1 5& we $end
 $var wire 1 6 clk $end
-$var parameter 32 7& DEPTH $end
-$var parameter 32 8& LATENCY $end
-$var parameter 184 9& MEM_FILE $end
-$var reg 32 :& addr_reg [31:0] $end
-$var reg 1 ;& busy $end
-$var reg 2 <& counter [1:0] $end
-$var reg 1 =& pending $end
-$var reg 32 >& rdata [31:0] $end
-$var reg 1 ?& valid $end
+$var parameter 32 6& DEPTH $end
+$var parameter 32 7& LATENCY $end
+$var parameter 184 8& MEM_FILE $end
+$var reg 32 9& addr_reg [31:0] $end
+$var reg 1 :& busy $end
+$var reg 2 ;& counter [1:0] $end
+$var reg 1 <& pending $end
+$var reg 32 =& rdata [31:0] $end
+$var reg 1 >& valid $end
 $upscope $end
 $scope begin $ivl_for_loop0 $end
-$var integer 32 @& i [31:0] $end
+$var integer 32 ?& i [31:0] $end
 $upscope $end
 $scope begin $ivl_for_loop1 $end
-$var integer 32 A& i [31:0] $end
+$var integer 32 @& i [31:0] $end
 $upscope $end
 $scope begin $ivl_for_loop2 $end
-$var integer 32 B& i [31:0] $end
+$var integer 32 A& i [31:0] $end
 $upscope $end
 $upscope $end
 $scope module clk_divider_1HZ $end
 $var wire 1 " clk $end
-$var wire 32 C& div [31:0] $end
+$var wire 32 B& div [31:0] $end
 $var wire 1 2 n_rst $end
-$var reg 32 D& counter [31:0] $end
+$var reg 32 C& counter [31:0] $end
 $var reg 1 6 new_clk $end
 $upscope $end
 $scope module goon0 $end
-$var wire 8 E& alu_result [7:0] $end
+$var wire 8 D& alu_result [7:0] $end
 $var wire 1 " clk $end
-$var wire 1 F& dp $end
-$var parameter 32 G& DIVIDER $end
-$var reg 17 H& counter [16:0] $end
-$var reg 2 I& digit_en [1:0] $end
-$var reg 4 J& ones [3:0] $end
-$var reg 7 K& seg [6:0] $end
-$var reg 1 L& sel $end
-$var reg 4 M& tens [3:0] $end
-$var reg 8 N& value_latched [7:0] $end
+$var wire 1 E& dp $end
+$var parameter 32 F& DIVIDER $end
+$var reg 17 G& counter [16:0] $end
+$var reg 2 H& digit_en [1:0] $end
+$var reg 4 I& ones [3:0] $end
+$var reg 7 J& seg [6:0] $end
+$var reg 1 K& sel $end
+$var reg 4 L& tens [3:0] $end
+$var reg 8 M& value_latched [7:0] $end
 $scope function nibble_to_seg $end
 $upscope $end
 $upscope $end
 $scope module reg_file_inst $end
 $var wire 1 " clk $end
-$var wire 32 O& read_data1 [31:0] $end
-$var wire 32 P& read_data2 [31:0] $end
-$var wire 32 Q& read_data3 [31:0] $end
-$var wire 32 R& read_data4 [31:0] $end
-$var wire 1 S& reg_write $end
-$var wire 1 T& reg_write2 $end
-$var wire 32 U& write_data [31:0] $end
-$var wire 32 V& write_data2 [31:0] $end
-$var wire 5 W& regd2 [4:0] $end
-$var wire 5 X& regd [4:0] $end
-$var wire 5 Y& reg4 [4:0] $end
-$var wire 5 Z& reg3 [4:0] $end
-$var wire 5 [& reg2 [4:0] $end
-$var wire 5 \& reg1 [4:0] $end
+$var wire 32 N& read_data1 [31:0] $end
+$var wire 32 O& read_data2 [31:0] $end
+$var wire 32 P& read_data3 [31:0] $end
+$var wire 32 Q& read_data4 [31:0] $end
+$var wire 1 R& reg_write $end
+$var wire 1 S& reg_write2 $end
+$var wire 32 T& write_data [31:0] $end
+$var wire 32 U& write_data2 [31:0] $end
+$var wire 5 V& regd2 [4:0] $end
+$var wire 5 W& regd [4:0] $end
+$var wire 5 X& reg4 [4:0] $end
+$var wire 5 Y& reg3 [4:0] $end
+$var wire 5 Z& reg2 [4:0] $end
+$var wire 5 [& reg1 [4:0] $end
 $var wire 1 2 n_rst $end
 $scope begin $ivl_for_loop3 $end
-$var integer 32 ]& i [31:0] $end
+$var integer 32 \& i [31:0] $end
 $upscope $end
 $upscope $end
 $scope module ros $end
 $var wire 1 " clk $end
 $var wire 1 # manual $end
 $var wire 1 2 reset $end
-$var reg 3 ^& startup [2:0] $end
+$var reg 3 ]& startup [2:0] $end
 $upscope $end
 $scope module sched_assist_inst $end
 $var wire 1 6 clk $end
-$var wire 32 _& instruction0 [31:0] $end
-$var wire 32 `& instruction1 [31:0] $end
+$var wire 32 ^& instruction0 [31:0] $end
+$var wire 32 _& instruction1 [31:0] $end
 $var wire 1 2 n_rst $end
 $var wire 1 1 nothing_filled $end
-$var wire 5 a& reg4 [4:0] $end
-$var wire 5 b& reg3 [4:0] $end
-$var wire 5 c& reg2 [4:0] $end
-$var wire 5 d& reg1 [4:0] $end
-$var wire 5 e& RegD2 [4:0] $end
-$var wire 5 f& RegD1 [4:0] $end
-$var wire 32 g& Imm2 [31:0] $end
-$var wire 32 h& Imm1 [31:0] $end
+$var wire 5 `& reg4 [4:0] $end
+$var wire 5 a& reg3 [4:0] $end
+$var wire 5 b& reg2 [4:0] $end
+$var wire 5 c& reg1 [4:0] $end
+$var wire 5 d& RegD2 [4:0] $end
+$var wire 5 e& RegD1 [4:0] $end
+$var wire 32 f& Imm2 [31:0] $end
+$var wire 32 g& Imm1 [31:0] $end
 $var wire 1 G ALUSrc2 $end
 $var wire 1 H ALUSrc1 $end
 $var reg 1 ; datapath_1_enable $end
 $var reg 1 : datapath_2_enable $end
-$var reg 1 i& dep_detected $end
-$var reg 2 j& dep_timer [1:0] $end
+$var reg 1 h& dep_detected $end
+$var reg 2 i& dep_timer [1:0] $end
 $var reg 1 9 dependency_on_ins2 $end
 $var reg 1 8 freeze1 $end
-$var reg 1 k& freeze1_next $end
+$var reg 1 j& freeze1_next $end
 $var reg 1 7 freeze2 $end
-$var reg 1 l& freeze2_next $end
-$var reg 32 m& ins0 [31:0] $end
-$var reg 32 n& ins1 [31:0] $end
+$var reg 1 k& freeze2_next $end
+$var reg 32 l& ins0 [31:0] $end
+$var reg 32 m& ins1 [31:0] $end
 $scope module cu1 $end
-$var wire 7 o& i [6:0] $end
-$var wire 32 p& instruction [31:0] $end
-$var wire 7 q& l [6:0] $end
-$var wire 7 r& r [6:0] $end
-$var wire 7 s& s [6:0] $end
-$var wire 7 t& opcode [6:0] $end
-$var wire 5 u& RegD [4:0] $end
-$var wire 5 v& Reg2 [4:0] $end
-$var wire 5 w& Reg1 [4:0] $end
+$var wire 7 n& i [6:0] $end
+$var wire 32 o& instruction [31:0] $end
+$var wire 7 p& l [6:0] $end
+$var wire 7 q& r [6:0] $end
+$var wire 7 r& s [6:0] $end
+$var wire 7 s& opcode [6:0] $end
+$var wire 5 t& RegD [4:0] $end
+$var wire 5 u& Reg2 [4:0] $end
+$var wire 5 v& Reg1 [4:0] $end
 $var reg 1 H ALUSrc $end
-$var reg 32 x& Imm [31:0] $end
+$var reg 32 w& Imm [31:0] $end
 $upscope $end
 $scope module cu2 $end
-$var wire 7 y& i [6:0] $end
-$var wire 32 z& instruction [31:0] $end
-$var wire 7 {& l [6:0] $end
-$var wire 7 |& r [6:0] $end
-$var wire 7 }& s [6:0] $end
-$var wire 7 ~& opcode [6:0] $end
-$var wire 5 !' RegD [4:0] $end
-$var wire 5 "' Reg2 [4:0] $end
-$var wire 5 #' Reg1 [4:0] $end
+$var wire 7 x& i [6:0] $end
+$var wire 32 y& instruction [31:0] $end
+$var wire 7 z& l [6:0] $end
+$var wire 7 {& r [6:0] $end
+$var wire 7 |& s [6:0] $end
+$var wire 7 }& opcode [6:0] $end
+$var wire 5 ~& RegD [4:0] $end
+$var wire 5 !' Reg2 [4:0] $end
+$var wire 5 "' Reg1 [4:0] $end
 $var reg 1 G ALUSrc $end
-$var reg 32 $' Imm [31:0] $end
+$var reg 32 #' Imm [31:0] $end
 $upscope $end
 $upscope $end
+$upscope $end
+$scope begin $ivl_for_loop4 $end
+$var integer 32 $' i [31:0] $end
+$upscope $end
+$scope begin $ivl_for_loop5 $end
+$var integer 32 %' i [31:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end
 $dumpall
-b11000011010100000 G&
-b110100101101110011100110111010001110010011101010110001101110100011010010110111101101110010111110110110101100101011011010110111101110010011110010010111001101101011001010110110101101000 9&
-b11 8&
-b10000000000 7&
-b110100101101110011100110111010001110010011101010110001101110100011010010110111101101110010111110110110101100101011011010110111101110010011110010010111001101101011001010110110101101000 +&
-b11 *&
-b10000000000 )&
-b110100101101110011100110111010001110010011101010110001101110100011010010110111101101110010111110110110101100101011011010110111101110010011110010010111001101101011001010110110101101000 {%
-b11 z%
-b10000000000 y%
-b110100101101110011100110111010001110010011101010110001101110100011010010110111101101110010111110110110101100101011011010110111101110010011110010010111001101101011001010110110101101000 m%
-b11 l%
-b10000000000 k%
-b110100101101110011100110111010001110010011101010110001101110100011010010110111101101110010111110110110101100101011011010110111101110010011110010010111001101101011001010110110101101000 _%
-b11 ^%
-b10000000000 ]%
-b110100101101110011100110111010001110010011101010110001101110100011010010110111101101110010111110110110101100101011011010110111101110010011110010010111001101101011001010110110101101000 R%
-b11 Q%
-b10000000000 P%
+b11000011010100000 F&
+b110100101101110011100110111010001110010011101010110001101110100011010010110111101101110010111110110110101100101011011010110111101110010011110010010111001101101011001010110110101101000 8&
+b11 7&
+b10000000000 6&
+b110100101101110011100110111010001110010011101010110001101110100011010010110111101101110010111110110110101100101011011010110111101110010011110010010111001101101011001010110110101101000 *&
+b11 )&
+b10000000000 (&
+b110100101101110011100110111010001110010011101010110001101110100011010010110111101101110010111110110110101100101011011010110111101110010011110010010111001101101011001010110110101101000 z%
+b11 y%
+b10000000000 x%
+b110100101101110011100110111010001110010011101010110001101110100011010010110111101101110010111110110110101100101011011010110111101110010011110010010111001101101011001010110110101101000 l%
+b11 k%
+b10000000000 j%
+b110100101101110011100110111010001110010011101010110001101110100011010010110111101101110010111110110110101100101011011010110111101110010011110010010111001101101011001010110110101101000 ^%
+b11 ]%
+b10000000000 \%
+b110100101101110011100110111010001110010011101010110001101110100011010010110111101101110010111110110110101100101011011010110111101110010011110010010111001101101011001010110110101101000 Q%
+b11 P%
+b10000000000 O%
 $end
 #0
 $dumpvars
+b0 %'
 b0 $'
-bx #'
+b0 #'
 bx "'
 bx !'
 bx ~&
-b100011 }&
-b110011 |&
-b11 {&
-bx z&
-b10011 y&
-b0 x&
-bx w&
+bx }&
+b100011 |&
+b110011 {&
+b11 z&
+bx y&
+b10011 x&
+b0 w&
 bx v&
 bx u&
 bx t&
-b100011 s&
-b110011 r&
-b11 q&
-bx p&
-b10011 o&
-bx n&
+bx s&
+b100011 r&
+b110011 q&
+b11 p&
+bx o&
+b10011 n&
 bx m&
-0l&
+bx l&
 0k&
-bx j&
-0i&
-b0 h&
+0j&
+bx i&
+0h&
 b0 g&
-bx f&
+b0 f&
 bx e&
 bx d&
 bx c&
@@ -853,9 +859,9 @@ bx b&
 bx a&
 bx `&
 bx _&
-b100 ^&
-b0 ]&
-bx \&
+bx ^&
+b100 ]&
+b0 \&
 bx [&
 bx Z&
 bx Y&
@@ -863,96 +869,96 @@ bx X&
 bx W&
 bx V&
 bx U&
-xT&
+bx T&
 xS&
-bx R&
+xR&
 bx Q&
 bx P&
 bx O&
 bx N&
 bx M&
-0L&
-b0 K&
-bx J&
-b10 I&
-b0 H&
-1F&
-bx E&
+bx L&
+0K&
+b0 J&
+bx I&
+b10 H&
+b0 G&
+1E&
 bx D&
-b1 C&
-b0 B&
+bx C&
+b10 B&
 b0 A&
 b0 @&
-x?&
-bx >&
-x=&
-bx <&
-x;&
-bx :&
-06&
-b0 5&
-z4&
-13&
-bx 2&
-x1&
-bx 0&
-x/&
-bx .&
-x-&
-bx ,&
-0(&
-b0 '&
-z&&
-1%&
-bx $&
-x#&
-bx "&
-x!&
-bx ~%
-x}%
-bx |%
-0x%
-b0 w%
-zv%
-1u%
-bx t%
-xs%
-bx r%
-xq%
-bx p%
-xo%
-bx n%
-0j%
-b0 i%
-zh%
-1g%
-bx f%
-xe%
-bx d%
-xc%
-bx b%
-xa%
-bx `%
-0\%
-b0 [%
-zZ%
-1Y%
-bx X%
-xW%
-bx V%
-xU%
-bx T%
+b0 ?&
+x>&
+bx =&
+x<&
+bx ;&
+x:&
+bx 9&
+05&
+b0 4&
+03&
+12&
+bx 1&
+x0&
+bx /&
+x.&
+bx -&
+x,&
+bx +&
+0'&
+b0 &&
+0%&
+1$&
+bx #&
+x"&
+bx !&
+x~%
+bx }%
+x|%
+bx {%
+0w%
+b0 v%
+0u%
+1t%
+bx s%
+xr%
+bx q%
+xp%
+bx o%
+xn%
+bx m%
+0i%
+b0 h%
+0g%
+1f%
+bx e%
+xd%
+bx c%
+xb%
+bx a%
+x`%
+bx _%
+0[%
+b0 Z%
+0Y%
+1X%
+bx W%
+xV%
+bx U%
+xT%
 bx S%
-0O%
-b0 N%
-zM%
-1L%
-bx K%
-0J%
-bx I%
+bx R%
+0N%
+b0 M%
+0L%
+1K%
+bx J%
+0I%
 bx H%
-xG%
-zF%
+bx G%
+xF%
 bx E%
 bx D%
 0C%
@@ -1363,10 +1369,10 @@ bx '
 bx &
 bx %
 z$
-0#
+1#
 0"
 bxzzzzzzz !
 $end
-#1000
-1#
+#20000
+0#
 #1000000
