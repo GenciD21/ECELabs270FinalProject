@@ -152,7 +152,7 @@ module top (
     // assign J40_m4 = 0; //Left Active
 
     cache1 cache_inst (
-        .clk(hz1_clk),
+        .clk(clk),
         .n_rst(n_rst),
         .freeze1(freeze1),
         .freeze2(freeze2),
@@ -163,7 +163,7 @@ module top (
     );
 
     scheduling_assistant_controlunit sched_assist_inst (
-        .clk(hz1_clk),
+        .clk(clk),
         .n_rst(n_rst),
         .freeze1(freeze1),
         .freeze2(freeze2),

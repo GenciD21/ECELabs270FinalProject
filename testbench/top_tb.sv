@@ -17,7 +17,7 @@ module top_tb;
     );
 
     // Clock generation: 10ns perio
-        always #1 clk = ~clk;
+    always #1 clk = ~clk;
 
     // Reset pulse
     initial begin
@@ -53,7 +53,7 @@ module top_tb;
     initial begin
         $dumpfile("waves/top.vcd");
         $dumpvars(0, top_tb);
-        #5000;
+        #100;
         $display("=== DATAPATH SIMULATION COMPLETE ===");
         $finish;
     end

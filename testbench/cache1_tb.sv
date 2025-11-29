@@ -19,7 +19,7 @@ module cache1_tb;
   // DUT instance
   cache1 dut (
     .clk(clk),
-    .rst(rst),
+    .n_rst(rst),
     .freeze1(freeze1),
     .freeze2(freeze2),
     .dependency_on_ins2(dependency_on_ins2),
@@ -41,13 +41,13 @@ module cache1_tb;
     $display("=== CACHE AUTO-FILL TEST START ===");
 
     // Reset
-    rst = 1;
-    freeze1 = 1;
+    rst = 0;
+    freeze1 = 0;
     freeze2 = 0;
     dependency_on_ins2 = 0;
 
     #20;
-    rst = 0;
+    rst = 1;
 
     // Let simulation run for a while
     repeat (20) begin
