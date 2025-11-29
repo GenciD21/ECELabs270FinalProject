@@ -17,7 +17,7 @@ module top_tb;
     );
 
     // Clock generation: 10ns perio
-    always #1ms clk = ~clk;
+        always #1 clk = ~clk;
 
     // Reset pulse
     initial begin
