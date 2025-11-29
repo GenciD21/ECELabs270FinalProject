@@ -6,31 +6,28 @@ module alu_7seg_mux(
     output logic        dp
 );
 
-    parameter integer DIVIDER = 100_000;  
+    parameter integer DIVIDER = 100_000;
+
     logic [16:0] counter = 0;
     logic sel = 0;
+
+    logic [7:0] value_latched;
+    logic [3:0] tens;
+    logic [3:0] ones;
 
     always_ff @(posedge clk) begin
         if (counter >= DIVIDER) begin
             counter <= 0;
             sel <= ~sel;
+            value_latched <= alu_result;
         end else begin
             counter <= counter + 1;
         end
     end
 
-    logic [7:0] value;
-    logic [3:0] tens;
-    logic [3:0] ones;
-
     always_comb begin
-        if (alu_result > 8'd99)
-            value = 8'd99;
-        else
-            value = alu_result;
-
-        tens = value / 10;
-        ones = value % 10;
+        tens = value_latched / 10;
+        ones = value_latched % 10;
     end
 
     function automatic [6:0] nibble_to_seg;
@@ -61,9 +58,9 @@ module alu_7seg_mux(
 
     always_comb begin
         if (sel)
-            digit_en = 2'b10;
-        else
             digit_en = 2'b01;
+        else
+            digit_en = 2'b10;
     end
 
     assign dp = 1'b1;

@@ -34,10 +34,7 @@ module scheduling_assistant_controlunit (
     logic [1:0]   dep_timer;        // 2-cycle countdown for dependency handling
     logic         freeze1_next, freeze2_next;
 
-    // =========================================================
-    //  INSTRUCTION LATCHING
-    //  - latch new pair only when both freezes are low
-    // =========================================================
+  
     always_ff @(posedge clk or negedge n_rst) begin
         if (~n_rst) begin
             ins0 <= 32'd0;
@@ -53,11 +50,7 @@ module scheduling_assistant_controlunit (
         end
     end
 
-    // =========================================================
-    //  CONTROL UNIT DECODE (instantiated for both lanes)
-    //  - control_unit port names: .instruction, .RegD, .Reg2, .Reg1, .Imm, etc.
-    // =========================================================
-
+    
     
     control_unit cu1 (
         .instruction(ins0),
@@ -77,10 +70,7 @@ module scheduling_assistant_controlunit (
         .Imm(Imm2)
     );
 
-    // =========================================================
-    //  HAZARD DETECTION (combinational)
-    //  - detect register hazards between destinations and sources
-    // =========================================================
+
     always_comb begin
         dep_detected = 1'b0;
         dependency_on_ins2 = 1'b0;
@@ -115,12 +105,7 @@ module scheduling_assistant_controlunit (
         end
     end
 
-    // =========================================================
-    //  DEPENDENCY TIMER (2-cycle behavior)
-    //    dep_timer == 2 -> both frozen (first cycle)
-    //    dep_timer == 1 -> allow lane1 only (second cycle)
-    //    dep_timer == 0 -> normal operation
-    // =========================================================
+  
     always_ff @(posedge clk or negedge n_rst) begin
         if (~n_rst) begin
             dep_timer <= 2'd0;
@@ -134,9 +119,7 @@ module scheduling_assistant_controlunit (
         end
     end
 
-    // =========================================================
-    //  FREEZE CONTROL (combination of dep_timer and nothing_filled)
-    // =========================================================
+   
     always_comb begin
         // default: no freeze
         freeze1_next = 1'b0;
@@ -176,10 +159,4 @@ module scheduling_assistant_controlunit (
             freeze2 <= freeze2_next;
         end
     end
-
-    // =========================================================
-    //  Expose debug outputs (already connected to control_unit outputs)
-    // =========================================================
-    // reg1, reg2, reg3, reg4, RegD1, RegD2 are driven by cu1/cu2 above
-
 endmodule

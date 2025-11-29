@@ -28,26 +28,83 @@ module top (
     //J39_B10
     //J39_E7 
 );
+    logic [31:0] ALU_result1;
+    logic [31:0] ALU_result2;
+    logic [31:0] imm1, imm2;
+    logic ALU_src1, ALU_src2;
+    logic [31:0] read_data1_dp1, read_data2_dp1;
+    logic [31:0] read_data1_dp2, read_data2_dp2;
+
+    //Testing Outputs
+    logic [6:0] opcode_1;
+    logic [6:0] opcode_2;
+
+    //Depndency Signals
+    logic freeze1, freeze2;
+    logic dependency_on_ins2;
+    logic nothing_filled;
+    logic datapath_1_enable;
+    logic datapath_2_enable;
+    
+    //Intructions from Queue
+    logic [31:0] instruction0;
+    logic [31:0] instruction1;
+
+    //Registers
+    logic [4:0] RegD1, reg1, reg2;
+    logic [4:0] RegD2, reg3, reg4;
+
+    logic clk_d;
+
+
+
+    logic [7:0] led_sampled;
     
 
     alu_7seg_mux goon0 (
     .clk(clk), 
-    .alu_result(ALU_result1), 
+    .alu_result(led_sampled), 
     .seg({J39_e11,J39_b20,J39_d11,J39_b13,J39_b12,J39_d15,J39_d12}), // A-G 
     .digit_en({J39_b15, J39_c15}), // [1]=left, [0]=right (active LOW)
     .dp()                  // Decimal point
 );
 
+     reset_on_start
+     ros (
+        .reset(n_rst),
+        .clk(clk),
+        .manual(rst_pin)
+    );
+
+    clock_div clk_divider_1HZ
+    (
+        .clk(clk),
+        .n_rst(n_rst),
+        .new_clk(hz1_clk),
+        .div(2)
+    );
+
     logic n_rst;
     logic hz1_clk;
-    
-     alu_7seg_mux goon2 (
-    .clk(clk), 
-    .alu_result(8'h88), 
-    .seg({J39_c12,J39_e12,J39_e13,J39_a9,J39_b10,J39_a14,J39_e7}), // A-G 
-    .digit_en({J39_c13, J39_d13}), // [1]=left, [0]=right (active LOW)
-    .dp()                  // Decimal point
-);
+    // assign J40_m4 = hz1_clk;
+
+    assign led[7] = hz1_clk;
+
+    always_ff @(posedge hz1_clk, negedge n_rst) begin
+    if (~n_rst)
+        led_sampled <= 0;
+    else
+        led_sampled <= ALU_result1[7:0];
+    end
+
+
+//      alu_7seg_mux goon2 (
+//     .clk(clk), 
+//     .alu_result(8'h88), 
+//     .seg({J39_c12,J39_e12,J39_e13,J39_a9,J39_b10,J39_a14,J39_e7}), // A-G 
+//     .digit_en({J39_c13, J39_d13}), // [1]=left, [0]=right (active LOW)
+//     .dp()                  // Decimal point
+// );
 
      // assign J39_c13 = 0;
     // assign J39_d13 = 0;
@@ -91,67 +148,8 @@ module top (
     // assign J39_e7 = 1; // G
 
 
-    assign J40_n4 = 0; //Right Active
-    assign J40_m4 = 0; //Left Active
-
-
-    logic [31:0] ALU_result1;
-    logic [31:0] ALU_result2;
-    logic [31:0] imm1, imm2;
-    logic ALU_src1, ALU_src2;
-    logic [31:0] read_data1_dp1, read_data2_dp1;
-    logic [31:0] read_data1_dp2, read_data2_dp2;
-
-    //Testing Outputs
-    logic [6:0] opcode_1;
-    logic [6:0] opcode_2;
-
-    //Depndency Signals
-    logic freeze1, freeze2;
-    logic dependency_on_ins2;
-    logic nothing_filled;
-    logic datapath_1_enable;
-    logic datapath_2_enable;
-    
-    //Intructions from Queue
-    logic [31:0] instruction0;
-    logic [31:0] instruction1;
-
-    //Registers
-    logic [4:0] RegD1, reg1, reg2;
-    logic [4:0] RegD2, reg3, reg4;
-
-    logic clk_d;
-
-
-
-    
-    reset_on_start
-     ros (
-        .reset(n_rst),
-        .clk(clk),
-        .manual(rst_pin)
-    );
-
-    clock_div clk_divider_1HZ
-    (
-        .clk(clk),
-        .n_rst(n_rst),
-        .new_clk(hz1_clk),
-        .div(2_499_999)
-    );
-
-
-    logic [7:0] led_sampled;
-
-    always_ff @(posedge hz1_clk, negedge n_rst) begin
-    if (~n_rst)
-        led_sampled <= 0;
-    else
-        led_sampled <= ALU_result1[7:0];
-    end
-
-    assign led[7] = hz1_clk;
+    // assign J40_n4 = 0; //Right Active
+    // assign J40_m4 = 0; //Left Active
 
     cache1 cache_inst (
         .clk(hz1_clk),
