@@ -21,9 +21,9 @@ module top_tb;
 
     // Reset pulse
     initial begin
-        rst_pin = 1;
-        #20;
         rst_pin = 0;
+        #20;
+        rst_pin = 1;
     end
 
     // Display freeze, enable signals, instructions, and all registers
@@ -53,7 +53,7 @@ module top_tb;
     initial begin
         $dumpfile("waves/top.vcd");
         $dumpvars(0, top_tb);
-        #1000;
+        #5000;
         $display("=== DATAPATH SIMULATION COMPLETE ===");
         $finish;
     end

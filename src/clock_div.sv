@@ -13,7 +13,7 @@ module clock_div (
             new_clk <= 0;
         end
         else begin
-            if (counter == (div- 1)) begin
+            if (counter == (div - 1)) begin
                 new_clk <= ~new_clk;
                 counter <= 0;
             end
