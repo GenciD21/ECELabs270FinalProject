@@ -1,4 +1,4 @@
-`timescale 1s/1ps
+`timescale 1ns/1ps
 
 module top_tb;
 
@@ -29,7 +29,7 @@ module top_tb;
     initial begin
         $dumpfile("waves/top.vcd");
         $dumpvars(0, top_tb);
-        #5;
+        #1000;
         $display("=== DATAPATH SIMULATION COMPLETE ===");
         $finish;
     end
