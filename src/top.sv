@@ -81,7 +81,7 @@ module top (
         .clk(clk),
         .n_rst(n_rst),
         .new_clk(hz1_clk),
-        .div(2)
+        .div(24_999_999)
     );
 
     logic n_rst;
