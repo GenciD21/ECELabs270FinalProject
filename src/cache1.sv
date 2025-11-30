@@ -1,7 +1,7 @@
 module cache1 (
     input  logic clk,
     input  logic n_rst,
-
+    input  logic en,
     // Scheduler outputs
     input  logic freeze1,             // do not increment instructions     
     input  logic freeze2,             // do not increment instructions 
@@ -24,9 +24,7 @@ module cache1 (
     logic [31:0] PC;
     //CAVEAT PC UPDATE IS JANK
     always_comb begin
-    if (~n_rst)
-        next_PC = 32'h0000_0000;
-    else if ((n_ins[0] == ins[0] && n_ins[1] == ins[1] && n_ins[2] == ins[2] && n_ins[3] == ins[3] && n_ins[4] == ins[4] && n_ins[5] == ins[5]))
+    if ((n_ins[0] == ins[0] && n_ins[1] == ins[1] && n_ins[2] == ins[2] && n_ins[3] == ins[3] && n_ins[4] == ins[4] && n_ins[5] == ins[5]))
         next_PC = PC + 32'd6;
     else if (freeze1 || freeze2)
         next_PC = PC;
@@ -38,8 +36,13 @@ module cache1 (
         next_PC = PC;
     end
 
-    always_ff @(posedge clk) begin
+    always_ff @(posedge clk, negedge n_rst) begin
+        if(~n_rst) begin
+            PC <= 32'h0000_0000;
+        end
+        else if (en) begin
         PC <= next_PC;
+        end
     end
 
     // logic [31:0] n_instruction_0;
@@ -63,7 +66,8 @@ module cache1 (
         .wdata(32'd0),
         .rdata(n_ins[0]),
         .busy(busy),
-        .valid()
+        .valid(),
+        .en(en)
     );
 
     wb_simulator #(
@@ -79,7 +83,8 @@ module cache1 (
         .wdata(32'd0),
         .rdata(n_ins[1]),
         .busy(),
-        .valid()
+        .valid(),
+        .en(en)
     );
 
     wb_simulator #(
@@ -95,7 +100,8 @@ module cache1 (
         .wdata(32'd0),
         .rdata(n_ins[2]),
         .busy(),
-        .valid()
+        .valid(),
+        .en(en)
     );
 
     wb_simulator #(
@@ -111,7 +117,8 @@ module cache1 (
         .wdata(32'd0),
         .rdata(n_ins[3]),
         .busy(),
-        .valid()
+        .valid(),
+        .en(en)
     );
 
     wb_simulator #(
@@ -127,7 +134,8 @@ module cache1 (
         .wdata(32'd0),
         .rdata(n_ins[4]),
         .busy(),
-        .valid()
+        .valid(),
+        .en(en)
     );
 
     wb_simulator #(
@@ -143,7 +151,8 @@ module cache1 (
         .wdata(32'd0),
         .rdata(n_ins[5]),
         .busy(),
-        .valid()
+        .valid(),
+        .en(en)
     );
 
     always_ff @(posedge clk or negedge n_rst) begin
@@ -157,7 +166,7 @@ module cache1 (
             ins[i] <= 32'd0;
         end
     end 
-    else begin
+    else if (en) begin
         for (int i = 0; i < 6; i++) begin
             past_n_ins[i] <= n_ins[i];
         end

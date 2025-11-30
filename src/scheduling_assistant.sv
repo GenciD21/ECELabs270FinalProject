@@ -1,6 +1,7 @@
 module scheduling_assistant_controlunit (
     input  logic          clk,
     input  logic          n_rst,
+    input  logic          en,
 
     // Scheduler outputs
     output logic          freeze1,
@@ -39,7 +40,7 @@ module scheduling_assistant_controlunit (
         if (~n_rst) begin
             ins0 <= 32'd0;
             ins1 <= 32'd0;
-        end else begin
+        end else if(en) begin
             if (!freeze1 && !freeze2) begin //both are not frozen, let it flow freeze1 == 0 and freeze2 == 0
                 ins0 <= instruction0;
                 ins1 <= instruction1;
@@ -109,7 +110,7 @@ module scheduling_assistant_controlunit (
     always_ff @(posedge clk or negedge n_rst) begin
         if (~n_rst) begin
             dep_timer <= 2'd0;
-        end else begin
+        end else if(en) begin
             if (dep_detected && dep_timer == 2'd0)
                 dep_timer <= 2'd2;        // start countdown when a new dep appears
             else if (dep_timer != 2'd0)
@@ -154,7 +155,7 @@ module scheduling_assistant_controlunit (
         if (~n_rst) begin
             freeze1 <= 1'b0;
             freeze2 <= 1'b0;
-        end else begin
+        end else if(en) begin
             freeze1 <= freeze1_next;
             freeze2 <= freeze2_next;
         end

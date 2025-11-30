@@ -54,25 +54,22 @@ module top (
     logic [4:0] RegD1, reg1, reg2;
     logic [4:0] RegD2, reg3, reg4;
 
-    logic clk_d;
-
-
-
+    //LED
     logic [7:0] led_sampled;
     
 
-    alu_7seg_mux goon0 (
-    .clk(clk), 
-    .alu_result(led_sampled), 
-    .seg({J39_e11,J39_b20,J39_d11,J39_b13,J39_b12,J39_d15,J39_d12}), // A-G 
-    .digit_en({J39_b15, J39_c15}), // [1]=left, [0]=right (active LOW)
-    .dp()                  // Decimal point
-);
+//     alu_7seg_mux goon0 (
+//     .clk(clk), 
+//     .alu_result(led_sampled), 
+//     .seg({J39_e11,J39_b20,J39_d11,J39_b13,J39_b12,J39_d15,J39_d12}), // A-G 
+//     .digit_en({J39_b15, J39_c15}), // [1]=left, [0]=right (active LOW)
+//     .dp()                  // Decimal point
+// );
 
      reset_on_start
      ros (
         .reset(n_rst),
-        .clk(clk),
+        .clk(clk), // clk
         .manual(rst_pin)
     );
 
@@ -80,79 +77,23 @@ module top (
     (
         .clk(clk),
         .n_rst(n_rst),
-        .new_clk(hz1_clk),
-        .div(1)
+        .new_clk(hz1_clk_en),
+        .div(2)
     );
 
     logic n_rst;
-    logic hz1_clk;
-    // assign J40_m4 = hz1_clk;
+    logic hz1_clk_en;
 
-    assign led[7] = hz1_clk;
-
-    always_ff @(posedge hz1_clk, negedge n_rst) begin
+    always_ff @(posedge clk, negedge n_rst) begin
     if (~n_rst)
         led_sampled <= 0;
     else
         led_sampled <= ALU_result1[7:0];
     end
 
-
-//      alu_7seg_mux goon2 (
-//     .clk(clk), 
-//     .alu_result(8'h88), 
-//     .seg({J39_c12,J39_e12,J39_e13,J39_a9,J39_b10,J39_a14,J39_e7}), // A-G 
-//     .digit_en({J39_c13, J39_d13}), // [1]=left, [0]=right (active LOW)
-//     .dp()                  // Decimal point
-// );
-
-     // assign J39_c13 = 0;
-    // assign J39_d13 = 0;
-    // assign J39_c12 = 1; // A
-    // assign J39_e12 = 1; // B
-    // assign J39_e13 = 1; // C
-    // assign J39_a9 = 1; // E
-    // assign J39_b10 = 1; // D
-    // assign J39_a14 = 1;  // F
-    // assign J39_e7 = 1; // G
-
-    //E11 Is Right
-    // assign J39_b15 = 0; // Display 1 
-    // assign J39_c15 = 0; // Display 2 
-    // assign J39_e11 = 0; // A 
-    // assign J39_b20 = 0; // B
-    // assign J39_d11 = 0; // C
-    // assign J39_b13 = 0; // D
-    // assign J40_m4 = 0; // E
-    // assign J39_d15 = 0; // F
-    // assign J39_d12 = 0; // G
-
-    //J39_c13, //Display 1
-    //J39_d13  // Disply 2
-    //J39_c12, // A
-    //J39_e12, // B
-    //J39_a14
-    //J39_e13 
-    //J39_A9
-    //J39_B10
-    //J39_E7 
-
-    // assign J39_c13 = 0;
-    // assign J39_d13 = 0;
-    // assign J39_c12 = 1; // A
-    // assign J39_e12 = 1; // B
-    // assign J39_e13 = 1; // C
-    // assign J39_a9 = 1; // E
-    // assign J39_b10 = 1; // D
-    // assign J39_a14 = 1;  // F
-    // assign J39_e7 = 1; // G
-
-
-    // assign J40_n4 = 0; //Right Active
-    // assign J40_m4 = 0; //Left Active
-
     cache1 cache_inst (
-        .clk(clk),
+        .clk(clk), // clk
+        .en(hz1_clk_en),
         .n_rst(n_rst),
         .freeze1(freeze1),
         .freeze2(freeze2),
@@ -163,7 +104,8 @@ module top (
     );
 
     scheduling_assistant_controlunit sched_assist_inst (
-        .clk(clk),
+        .clk(clk), // clk
+        .en(hz1_clk_en),
         .n_rst(n_rst),
         .freeze1(freeze1),
         .freeze2(freeze2),
@@ -207,7 +149,8 @@ module top (
 
     // Dual register file
     register_file reg_file_inst (
-        .clk(clk),
+        .clk(clk), // clk
+        .en(hz1_clk_en),
         .n_rst(n_rst),
         .reg_write((datapath_1_enable || !freeze1) && instruction0 != 32'd0),
         .reg_write2((datapath_2_enable || !freeze2) && instruction1 != 32'd0),
