@@ -2,32 +2,35 @@
 
 module top_tb;
 
-    logic clk=0;
-    logic rst_pin;
-    logic [7:0] led;  // onboard LED but
-    // logic rst_pin, J39_b15, J39_c15, J39_b20, J39_e11, J39_b10, 
-    // J39_a14, J39_d13, J39_e12, J40_m3, J40_j5, J40_a15, J40_h2, J40_j4, 
-    // ,J40_j3, J40_l4, J40_m4, J40_n4, J40_k5;
+    logic hz100=0;
+    logic reset;
+    logic [20:0] pb;
+    logic [7:0] left, right;
+    logic [7:0] ss7, ss6, ss5, ss4, ss3, ss2, ss1, ss0;
+    logic       red, green, blue;
+    logic [7:0] txdata;
+    logic [7:0] rxdata;
+    logic      txclk, rxclk;
+    logic       txready, rxready;
 
     // Instantiate DUT
     top dut (
-        .clk(clk),
-        .rst_pin(rst_pin),
-        .led(led)
+        .hz100(hz100),
+        .reset(reset)
     );
 
     // Clock generation: 10ns perio
-    always #1 clk = ~clk;
+    always #1 hz100 = ~hz100;
 
     // Reset pulse
     initial begin
-        rst_pin = 0;
+        reset = 1;
         #20;
-        rst_pin = 1;
+        reset = 0;
     end
 
     // Display freeze, enable signals, instructions, and all registers
-    always_ff @(posedge clk) begin
+    always_ff @(posedge hz100) begin
         $display("[%0t] freeze1=%b freeze2=%b enable1=%b enable2=%b",
                  $time, dut.freeze1, dut.freeze2,
                  dut.datapath_1_enable, dut.datapath_2_enable);

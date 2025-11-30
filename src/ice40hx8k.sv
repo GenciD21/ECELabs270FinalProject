@@ -52,25 +52,25 @@ module ice40hx8k (hwclk,pb,ss7,ss6,ss5,ss4,ss3,ss2,ss1,ss0,left,right,red,green,
     wire BYPASS = 0;
     wire RESETB = 1;
     wire serclk;
-    SB_PLL40_CORE #(
-        .FEEDBACK_PATH("PHASE_AND_DELAY"),
-        .DELAY_ADJUSTMENT_MODE_FEEDBACK("FIXED"),
-        .DELAY_ADJUSTMENT_MODE_RELATIVE("FIXED"),
-        .PLLOUT_SELECT("SHIFTREG_0deg"),
-        .SHIFTREG_DIV_MODE(1'b0), // 0 => div-by-4; 1 => div-by-7
-        .FDA_FEEDBACK(4'b0000),
-        .FDA_RELATIVE(4'b0000),
-        .DIVR(4'b1100),        // 12
-        .DIVF(7'b0000011),     // 3
-        .DIVQ(3'b000),         // 0
-        .FILTER_RANGE(3'b001), // 1
-    ) pll (
-        .REFERENCECLK (hwclk),
-        .PLLOUTCORE   (serclk),
-        .BYPASS       (BYPASS),
-        .RESETB       (RESETB)
-        //.LOCK (LOCK)
-    );
+    // SB_PLL40_CORE #(
+    //     .FEEDBACK_PATH("PHASE_AND_DELAY"),
+    //     .DELAY_ADJUSTMENT_MODE_FEEDBACK("FIXED"),
+    //     .DELAY_ADJUSTMENT_MODE_RELATIVE("FIXED"),
+    //     .PLLOUT_SELECT("SHIFTREG_0deg"),
+    //     .SHIFTREG_DIV_MODE(1'b0), // 0 => div-by-4; 1 => div-by-7
+    //     .FDA_FEEDBACK(4'b0000),
+    //     .FDA_RELATIVE(4'b0000),
+    //     .DIVR(4'b1100),        // 12
+    //     .DIVF(7'b0000011),     // 3
+    //     .DIVQ(3'b000),         // 0
+    //     .FILTER_RANGE(3'b001)  // 1
+    // ) pll (
+    //     .REFERENCECLK (hwclk),
+    //     .PLLOUTCORE   (serclk),
+    //     .BYPASS       (BYPASS),
+    //     .RESETB       (RESETB)
+    //     //.LOCK (LOCK)
+    // );
 
     reg xmit;
     wire [7:0] txdata;
@@ -81,19 +81,19 @@ module ice40hx8k (hwclk,pb,ss7,ss6,ss5,ss4,ss3,ss2,ss1,ss0,left,right,red,green,
     wire       rxclk;
     wire       rxready;
 
-    uart uart_inst(
-        .clk(serclk),
-        .rst(0),
-        .input_axis_tdata(txdata),
-        .input_axis_tvalid(xmit),
-        .input_axis_tready(txready),
-        .output_axis_tdata(rxdata),
-        .output_axis_tvalid(rxready),
-        .output_axis_tready(recv),
-        .rxd(Rx),
-        .txd(Tx),
-        .prescale(4)
-    );
+    // uart uart_inst(
+    //     .clk(serclk),
+    //     .rst(0),
+    //     .input_axis_tdata(txdata),
+    //     .input_axis_tvalid(xmit),
+    //     .input_axis_tready(txready),
+    //     .output_axis_tdata(rxdata),
+    //     .output_axis_tvalid(rxready),
+    //     .output_axis_tready(recv),
+    //     .rxd(Rx),
+    //     .txd(Tx),
+    //     .prescale(4)
+    // );
 
     always_ff @(posedge txclk, negedge txready)
       if (!txready)
@@ -110,7 +110,7 @@ module ice40hx8k (hwclk,pb,ss7,ss6,ss5,ss4,ss3,ss2,ss1,ss0,left,right,red,green,
     wire reset;
     reset_on_start ros (reset, hz100, pb[3] && pb[0] && pb[16]);
 
-    system_top top_inst(
+    top top_inst(
       hz100, reset, pb,
       left, right, ss7, ss6, ss5, ss4, ss3, ss2, ss1, ss0,
       red, green, blue,

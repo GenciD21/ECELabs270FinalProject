@@ -36,8 +36,8 @@ module cache1 (
         next_PC = PC;
     end
 
-    always_ff @(posedge clk, negedge n_rst) begin
-        if(~n_rst) begin
+    always_ff @(posedge clk, posedge n_rst) begin
+        if(n_rst) begin
             PC <= 32'h0000_0000;
         end
         else if (en) begin
@@ -59,7 +59,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst0 (
         .clk(clk),
-        .rst_n(n_rst),
+        .rst_n(!n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC),
@@ -67,7 +67,7 @@ module cache1 (
         .rdata(n_ins[0]),
         .busy(busy),
         .valid(),
-        .en(en)
+        .en(1)
     );
 
     wb_simulator #(
@@ -76,7 +76,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst1 (
         .clk(clk),
-        .rst_n(n_rst),
+        .rst_n(!n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd4),
@@ -84,7 +84,7 @@ module cache1 (
         .rdata(n_ins[1]),
         .busy(),
         .valid(),
-        .en(en)
+        .en(1)
     );
 
     wb_simulator #(
@@ -93,7 +93,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst2 (
         .clk(clk),
-        .rst_n(n_rst),
+        .rst_n(!n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd8),
@@ -101,7 +101,7 @@ module cache1 (
         .rdata(n_ins[2]),
         .busy(),
         .valid(),
-        .en(en)
+        .en(1)
     );
 
     wb_simulator #(
@@ -110,7 +110,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst3 (
         .clk(clk),
-        .rst_n(n_rst),
+        .rst_n(!n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd12),
@@ -118,7 +118,7 @@ module cache1 (
         .rdata(n_ins[3]),
         .busy(),
         .valid(),
-        .en(en)
+        .en(1)
     );
 
     wb_simulator #(
@@ -127,7 +127,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst4 (
         .clk(clk),
-        .rst_n(n_rst),
+        .rst_n(!n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd16),
@@ -135,7 +135,7 @@ module cache1 (
         .rdata(n_ins[4]),
         .busy(),
         .valid(),
-        .en(en)
+        .en(1)
     );
 
     wb_simulator #(
@@ -144,7 +144,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst5 (
         .clk(clk),
-        .rst_n(n_rst),
+        .rst_n(!n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd20),
@@ -152,11 +152,11 @@ module cache1 (
         .rdata(n_ins[5]),
         .busy(),
         .valid(),
-        .en(en)
+        .en(1)
     );
 
-    always_ff @(posedge clk or negedge n_rst) begin
-    if (~n_rst) begin
+    always_ff @(posedge clk or posedge n_rst) begin
+    if (n_rst) begin
         for (int i = 0; i < 6; i++) begin
             past_n_ins[i] <= 32'd0;
         end
