@@ -25,20 +25,20 @@ BIT        := $(BUILD)/$(TOP).bit
 # ================================
 # Default target
 # ================================
-all: $(BIT)
+#all: $(BIT)
 
 # ================================
 # Synthesis
 # ================================
-$(JSON): $(SRC) | $(BUILD)
-	$(YOSYS) \
+#$(JSON): $(SRC) | $(BUILD)
+#	$(YOSYS) \
 	  -p "read_verilog -sv $(SRC); synth_ecp5 -top $(TOP) -json $(JSON)"
 
 # ================================
 # Place and route
 # ================================
-$(CONFIG): $(JSON) $(PCF)
-	$(NEXTPNR) \
+#$(CONFIG): $(JSON) $(PCF)
+#	$(NEXTPNR) \
 	    --$(DEVICE) \
 	    --package $(PACKAGE) \
 	    --json $(JSON) \
@@ -48,18 +48,42 @@ $(CONFIG): $(JSON) $(PCF)
 # ================================
 # Bitstream pack
 # ================================
-$(BIT): $(CONFIG)
-	$(ECPPACK) $(CONFIG) $(BIT)
+#$(BIT): $(CONFIG)
+#	$(ECPPACK) $(CONFIG) $(BIT)
 
 # ================================
 # Program board
 # ================================
-prog: $(BIT)
-	$(PROG) -b ecp5_evn $(BIT)
+#prog: $(BIT)
+#	$(PROG) -b ecp5_evn $(BIT)
+
+
+#########################
+# Flash to FPGA
+$(BUILD)/$(PROJ).json : $(ICE) $(SRC) $(PINMAP) Makefile
+	# lint with Verilator
+# 	verilator --top-module top $(SRC) $(SUP)
+	# if build folder doesn't exist, create it
+	mkdir -p $(BUILD)
+	# synthesize using Yosys
+	$(YOSYS) -p "read_json $(JSON); read_verilog -sv -noblackbox $(FILES); synth_ice40 -top ice40hx8k -json $(BUILD)/$(PROJ).json"
+
+$(BUILD)/$(PROJ).asc : $(BUILD)/$(PROJ).json
+	# Place and route using nextpnr
+	$(NEXTPNR) --hx8k --package ct256 --pcf $(PINMAP) --asc $(BUILD)/$(PROJ).asc --json $(BUILD)/$(PROJ).json 2> >(sed -e 's/^.* 0 errors$$//' -e '/^Info:/d' -e '/^[ ]*$$/d' 1>&2)
+
+$(BUILD)/$(PROJ).bin : $(BUILD)/$(PROJ).asc
+	# Convert to bitstream using IcePack
+	icepack $(BUILD)/$(PROJ).asc $(BUILD)/$(PROJ).bin
 
 # ================================
 # Utils
 # ================================
+
+
+cram: $(BUILD)/$(PROJ).bin
+	iceprog -S $(BUILD)/$(PROJ).bin
+
 clean:
 	rm -rf $(BUILD)
 
@@ -82,7 +106,6 @@ sim_%_src:
 	else \
 		gtkwave waves/$*.vcd; \
 	fi
-
 
 .PHONY: all clean prog
 
