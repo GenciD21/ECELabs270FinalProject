@@ -17,7 +17,7 @@ module scheduling_assistant_controlunit (
     input  logic          nothing_filled,
     input  logic [31:0]   instruction0,
     input  logic [31:0]   instruction1,
-    output logic [31:0] Imm1, Imm2,
+    output logic [31:0]   Imm1, Imm2,
     output logic ALUSrc1,
     output logic ALUSrc2
 );
@@ -29,7 +29,13 @@ module scheduling_assistant_controlunit (
     logic [1:0]   dep_timer;
     logic         freeze1_next, freeze2_next;
 
-  
+    // ----- added for edge detection -----
+    logic         dep_prev;      // registered previous value of dep_detected
+    logic         dep_rising;    // dep_detected && ~dep_prev
+
+    //==================================================================
+    // Instruction latching (unchanged)
+    //==================================================================
     always_ff @(posedge clk or negedge n_rst) begin
         if (~n_rst) begin
             ins0 <= 32'd0;
@@ -45,8 +51,9 @@ module scheduling_assistant_controlunit (
         end
     end
 
-    
-    
+    //==================================================================
+    // Control units (unchanged)
+    //==================================================================
     control_unit cu1 (
         .instruction(ins0),
         .ALUSrc(ALUSrc1),
@@ -66,6 +73,9 @@ module scheduling_assistant_controlunit (
     );
 
 
+    //==================================================================
+    // Dependency detection (unchanged semantics)
+    //==================================================================
     always_comb begin
         dep_detected = 1'b0;
         dependency_on_ins2 = 1'b0;
@@ -101,7 +111,25 @@ module scheduling_assistant_controlunit (
         end
     end
 
-  
+    //==================================================================
+    // dep_prev update (register previous dep_detected)
+    //==================================================================
+    always_ff @(posedge clk or negedge n_rst) begin
+        if (~n_rst) begin
+            dep_prev <= 1'b0;
+        end else begin
+            dep_prev <= dep_detected;
+        end
+    end
+
+    // edge detect (combinational)
+    always_comb begin
+        dep_rising = dep_detected && ~dep_prev;
+    end
+
+    //==================================================================
+    // Dependency timer (unchanged)
+    //==================================================================
     always_ff @(posedge clk or negedge n_rst) begin
         if (~n_rst) begin
             dep_timer <= 2'd0;
@@ -115,7 +143,9 @@ module scheduling_assistant_controlunit (
         end
     end
 
-   
+    //==================================================================
+    // freeze_next computation (unchanged)
+    //==================================================================
     always_comb begin
         freeze1_next = 1'b0;
         freeze2_next = 1'b0;
@@ -139,10 +169,13 @@ module scheduling_assistant_controlunit (
         end
     end
 
-    // COMBINATIONAL outputs that react immediately to dep_detected OR use freeze_next
+    //==================================================================
+    // COMBINATIONAL outputs that react to rising dependency only
+    // (use dep_rising instead of dep_detected to avoid re-triggering)
+    //==================================================================
     always_comb begin
-        if (dep_detected && dep_timer == 2'd0) begin
-            // Immediate reaction to new dependency
+        if (dep_rising && dep_timer == 2'd0) begin
+            // Immediate reaction to *new* dependency only
             freeze1 = 1'b1;
             freeze2 = 1'b1;
         end else begin
