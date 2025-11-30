@@ -53,7 +53,7 @@ module top_tb;
     initial begin
         $dumpfile("waves/top.vcd");
         $dumpvars(0, top_tb);
-        #10000;
+        #100;
         $display("=== DATAPATH SIMULATION COMPLETE ===");
         $finish;
     end
