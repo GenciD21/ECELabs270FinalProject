@@ -156,7 +156,7 @@ module top (
         .n_rst(n_rst),
         .freeze1(freeze1),
         .freeze2(freeze2),
-        .dependency_on_ins2(1'b0),
+        .dependency_on_ins2(dependency_on_ins2),
         .nothing_filled(nothing_filled),
         .instruction0(instruction0),
         .instruction1(instruction1)
