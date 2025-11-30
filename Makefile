@@ -38,13 +38,15 @@ BIN  := $(BUILD)/$(TOP).bin
 # FPGA Build Flow
 # ================================
 
-$(JSON): $(FILES) Makefile
+$(JSON): $(FILES) $(PINMAP) Makefile
 	mkdir -p $(BUILD)
-	$(YOSYS) -p "read_verilog -sv $(FILES); \
-	             hierarchy -check -top $(TOP); \
-	             proc; opt; fsm; opt; \
-	             techmap; opt; \
-	             synth_ice40 -top $(TOP) -json $(JSON)"
+	$(YOSYS) -p "\
+	    read_verilog -sv -noblackbox $(FILES); \
+		read_verilog -lib $(shell yosys-config --datdir)/ice40/cells_sim.v; \
+	    hierarchy -check -top $(TOP); \
+	    proc; opt; fsm; opt; \
+	    techmap; opt; \
+	    synth_ice40 -top $(TOP) -json $(JSON)"
 
 $(ASC): $(JSON)
 	$(NEXTPNR) --hx8k --package ct256 --pcf $(PINMAP) \
