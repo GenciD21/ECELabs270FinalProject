@@ -1,25 +1,35 @@
 # ================================
 # Project Configuration
 # ================================
+
 TOP        := ice40hx8k
 SRC_DIR    := src
 UART_DIR   := uart
 TB_DIR     := testbench
 BUILD      := build
-PINMAP     := constraints/ice40.pcf
+PINMAP     := constraints/pinmap.pcf
 
-# FPGA tools
+# ================================
+# FPGA Tools
+# ================================
+
 YOSYS    := yosys
 NEXTPNR  := nextpnr-ice40
 ICEPACK  := icepack
 PROG     := iceprog
 
+# ================================
 # Source Files
+# ================================
+
 SRC   := $(wildcard $(SRC_DIR)/*.sv)
 UART  := $(wildcard $(UART_DIR)/*.v)
 FILES := $(SRC) $(UART)
 
-# Build Files
+# ================================
+# Build Products
+# ================================
+
 JSON := $(BUILD)/$(TOP).json
 ASC  := $(BUILD)/$(TOP).asc
 BIN  := $(BUILD)/$(TOP).bin
@@ -30,10 +40,15 @@ BIN  := $(BUILD)/$(TOP).bin
 
 $(JSON): $(FILES) Makefile
 	mkdir -p $(BUILD)
-	$(YOSYS) -p "read_verilog -sv $(FILES); synth_ice40 -top $(TOP) -json $(JSON)"
+	$(YOSYS) -p "read_verilog -sv $(FILES); \
+	             hierarchy -check -top $(TOP); \
+	             proc; opt; fsm; opt; \
+	             techmap; opt; \
+	             synth_ice40 -top $(TOP) -json $(JSON)"
 
 $(ASC): $(JSON)
-	$(NEXTPNR) --hx8k --package ct256 --pcf $(PINMAP) --json $(JSON) --asc $(ASC)
+	$(NEXTPNR) --hx8k --package ct256 --pcf $(PINMAP) \
+	           --json $(JSON) --asc $(ASC) --top $(TOP)
 
 $(BIN): $(ASC)
 	$(ICEPACK) $(ASC) $(BIN)
