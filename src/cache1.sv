@@ -26,7 +26,7 @@ module cache1 (
     always_comb begin
     if (~n_rst)
         next_PC = 32'h0000_0000;
-    else if ((freeze1 || freeze2) && dependency_on_ins2)
+    else if ((freeze1 || freeze2))
         next_PC = PC;
     else if ((n_ins[0] == ins[0] && n_ins[1] == ins[1] && n_ins[2] == ins[2] && n_ins[3] == ins[3] && n_ins[4] == ins[4] && n_ins[5] == ins[5]))
         next_PC = PC + 32'd6;
