@@ -66,12 +66,12 @@ module top (
 //     .dp()                  // Decimal point
 // );
 
-     reset_on_start
-     ros (
-        .reset(n_rst),
-        .clk(clk), // clk
-        .manual(rst_pin)
-    );
+    //  reset_on_start
+    //  ros (
+    //     .reset(n_rst),
+    //     .clk(clk), // clk
+    //     .manual(rst_pin)
+    // );
 
     clock_div clk_divider_1HZ
     (
