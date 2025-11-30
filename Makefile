@@ -21,6 +21,7 @@ BUILD      := build
 JSON       := $(BUILD)/$(TOP).json
 CONFIG     := $(BUILD)/$(TOP).config
 BIT        := $(BUILD)/$(TOP).bit
+JSON       := ll.json
 
 # ================================
 # Default target
