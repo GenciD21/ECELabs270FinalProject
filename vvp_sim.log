@@ -844,8 +844,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[35000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00110113
+[35000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00000001 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -881,7 +881,7 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00000000
+           ins[0] = 00000001
            ins[1] = 00110113
            ins[2] = 00108093
            ins[3] = 00110113
@@ -893,8 +893,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[37000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00110113
+[37000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00108093 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -930,20 +930,20 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00000000
+           ins[0] = 00108093
            ins[1] = 00110113
            ins[2] = 00108093
            ins[3] = 00110113
-           ins[4] = 00108093
-           ins[5] = 00110113
+           ins[4] = 00000000
+           ins[5] = 00000000
            ins[6] = 00000000
            ins[7] = 00000000
            ins[8] = 00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[39000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00110113
+[39000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00108093 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -979,20 +979,20 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00000000
+           ins[0] = 00108093
            ins[1] = 00110113
            ins[2] = 00108093
            ins[3] = 00110113
-           ins[4] = 00108093
-           ins[5] = 00110113
+           ins[4] = 00000000
+           ins[5] = 00000000
            ins[6] = 00000000
            ins[7] = 00000000
            ins[8] = 00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[41000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00110113
+[41000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00108093 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1028,12 +1028,12 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00000000
+           ins[0] = 00108093
            ins[1] = 00110113
            ins[2] = 00108093
            ins[3] = 00110113
-           ins[4] = 00108093
-           ins[5] = 00110113
+           ins[4] = 00000000
+           ins[5] = 00000000
            ins[6] = 00000000
            ins[7] = 00000000
            ins[8] = 00000000
@@ -1041,7 +1041,7 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[10] = 00000000
            ins[11] = 00000000
 [43000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=00110113 ins1=00108093
+         ins0=00108093 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1077,59 +1077,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00110113
-           ins[1] = 00108093
-           ins[2] = 00110113
-           ins[3] = 00108093
-           ins[4] = 00110113
-           ins[5] = 00108093
-           ins[6] = 00000000
-           ins[7] = 00000000
-           ins[8] = 00000000
-           ins[9] = 00000000
-           ins[10] = 00000000
-           ins[11] = 00000000
-[45000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=00110113 ins1=00108093
-ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
-         Register File:
-           x0 = 00000000
-           x1 = 00000000
-           x2 = 00000000
-           x3 = 00000000
-           x4 = 00000000
-           x5 = 00000000
-           x6 = 00000000
-           x7 = 00000000
-           x8 = 00000000
-           x9 = 00000000
-           x10 = 00000000
-           x11 = 00000000
-           x12 = 00000000
-           x13 = 00000000
-           x14 = 00000000
-           x15 = 00000000
-           x16 = 00000000
-           x17 = 00000000
-           x18 = 00000000
-           x19 = 00000000
-           x20 = 00000000
-           x21 = 00000000
-           x22 = 00000000
-           x23 = 00000000
-           x24 = 00000000
-           x25 = 00000000
-           x26 = 00000000
-           x27 = 00000000
-           x28 = 00000000
-           x29 = 00000000
-           x30 = 00000000
-           x31 = 00000000
-         Cache Contents (ins[0:11]):
-           ins[0] = 00110113
-           ins[1] = 00108093
-           ins[2] = 00110113
-           ins[3] = 00108093
+           ins[0] = 00108093
+           ins[1] = 00110113
+           ins[2] = 00000000
+           ins[3] = 00000000
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1138,8 +1089,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[47000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=00110113 ins1=00108093
+[45000] freeze1=0 freeze2=0 enable1=0 enable2=0
+         ins0=00000000 ins1=00000000
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1175,10 +1126,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00110113
-           ins[1] = 00108093
-           ins[2] = 00110113
-           ins[3] = 00108093
+           ins[0] = 00000000
+           ins[1] = 00000000
+           ins[2] = 00000000
+           ins[3] = 00000000
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1187,8 +1138,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[49000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=00110113 ins1=00108093
+[47000] freeze1=0 freeze2=0 enable1=0 enable2=0
+         ins0=00000000 ins1=00000000
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1224,10 +1175,59 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00110113
-           ins[1] = 00108093
-           ins[2] = 00110113
-           ins[3] = 00108093
+           ins[0] = 00000000
+           ins[1] = 00000000
+           ins[2] = 00000000
+           ins[3] = 00000000
+           ins[4] = 00000000
+           ins[5] = 00000000
+           ins[6] = 00000000
+           ins[7] = 00000000
+           ins[8] = 00000000
+           ins[9] = 00000000
+           ins[10] = 00000000
+           ins[11] = 00000000
+[49000] freeze1=0 freeze2=0 enable1=0 enable2=0
+         ins0=00000000 ins1=00000000
+ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
+         Register File:
+           x0 = 00000000
+           x1 = 00000000
+           x2 = 00000000
+           x3 = 00000000
+           x4 = 00000000
+           x5 = 00000000
+           x6 = 00000000
+           x7 = 00000000
+           x8 = 00000000
+           x9 = 00000000
+           x10 = 00000000
+           x11 = 00000000
+           x12 = 00000000
+           x13 = 00000000
+           x14 = 00000000
+           x15 = 00000000
+           x16 = 00000000
+           x17 = 00000000
+           x18 = 00000000
+           x19 = 00000000
+           x20 = 00000000
+           x21 = 00000000
+           x22 = 00000000
+           x23 = 00000000
+           x24 = 00000000
+           x25 = 00000000
+           x26 = 00000000
+           x27 = 00000000
+           x28 = 00000000
+           x29 = 00000000
+           x30 = 00000000
+           x31 = 00000000
+         Cache Contents (ins[0:11]):
+           ins[0] = 00000000
+           ins[1] = 00000000
+           ins[2] = 00000000
+           ins[3] = 00000000
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1237,7 +1237,7 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[10] = 00000000
            ins[11] = 00000000
 [51000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=00110113 ins1=00108093
+         ins0=00108093 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1273,10 +1273,59 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00110113
-           ins[1] = 00108093
-           ins[2] = 00000000
-           ins[3] = 00000000
+           ins[0] = 00108093
+           ins[1] = 00110113
+           ins[2] = 00108093
+           ins[3] = 00110113
+           ins[4] = 00108093
+           ins[5] = 00110113
+           ins[6] = 00000000
+           ins[7] = 00000000
+           ins[8] = 00000000
+           ins[9] = 00000000
+           ins[10] = 00000000
+           ins[11] = 00000000
+[53000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00108093 ins1=00110113
+ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
+         Register File:
+           x0 = 00000000
+           x1 = 00000000
+           x2 = 00000000
+           x3 = 00000000
+           x4 = 00000000
+           x5 = 00000000
+           x6 = 00000000
+           x7 = 00000000
+           x8 = 00000000
+           x9 = 00000000
+           x10 = 00000000
+           x11 = 00000000
+           x12 = 00000000
+           x13 = 00000000
+           x14 = 00000000
+           x15 = 00000000
+           x16 = 00000000
+           x17 = 00000000
+           x18 = 00000000
+           x19 = 00000000
+           x20 = 00000000
+           x21 = 00000000
+           x22 = 00000000
+           x23 = 00000000
+           x24 = 00000000
+           x25 = 00000000
+           x26 = 00000000
+           x27 = 00000000
+           x28 = 00000000
+           x29 = 00000000
+           x30 = 00000000
+           x31 = 00000000
+         Cache Contents (ins[0:11]):
+           ins[0] = 00108093
+           ins[1] = 00110113
+           ins[2] = 00108093
+           ins[3] = 00110113
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1285,8 +1334,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[53000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00000000
+[55000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00108093 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1322,10 +1371,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00000000
-           ins[1] = 00000000
-           ins[2] = 00000000
-           ins[3] = 00000000
+           ins[0] = 00108093
+           ins[1] = 00110113
+           ins[2] = 00108093
+           ins[3] = 00110113
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1334,8 +1383,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[55000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00000000
+[57000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00108093 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1371,59 +1420,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00000000
-           ins[1] = 00000000
-           ins[2] = 00000000
-           ins[3] = 00000000
-           ins[4] = 00000000
-           ins[5] = 00000000
-           ins[6] = 00000000
-           ins[7] = 00000000
-           ins[8] = 00000000
-           ins[9] = 00000000
-           ins[10] = 00000000
-           ins[11] = 00000000
-[57000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00000000
-ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
-         Register File:
-           x0 = 00000000
-           x1 = 00000000
-           x2 = 00000000
-           x3 = 00000000
-           x4 = 00000000
-           x5 = 00000000
-           x6 = 00000000
-           x7 = 00000000
-           x8 = 00000000
-           x9 = 00000000
-           x10 = 00000000
-           x11 = 00000000
-           x12 = 00000000
-           x13 = 00000000
-           x14 = 00000000
-           x15 = 00000000
-           x16 = 00000000
-           x17 = 00000000
-           x18 = 00000000
-           x19 = 00000000
-           x20 = 00000000
-           x21 = 00000000
-           x22 = 00000000
-           x23 = 00000000
-           x24 = 00000000
-           x25 = 00000000
-           x26 = 00000000
-           x27 = 00000000
-           x28 = 00000000
-           x29 = 00000000
-           x30 = 00000000
-           x31 = 00000000
-         Cache Contents (ins[0:11]):
-           ins[0] = 00000000
-           ins[1] = 00000000
-           ins[2] = 00000000
-           ins[3] = 00000000
+           ins[0] = 00108093
+           ins[1] = 00110113
+           ins[2] = 00108093
+           ins[3] = 00110113
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1471,57 +1471,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Cache Contents (ins[0:11]):
            ins[0] = 00108093
            ins[1] = 00110113
-           ins[2] = 00108093
-           ins[3] = 00110113
-           ins[4] = 00108093
-           ins[5] = 00110113
-           ins[6] = 00000000
-           ins[7] = 00000000
-           ins[8] = 00000000
-           ins[9] = 00000000
-           ins[10] = 00000000
-           ins[11] = 00000000
-[61000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=00108093 ins1=00110113
-ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
-         Register File:
-           x0 = 00000000
-           x1 = 00000000
-           x2 = 00000000
-           x3 = 00000000
-           x4 = 00000000
-           x5 = 00000000
-           x6 = 00000000
-           x7 = 00000000
-           x8 = 00000000
-           x9 = 00000000
-           x10 = 00000000
-           x11 = 00000000
-           x12 = 00000000
-           x13 = 00000000
-           x14 = 00000000
-           x15 = 00000000
-           x16 = 00000000
-           x17 = 00000000
-           x18 = 00000000
-           x19 = 00000000
-           x20 = 00000000
-           x21 = 00000000
-           x22 = 00000000
-           x23 = 00000000
-           x24 = 00000000
-           x25 = 00000000
-           x26 = 00000000
-           x27 = 00000000
-           x28 = 00000000
-           x29 = 00000000
-           x30 = 00000000
-           x31 = 00000000
-         Cache Contents (ins[0:11]):
-           ins[0] = 00108093
-           ins[1] = 00110113
-           ins[2] = 00108093
-           ins[3] = 00110113
+           ins[2] = 00000000
+           ins[3] = 00000000
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1530,8 +1481,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[63000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=00108093 ins1=00110113
+[61000] freeze1=0 freeze2=0 enable1=0 enable2=0
+         ins0=00000000 ins1=00000000
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1567,10 +1518,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00108093
-           ins[1] = 00110113
-           ins[2] = 00108093
-           ins[3] = 00110113
+           ins[0] = 00000000
+           ins[1] = 00000000
+           ins[2] = 00000000
+           ins[3] = 00000000
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1579,8 +1530,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[65000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=00108093 ins1=00110113
+[63000] freeze1=0 freeze2=0 enable1=0 enable2=0
+         ins0=00000000 ins1=00000000
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1616,10 +1567,59 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00108093
-           ins[1] = 00110113
-           ins[2] = 00108093
-           ins[3] = 00110113
+           ins[0] = 00000000
+           ins[1] = 00000000
+           ins[2] = 00000000
+           ins[3] = 00000000
+           ins[4] = 00000000
+           ins[5] = 00000000
+           ins[6] = 00000000
+           ins[7] = 00000000
+           ins[8] = 00000000
+           ins[9] = 00000000
+           ins[10] = 00000000
+           ins[11] = 00000000
+[65000] freeze1=0 freeze2=0 enable1=0 enable2=0
+         ins0=00000000 ins1=00000000
+ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
+         Register File:
+           x0 = 00000000
+           x1 = 00000000
+           x2 = 00000000
+           x3 = 00000000
+           x4 = 00000000
+           x5 = 00000000
+           x6 = 00000000
+           x7 = 00000000
+           x8 = 00000000
+           x9 = 00000000
+           x10 = 00000000
+           x11 = 00000000
+           x12 = 00000000
+           x13 = 00000000
+           x14 = 00000000
+           x15 = 00000000
+           x16 = 00000000
+           x17 = 00000000
+           x18 = 00000000
+           x19 = 00000000
+           x20 = 00000000
+           x21 = 00000000
+           x22 = 00000000
+           x23 = 00000000
+           x24 = 00000000
+           x25 = 00000000
+           x26 = 00000000
+           x27 = 00000000
+           x28 = 00000000
+           x29 = 00000000
+           x30 = 00000000
+           x31 = 00000000
+         Cache Contents (ins[0:11]):
+           ins[0] = 00000000
+           ins[1] = 00000000
+           ins[2] = 00000000
+           ins[3] = 00000000
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1667,18 +1667,18 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Cache Contents (ins[0:11]):
            ins[0] = 00108093
            ins[1] = 00110113
-           ins[2] = 00000000
-           ins[3] = 00000000
-           ins[4] = 00000000
-           ins[5] = 00000000
+           ins[2] = 00108093
+           ins[3] = 00110113
+           ins[4] = 00108093
+           ins[5] = 00110113
            ins[6] = 00000000
            ins[7] = 00000000
            ins[8] = 00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[69000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00000000
+[69000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00108093 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1714,10 +1714,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00000000
-           ins[1] = 00000000
-           ins[2] = 00000000
-           ins[3] = 00000000
+           ins[0] = 00108093
+           ins[1] = 00110113
+           ins[2] = 00108093
+           ins[3] = 00110113
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1726,8 +1726,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[71000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00000000
+[71000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00108093 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1763,10 +1763,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00000000
-           ins[1] = 00000000
-           ins[2] = 00000000
-           ins[3] = 00000000
+           ins[0] = 00108093
+           ins[1] = 00110113
+           ins[2] = 00108093
+           ins[3] = 00110113
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1775,8 +1775,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[73000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00000000
+[73000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00108093 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1812,10 +1812,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00000000
-           ins[1] = 00000000
-           ins[2] = 00000000
-           ins[3] = 00000000
+           ins[0] = 00108093
+           ins[1] = 00110113
+           ins[2] = 00108093
+           ins[3] = 00110113
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1825,7 +1825,7 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[10] = 00000000
            ins[11] = 00000000
 [75000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=00110113 ins1=00108093
+         ins0=00108093 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1861,59 +1861,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00110113
-           ins[1] = 00108093
-           ins[2] = 00110113
-           ins[3] = 00110113
-           ins[4] = 00110113
-           ins[5] = 00110113
-           ins[6] = 00000000
-           ins[7] = 00000000
-           ins[8] = 00000000
-           ins[9] = 00000000
-           ins[10] = 00000000
-           ins[11] = 00000000
-[77000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=00110113 ins1=00110113
-ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
-         Register File:
-           x0 = 00000000
-           x1 = 00000000
-           x2 = 00000000
-           x3 = 00000000
-           x4 = 00000000
-           x5 = 00000000
-           x6 = 00000000
-           x7 = 00000000
-           x8 = 00000000
-           x9 = 00000000
-           x10 = 00000000
-           x11 = 00000000
-           x12 = 00000000
-           x13 = 00000000
-           x14 = 00000000
-           x15 = 00000000
-           x16 = 00000000
-           x17 = 00000000
-           x18 = 00000000
-           x19 = 00000000
-           x20 = 00000000
-           x21 = 00000000
-           x22 = 00000000
-           x23 = 00000000
-           x24 = 00000000
-           x25 = 00000000
-           x26 = 00000000
-           x27 = 00000000
-           x28 = 00000000
-           x29 = 00000000
-           x30 = 00000000
-           x31 = 00000000
-         Cache Contents (ins[0:11]):
-           ins[0] = 00110113
+           ins[0] = 00108093
            ins[1] = 00110113
-           ins[2] = 00110113
-           ins[3] = 00110113
+           ins[2] = 00000000
+           ins[3] = 00000000
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1922,8 +1873,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[79000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=00110113 ins1=00110113
+[77000] freeze1=0 freeze2=0 enable1=0 enable2=0
+         ins0=00000000 ins1=00000000
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -1959,10 +1910,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00110113
-           ins[1] = 00110113
-           ins[2] = 00110113
-           ins[3] = 00110113
+           ins[0] = 00000000
+           ins[1] = 00000000
+           ins[2] = 00000000
+           ins[3] = 00000000
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -1971,8 +1922,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[81000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=00110113 ins1=00110113
+[79000] freeze1=0 freeze2=0 enable1=0 enable2=0
+         ins0=00000000 ins1=00000000
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -2008,10 +1959,59 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00110113
-           ins[1] = 00110113
-           ins[2] = 00110113
-           ins[3] = 00110113
+           ins[0] = 00000000
+           ins[1] = 00000000
+           ins[2] = 00000000
+           ins[3] = 00000000
+           ins[4] = 00000000
+           ins[5] = 00000000
+           ins[6] = 00000000
+           ins[7] = 00000000
+           ins[8] = 00000000
+           ins[9] = 00000000
+           ins[10] = 00000000
+           ins[11] = 00000000
+[81000] freeze1=0 freeze2=0 enable1=0 enable2=0
+         ins0=00000000 ins1=00000000
+ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
+         Register File:
+           x0 = 00000000
+           x1 = 00000000
+           x2 = 00000000
+           x3 = 00000000
+           x4 = 00000000
+           x5 = 00000000
+           x6 = 00000000
+           x7 = 00000000
+           x8 = 00000000
+           x9 = 00000000
+           x10 = 00000000
+           x11 = 00000000
+           x12 = 00000000
+           x13 = 00000000
+           x14 = 00000000
+           x15 = 00000000
+           x16 = 00000000
+           x17 = 00000000
+           x18 = 00000000
+           x19 = 00000000
+           x20 = 00000000
+           x21 = 00000000
+           x22 = 00000000
+           x23 = 00000000
+           x24 = 00000000
+           x25 = 00000000
+           x26 = 00000000
+           x27 = 00000000
+           x28 = 00000000
+           x29 = 00000000
+           x30 = 00000000
+           x31 = 00000000
+         Cache Contents (ins[0:11]):
+           ins[0] = 00000000
+           ins[1] = 00000000
+           ins[2] = 00000000
+           ins[3] = 00000000
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -2059,18 +2059,18 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Cache Contents (ins[0:11]):
            ins[0] = 00110113
            ins[1] = 00110113
-           ins[2] = 00000000
-           ins[3] = 00000000
-           ins[4] = 00000000
-           ins[5] = 00000000
+           ins[2] = 00110113
+           ins[3] = 00110113
+           ins[4] = 00110113
+           ins[5] = 00110113
            ins[6] = 00000000
            ins[7] = 00000000
            ins[8] = 00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[85000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00000000
+[85000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00110113 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -2106,10 +2106,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00000000
-           ins[1] = 00000000
-           ins[2] = 00000000
-           ins[3] = 00000000
+           ins[0] = 00110113
+           ins[1] = 00110113
+           ins[2] = 00110113
+           ins[3] = 00110113
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -2118,8 +2118,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[87000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00000000
+[87000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00110113 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -2155,10 +2155,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00000000
-           ins[1] = 00000000
-           ins[2] = 00000000
-           ins[3] = 00000000
+           ins[0] = 00110113
+           ins[1] = 00110113
+           ins[2] = 00110113
+           ins[3] = 00110113
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -2167,8 +2167,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[89000] freeze1=0 freeze2=0 enable1=0 enable2=0
-         ins0=00000000 ins1=00000000
+[89000] freeze1=0 freeze2=0 enable1=1 enable2=1
+         ins0=00110113 ins1=00110113
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -2204,10 +2204,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = 00000000
-           ins[1] = 00000000
-           ins[2] = 00000000
-           ins[3] = 00000000
+           ins[0] = 00110113
+           ins[1] = 00110113
+           ins[2] = 00110113
+           ins[3] = 00110113
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -2255,57 +2255,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Cache Contents (ins[0:11]):
            ins[0] = 00110113
            ins[1] = 00110113
-           ins[2] = xxxxxxxx
-           ins[3] = xxxxxxxx
-           ins[4] = xxxxxxxx
-           ins[5] = xxxxxxxx
-           ins[6] = 00000000
-           ins[7] = 00000000
-           ins[8] = 00000000
-           ins[9] = 00000000
-           ins[10] = 00000000
-           ins[11] = 00000000
-[93000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=xxxxxxxx ins1=xxxxxxxx
-ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
-         Register File:
-           x0 = 00000000
-           x1 = 00000000
-           x2 = 00000000
-           x3 = 00000000
-           x4 = 00000000
-           x5 = 00000000
-           x6 = 00000000
-           x7 = 00000000
-           x8 = 00000000
-           x9 = 00000000
-           x10 = 00000000
-           x11 = 00000000
-           x12 = 00000000
-           x13 = 00000000
-           x14 = 00000000
-           x15 = 00000000
-           x16 = 00000000
-           x17 = 00000000
-           x18 = 00000000
-           x19 = 00000000
-           x20 = 00000000
-           x21 = 00000000
-           x22 = 00000000
-           x23 = 00000000
-           x24 = 00000000
-           x25 = 00000000
-           x26 = 00000000
-           x27 = 00000000
-           x28 = 00000000
-           x29 = 00000000
-           x30 = 00000000
-           x31 = 00000000
-         Cache Contents (ins[0:11]):
-           ins[0] = xxxxxxxx
-           ins[1] = xxxxxxxx
-           ins[2] = xxxxxxxx
-           ins[3] = xxxxxxxx
+           ins[2] = 00000000
+           ins[3] = 00000000
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -2314,8 +2265,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[95000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=xxxxxxxx ins1=xxxxxxxx
+[93000] freeze1=0 freeze2=0 enable1=0 enable2=0
+         ins0=00000000 ins1=00000000
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -2351,10 +2302,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = xxxxxxxx
-           ins[1] = xxxxxxxx
-           ins[2] = xxxxxxxx
-           ins[3] = xxxxxxxx
+           ins[0] = 00000000
+           ins[1] = 00000000
+           ins[2] = 00000000
+           ins[3] = 00000000
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -2363,8 +2314,8 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            ins[9] = 00000000
            ins[10] = 00000000
            ins[11] = 00000000
-[97000] freeze1=0 freeze2=0 enable1=1 enable2=1
-         ins0=xxxxxxxx ins1=xxxxxxxx
+[95000] freeze1=0 freeze2=0 enable1=0 enable2=0
+         ins0=00000000 ins1=00000000
 ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Register File:
            x0 = 00000000
@@ -2400,10 +2351,59 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
            x30 = 00000000
            x31 = 00000000
          Cache Contents (ins[0:11]):
-           ins[0] = xxxxxxxx
-           ins[1] = xxxxxxxx
-           ins[2] = xxxxxxxx
-           ins[3] = xxxxxxxx
+           ins[0] = 00000000
+           ins[1] = 00000000
+           ins[2] = 00000000
+           ins[3] = 00000000
+           ins[4] = 00000000
+           ins[5] = 00000000
+           ins[6] = 00000000
+           ins[7] = 00000000
+           ins[8] = 00000000
+           ins[9] = 00000000
+           ins[10] = 00000000
+           ins[11] = 00000000
+[97000] freeze1=0 freeze2=0 enable1=0 enable2=0
+         ins0=00000000 ins1=00000000
+ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
+         Register File:
+           x0 = 00000000
+           x1 = 00000000
+           x2 = 00000000
+           x3 = 00000000
+           x4 = 00000000
+           x5 = 00000000
+           x6 = 00000000
+           x7 = 00000000
+           x8 = 00000000
+           x9 = 00000000
+           x10 = 00000000
+           x11 = 00000000
+           x12 = 00000000
+           x13 = 00000000
+           x14 = 00000000
+           x15 = 00000000
+           x16 = 00000000
+           x17 = 00000000
+           x18 = 00000000
+           x19 = 00000000
+           x20 = 00000000
+           x21 = 00000000
+           x22 = 00000000
+           x23 = 00000000
+           x24 = 00000000
+           x25 = 00000000
+           x26 = 00000000
+           x27 = 00000000
+           x28 = 00000000
+           x29 = 00000000
+           x30 = 00000000
+           x31 = 00000000
+         Cache Contents (ins[0:11]):
+           ins[0] = 00000000
+           ins[1] = 00000000
+           ins[2] = 00000000
+           ins[3] = 00000000
            ins[4] = 00000000
            ins[5] = 00000000
            ins[6] = 00000000
@@ -2451,10 +2451,10 @@ ALU RESULTS: ALU_result1=00000000, ALU_result2=00000000
          Cache Contents (ins[0:11]):
            ins[0] = xxxxxxxx
            ins[1] = xxxxxxxx
-           ins[2] = 00000000
-           ins[3] = 00000000
-           ins[4] = 00000000
-           ins[5] = 00000000
+           ins[2] = xxxxxxxx
+           ins[3] = xxxxxxxx
+           ins[4] = xxxxxxxx
+           ins[5] = xxxxxxxx
            ins[6] = 00000000
            ins[7] = 00000000
            ins[8] = 00000000

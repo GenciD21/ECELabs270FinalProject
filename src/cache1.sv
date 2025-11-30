@@ -1,7 +1,7 @@
 module cache1 (
     input  logic clk,
     input  logic n_rst,
-    input  logic en,
+
     // Scheduler outputs
     input  logic freeze1,             // do not increment instructions     
     input  logic freeze2,             // do not increment instructions 
@@ -24,10 +24,12 @@ module cache1 (
     logic [31:0] PC;
     //CAVEAT PC UPDATE IS JANK
     always_comb begin
-    if ((n_ins[0] == ins[0] && n_ins[1] == ins[1] && n_ins[2] == ins[2] && n_ins[3] == ins[3] && n_ins[4] == ins[4] && n_ins[5] == ins[5]))
-        next_PC = PC + 32'd6;
-    else if (freeze1 || freeze2)
+    if (~n_rst)
+        next_PC = 32'h0000_0000;
+    else if ((freeze1 || freeze2))
         next_PC = PC;
+    else if ((n_ins[0] == ins[0] && n_ins[1] == ins[1] && n_ins[2] == ins[2] && n_ins[3] == ins[3] && n_ins[4] == ins[4] && n_ins[5] == ins[5]))
+        next_PC = PC + 32'd6;
     else if (dependency_on_ins2)
         next_PC = PC + 32'd4;
     else if (!nothing_filled || busy == 1'b1)
@@ -36,13 +38,8 @@ module cache1 (
         next_PC = PC;
     end
 
-    always_ff @(posedge clk, posedge n_rst) begin
-        if(n_rst) begin
-            PC <= 32'h0000_0000;
-        end
-        else if (en) begin
+    always_ff @(posedge clk) begin
         PC <= next_PC;
-        end
     end
 
     // logic [31:0] n_instruction_0;
@@ -59,15 +56,14 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst0 (
         .clk(clk),
-        .rst_n(!n_rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC),
         .wdata(32'd0),
         .rdata(n_ins[0]),
         .busy(busy),
-        .valid(),
-        .en(1)
+        .valid()
     );
 
     wb_simulator #(
@@ -76,15 +72,14 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst1 (
         .clk(clk),
-        .rst_n(!n_rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd4),
         .wdata(32'd0),
         .rdata(n_ins[1]),
         .busy(),
-        .valid(),
-        .en(1)
+        .valid()
     );
 
     wb_simulator #(
@@ -93,15 +88,14 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst2 (
         .clk(clk),
-        .rst_n(!n_rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd8),
         .wdata(32'd0),
         .rdata(n_ins[2]),
         .busy(),
-        .valid(),
-        .en(1)
+        .valid()
     );
 
     wb_simulator #(
@@ -110,15 +104,14 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst3 (
         .clk(clk),
-        .rst_n(!n_rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd12),
         .wdata(32'd0),
         .rdata(n_ins[3]),
         .busy(),
-        .valid(),
-        .en(1)
+        .valid()
     );
 
     wb_simulator #(
@@ -127,15 +120,14 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst4 (
         .clk(clk),
-        .rst_n(!n_rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd16),
         .wdata(32'd0),
         .rdata(n_ins[4]),
         .busy(),
-        .valid(),
-        .en(1)
+        .valid()
     );
 
     wb_simulator #(
@@ -144,19 +136,18 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst5 (
         .clk(clk),
-        .rst_n(!n_rst),
+        .rst_n(n_rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd20),
         .wdata(32'd0),
         .rdata(n_ins[5]),
         .busy(),
-        .valid(),
-        .en(1)
+        .valid()
     );
 
-    always_ff @(posedge clk or posedge n_rst) begin
-    if (n_rst) begin
+    always_ff @(posedge clk or negedge n_rst) begin
+    if (~n_rst) begin
         for (int i = 0; i < 6; i++) begin
             past_n_ins[i] <= 32'd0;
         end
@@ -166,7 +157,7 @@ module cache1 (
             ins[i] <= 32'd0;
         end
     end 
-    else if (en) begin
+    else begin
         for (int i = 0; i < 6; i++) begin
             past_n_ins[i] <= n_ins[i];
         end
