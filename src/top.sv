@@ -11,8 +11,13 @@ module top (
 );
 
     //Mr Clock Divider
-
-
+    logic new_clk;
+    clock_div clcker_div(
+    .clk(hz100),
+    .rst(reset),
+    .div(50),
+    .new_clk(new_clk)
+    );
 
 
 
@@ -32,7 +37,9 @@ module top (
         led_sampled1 <= 0;
     end
     else begin
-        led_sampled1 <= ALU_result1[7:0];
+        if(ALU_result1 != 0) begin
+            led_sampled1 <= ALU_result1[7:0];
+        end
       end
     end
 
@@ -78,7 +85,9 @@ module top (
         led_sampled2 <= 0;
     end
     else begin
+        if(ALU_result2 != 0) begin
         led_sampled2 <= ALU_result2[7:0];
+        end
       end
     end
 
@@ -151,6 +160,7 @@ module top (
       cache1 cache_inst (
         .clk(hz100),
         .rst(reset),
+        .en(new_clk),
         .freeze1(freeze1),
         .freeze2(freeze2),
         .dependency_on_ins2(dependency_on_ins2),
@@ -162,6 +172,7 @@ module top (
     scheduling_assistant_controlunit sched_assist_inst (
         .clk(hz100),
         .rst(reset),
+        .en(new_clk),
         .freeze1(freeze1),
         .freeze2(freeze2),
         .dependency_on_ins2(dependency_on_ins2),
@@ -206,6 +217,7 @@ module top (
     register_file reg_file_inst (
         .clk(hz100),
         .rst(reset),
+        .en(new_clk),
         .reg_write(!freeze1),
         .reg_write2(freeze1 ? 1'b0 : !freeze2),
         .reg1(reg1),

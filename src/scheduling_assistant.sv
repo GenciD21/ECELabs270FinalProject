@@ -1,6 +1,7 @@
 module scheduling_assistant_controlunit (
     input  logic          clk,
     input  logic          rst,
+    input  logic          en,
 
     // Scheduler outputs
     output logic          freeze1,
@@ -40,7 +41,7 @@ module scheduling_assistant_controlunit (
         if (rst) begin
             ins0 <= 32'd0;
             ins1 <= 32'd0;
-        end else begin
+        end else if(en) begin
             if (!freeze1 && !freeze2) begin
                 ins0 <= instruction0;
                 ins1 <= instruction1;

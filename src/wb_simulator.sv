@@ -5,6 +5,7 @@ module wb_simulator #(
 )(
     input  logic        clk,
     input  logic        rst_n,
+    input  logic        en,
 
     input  logic        req,       // asserted for one cycle to start a transaction
     input  logic        we,        // 0=read, 1=write
@@ -32,7 +33,7 @@ module wb_simulator #(
             busy    <= 0;
             valid   <= 0;
             rdata   <= 0;
-        end else begin
+        end else if(en) begin
             valid <= 0; // default
 
             if (req && !busy) begin

@@ -1,6 +1,7 @@
 module cache1 (
     input  logic clk,
     input  logic rst,
+    input  logic en,
 
     // Scheduler outputs
     input  logic freeze1,             // do not increment instructions     
@@ -61,6 +62,7 @@ module cache1 (
         .we(1'b0),
         .addr(PC),
         .wdata(32'd0),
+        .en(en),
         .rdata(n_ins[0]),
         .busy(busy),
         .valid()
@@ -75,6 +77,7 @@ module cache1 (
         .rst_n(!rst),
         .req(1'b1),
         .we(1'b0),
+        .en(en),
         .addr(PC + 32'd4),
         .wdata(32'd0),
         .rdata(n_ins[1]),
@@ -91,6 +94,7 @@ module cache1 (
         .rst_n(!rst),
         .req(1'b1),
         .we(1'b0),
+        .en(en),
         .addr(PC + 32'd8),
         .wdata(32'd0),
         .rdata(n_ins[2]),
@@ -107,6 +111,7 @@ module cache1 (
         .rst_n(!rst),
         .req(1'b1),
         .we(1'b0),
+        .en(en),
         .addr(PC + 32'd12),
         .wdata(32'd0),
         .rdata(n_ins[3]),
@@ -123,6 +128,7 @@ module cache1 (
         .rst_n(!rst),
         .req(1'b1),
         .we(1'b0),
+        .en(en),
         .addr(PC + 32'd16),
         .wdata(32'd0),
         .rdata(n_ins[4]),
@@ -139,6 +145,7 @@ module cache1 (
         .rst_n(!rst),
         .req(1'b1),
         .we(1'b0),
+        .en(en),
         .addr(PC + 32'd20),
         .wdata(32'd0),
         .rdata(n_ins[5]),
@@ -157,7 +164,7 @@ module cache1 (
             ins[i] <= 32'd0;
         end
     end 
-    else begin
+    else if (en) begin
         for (int i = 0; i < 6; i++) begin
             past_n_ins[i] <= n_ins[i];
         end
