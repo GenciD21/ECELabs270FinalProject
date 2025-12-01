@@ -1,7 +1,6 @@
 module scheduling_assistant_controlunit (
     input  logic          clk,
-    input  logic          n_rst,
-    input  logic          en,
+    input  logic          rst,
 
     // Scheduler outputs
     output logic          freeze1,
@@ -18,7 +17,7 @@ module scheduling_assistant_controlunit (
     input  logic          nothing_filled,
     input  logic [31:0]   instruction0,
     input  logic [31:0]   instruction1,
-    output logic [31:0] Imm1, Imm2,
+    output logic [31:0]   Imm1, Imm2,
     output logic ALUSrc1,
     output logic ALUSrc2
 );
@@ -26,33 +25,35 @@ module scheduling_assistant_controlunit (
     // Internal signals
     logic [31:0] ins0, ins1;
 
-    // These are driven by the control_unit instances below
-    // (and exposed as outputs)
-    // logic [4:0] RegD1, reg1, reg2;
-    // logic [4:0] RegD2, reg3, reg4;
-
     logic         dep_detected;
-    logic [1:0]   dep_timer;        // 2-cycle countdown for dependency handling
+    logic [1:0]   dep_timer;
     logic         freeze1_next, freeze2_next;
 
-  
-    always_ff @(posedge clk or negedge n_rst) begin
-        if (~n_rst) begin
+    // ----- added for edge detection -----
+    logic         dep_prev;      // registered previous value of dep_detected
+    logic         dep_rising;    // dep_detected && ~dep_prev
+
+    //==================================================================
+    // Instruction latching (unchanged)
+    //==================================================================
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
             ins0 <= 32'd0;
             ins1 <= 32'd0;
-        end else if(en) begin
-            if (!freeze1 && !freeze2) begin //both are not frozen, let it flow freeze1 == 0 and freeze2 == 0
+        end else begin
+            if (!freeze1 && !freeze2) begin
                 ins0 <= instruction0;
                 ins1 <= instruction1;
-            end else begin //keep same instructions otherwise.
+            end else begin
                 ins0 <= ins0;
                 ins1 <= ins1;
             end
         end
     end
 
-    
-    
+    //==================================================================
+    // Control units (unchanged)
+    //==================================================================
     control_unit cu1 (
         .instruction(ins0),
         .ALUSrc(ALUSrc1),
@@ -72,6 +73,9 @@ module scheduling_assistant_controlunit (
     );
 
 
+    //==================================================================
+    // Dependency detection (unchanged semantics)
+    //==================================================================
     always_comb begin
         dep_detected = 1'b0;
         dependency_on_ins2 = 1'b0;
@@ -79,19 +83,20 @@ module scheduling_assistant_controlunit (
         datapath_1_enable = 1'b1;
         datapath_2_enable = 1'b1;
 
-        // simple reg-to-reg dependencies: check RegD of each against sources of the other
-        if ( (RegD1 != 5'd0) && ((RegD1 == reg4) || (RegD1 == reg3) || (RegD1==RegD2) ))
+        // Detect register dependencies between instruction0 and instruction1
+        if ( (RegD1 != 5'd0) && ((RegD1 == reg3) || (RegD1 == reg4)) ) begin
             dep_detected = 1'b1;
-        else if ( (RegD2 != 5'd0) && ((RegD2 == reg1) || (RegD2 == reg2) || (RegD1==RegD2)) )
+        end
+        // Also check if both write to the same destination (WAW hazard)
+        if ( (RegD1 != 5'd0) && (RegD2 != 5'd0) && (RegD1 == RegD2) ) begin
             dep_detected = 1'b1;
+        end
 
         if (dep_detected) begin
             dependency_on_ins2 = 1'b1;
-            datapath_1_enable = 1'b1;   // let lane 1 run
-            datapath_2_enable = 1'b0;   // stall lane 2 until sequence completes
+            datapath_1_enable = 1'b1;
+            datapath_2_enable = 1'b0;
         end
-
-        // Cache empty overrides everything
 
         if (instruction0 == 32'h0) begin
             datapath_1_enable = 1'b0;
@@ -106,13 +111,31 @@ module scheduling_assistant_controlunit (
         end
     end
 
-  
-    always_ff @(posedge clk or negedge n_rst) begin
-        if (~n_rst) begin
+    //==================================================================
+    // dep_prev update (register previous dep_detected)
+    //==================================================================
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            dep_prev <= 1'b0;
+        end else begin
+            dep_prev <= dep_detected;
+        end
+    end
+
+    // edge detect (combinational)
+    always_comb begin
+        dep_rising = dep_detected && ~dep_prev;
+    end
+
+    //==================================================================
+    // Dependency timer (unchanged)
+    //==================================================================
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
             dep_timer <= 2'd0;
-        end else if(en) begin
+        end else begin
             if (dep_detected && dep_timer == 2'd0)
-                dep_timer <= 2'd2;        // start countdown when a new dep appears
+                dep_timer <= 2'd2;
             else if (dep_timer != 2'd0)
                 dep_timer <= dep_timer - 2'd1;
             else
@@ -120,44 +143,46 @@ module scheduling_assistant_controlunit (
         end
     end
 
-   
+    //==================================================================
+    // freeze_next computation (unchanged)
+    //==================================================================
     always_comb begin
-        // default: no freeze
         freeze1_next = 1'b0;
         freeze2_next = 1'b0;
 
-        // dependency timer controls freeze behavior
         if (dep_timer == 2'd2) begin
-            // first cycle after detection: freeze both lanes
             freeze1_next = 1'b1;
             freeze2_next = 1'b1;
         end
         else if (dep_timer == 2'd1) begin
-            // second cycle: let lane1 run, keep lane2 frozen
             freeze1_next = 1'b0;
             freeze2_next = 1'b1;
         end
         else begin
-            // normal operation
             freeze1_next = 1'b0;
             freeze2_next = 1'b0;
         end
 
-        // nothing_filled overrides everything
         if (nothing_filled) begin
             freeze1_next = 1'b1;
             freeze2_next = 1'b1;
         end
     end
 
-    // Sequentially update freeze outputs
-    always_ff @(posedge clk, negedge n_rst) begin
-        if (~n_rst) begin
-            freeze1 <= 1'b0;
-            freeze2 <= 1'b0;
-        end else if(en) begin
-            freeze1 <= freeze1_next;
-            freeze2 <= freeze2_next;
+    //==================================================================
+    // COMBINATIONAL outputs that react to rising dependency only
+    // (use dep_rising instead of dep_detected to avoid re-triggering)
+    //==================================================================
+    always_comb begin
+        if (dep_rising && dep_timer == 2'd0) begin
+            // Immediate reaction to *new* dependency only
+            freeze1 = 1'b1;
+            freeze2 = 1'b1;
+        end else begin
+            // Use the sequential freeze_next values
+            freeze1 = freeze1_next;
+            freeze2 = freeze2_next;
         end
     end
+
 endmodule

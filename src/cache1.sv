@@ -1,6 +1,6 @@
 module cache1 (
     input  logic clk,
-    input  logic n_rst,
+    input  logic rst,
 
     // Scheduler outputs
     input  logic freeze1,             // do not increment instructions     
@@ -24,7 +24,7 @@ module cache1 (
     logic [31:0] PC;
     //CAVEAT PC UPDATE IS JANK
     always_comb begin
-    if (~n_rst)
+    if (rst)
         next_PC = 32'h0000_0000;
     else if ((freeze1 || freeze2))
         next_PC = PC;
@@ -56,7 +56,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst0 (
         .clk(clk),
-        .rst_n(n_rst),
+        .rst_n(!rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC),
@@ -72,7 +72,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst1 (
         .clk(clk),
-        .rst_n(n_rst),
+        .rst_n(!rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd4),
@@ -88,7 +88,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst2 (
         .clk(clk),
-        .rst_n(n_rst),
+        .rst_n(!rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd8),
@@ -104,7 +104,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst3 (
         .clk(clk),
-        .rst_n(n_rst),
+        .rst_n(!rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd12),
@@ -120,7 +120,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst4 (
         .clk(clk),
-        .rst_n(n_rst),
+        .rst_n(!rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd16),
@@ -136,7 +136,7 @@ module cache1 (
         .LATENCY(3)
     ) wb_inst5 (
         .clk(clk),
-        .rst_n(n_rst),
+        .rst_n(!rst),
         .req(1'b1),
         .we(1'b0),
         .addr(PC + 32'd20),
@@ -146,8 +146,8 @@ module cache1 (
         .valid()
     );
 
-    always_ff @(posedge clk or negedge n_rst) begin
-    if (~n_rst) begin
+    always_ff @(posedge clk, posedge rst) begin
+    if (rst) begin
         for (int i = 0; i < 6; i++) begin
             past_n_ins[i] <= 32'd0;
         end

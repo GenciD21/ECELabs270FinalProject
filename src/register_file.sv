@@ -1,5 +1,5 @@
 module register_file(
-  input  logic clk, n_rst, en,
+  input  logic clk, rst, en,
   input  logic reg_write, reg_write2,
   input  logic [4:0] reg1, reg2, reg3, reg4, regd, regd2,
   input  logic [31:0] write_data, write_data2,
@@ -7,9 +7,9 @@ module register_file(
 );
   logic [31:0] registers [31:0];
 
-  always_ff @(posedge clk, negedge n_rst) begin
+  always_ff @(posedge clk, posedge rst) begin
     
-    if (~n_rst) begin
+    if (rst) begin
       for (int i = 0; i < 32; i++)
         registers[i] <= 32'd0;
     end 

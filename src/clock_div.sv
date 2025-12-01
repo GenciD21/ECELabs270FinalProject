@@ -1,14 +1,14 @@
 module clock_div (
     input logic clk,
-    input logic n_rst,
+    input logic rst,
     input logic [31:0] div,
     output logic new_clk
 );
 
     logic [31:0] counter;
 
-    always_ff @(posedge clk, posedge n_rst) begin
-    if (n_rst) begin
+    always_ff @(posedge clk, posedge rst) begin
+    if (rst) begin
             counter <= 0;
             new_clk <= 0;
         end

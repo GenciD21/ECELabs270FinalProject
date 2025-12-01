@@ -25,7 +25,7 @@ module top_tb;
     // Reset pulse
     initial begin
         reset = 1;
-        #20;
+        #1;
         reset = 0;
     end
 
@@ -56,7 +56,7 @@ module top_tb;
     initial begin
         $dumpfile("waves/top.vcd");
         $dumpvars(0, top_tb);
-        #100;
+        #1000;
         $display("=== DATAPATH SIMULATION COMPLETE ===");
         $finish;
     end
