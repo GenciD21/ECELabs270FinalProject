@@ -9,7 +9,7 @@ module scheduling_assistant_controlunit (
     output logic          datapath_1_enable,
     output logic          datapath_2_enable,
 
-    // Exposed decoded register indices (driven by the control_units instantiated here)
+    
     output logic [4:0]    RegD1, reg1, reg2,
     output logic [4:0]    RegD2, reg3, reg4,
     
@@ -29,13 +29,11 @@ module scheduling_assistant_controlunit (
     logic [1:0]   dep_timer;
     logic         freeze1_next, freeze2_next;
 
-    // ----- added for edge detection -----
+    
     logic         dep_prev;      // registered previous value of dep_detected
     logic         dep_rising;    // dep_detected && ~dep_prev
 
-    //==================================================================
-    // Instruction latching (unchanged)
-    //==================================================================
+    
     always_ff @(posedge clk or negedge n_rst) begin
         if (~n_rst) begin
             ins0 <= 32'd0;
@@ -51,9 +49,7 @@ module scheduling_assistant_controlunit (
         end
     end
 
-    //==================================================================
-    // Control units (unchanged)
-    //==================================================================
+    
     control_unit cu1 (
         .instruction(ins0),
         .ALUSrc(ALUSrc1),
@@ -73,9 +69,7 @@ module scheduling_assistant_controlunit (
     );
 
 
-    //==================================================================
-    // Dependency detection (unchanged semantics)
-    //==================================================================
+    
     always_comb begin
         dep_detected = 1'b0;
         dependency_on_ins2 = 1'b0;
@@ -111,9 +105,7 @@ module scheduling_assistant_controlunit (
         end
     end
 
-    //==================================================================
-    // dep_prev update (register previous dep_detected)
-    //==================================================================
+    
     always_ff @(posedge clk or negedge n_rst) begin
         if (~n_rst) begin
             dep_prev <= 1'b0;
@@ -127,9 +119,7 @@ module scheduling_assistant_controlunit (
         dep_rising = dep_detected && ~dep_prev;
     end
 
-    //==================================================================
-    // Dependency timer (unchanged)
-    //==================================================================
+    
     always_ff @(posedge clk or negedge n_rst) begin
         if (~n_rst) begin
             dep_timer <= 2'd0;
@@ -143,9 +133,7 @@ module scheduling_assistant_controlunit (
         end
     end
 
-    //==================================================================
-    // freeze_next computation (unchanged)
-    //==================================================================
+    
     always_comb begin
         freeze1_next = 1'b0;
         freeze2_next = 1'b0;
@@ -169,10 +157,7 @@ module scheduling_assistant_controlunit (
         end
     end
 
-    //==================================================================
-    // COMBINATIONAL outputs that react to rising dependency only
-    // (use dep_rising instead of dep_detected to avoid re-triggering)
-    //==================================================================
+    
     always_comb begin
         if (dep_rising && dep_timer == 2'd0) begin
             // Immediate reaction to *new* dependency only
